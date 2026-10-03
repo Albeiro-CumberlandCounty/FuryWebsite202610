@@ -1,0 +1,1025 @@
+<style>
+/* =========================================================
+   FAYETTEVILLE FURY NXT
+   Single-container responsive page
+   ========================================================= */
+
+.fury-nxt-page,
+.fury-nxt-page * {
+    box-sizing: border-box;
+}
+
+.fury-nxt-page {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #111111;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+/* Force major headings to remain visible on SoccerShift */
+.fury-nxt-page h1,
+.fury-nxt-page h2,
+.fury-nxt-page h3 {
+    color: #ffffff !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    text-transform: uppercase !important;
+}
+
+/* =========================================================
+   TOP BAR
+   ========================================================= */
+
+.fury-nxt-top {
+    background: #ff5a1f;
+    padding: 8px 0;
+    width: 100%;
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.fury-nxt-hero {
+    position: relative;
+    padding: 78px 8%;
+    background:
+        radial-gradient(circle at 85% 20%, rgba(255,90,31,.16), transparent 35%),
+        linear-gradient(135deg, #0b0b0b 0%, #151515 55%, #100b09 100%);
+}
+
+.fury-nxt-hero-inner {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.fury-nxt-kicker {
+    color: #ff5a1f !important;
+    font-size: 15px !important;
+    font-weight: 800 !important;
+    letter-spacing: 2.5px !important;
+    text-transform: uppercase !important;
+    margin: 0 0 18px 0 !important;
+}
+
+.fury-nxt-hero h1 {
+    color: #ffffff !important;
+    font-size: 54px !important;
+    line-height: 1.02 !important;
+    font-weight: 900 !important;
+    letter-spacing: -1.5px !important;
+    margin: 0 0 24px 0 !important;
+    padding: 0 !important;
+    max-width: 760px;
+}
+
+.fury-nxt-orange-line {
+    width: 72px;
+    height: 5px;
+    background: #ff5a1f;
+    margin: 0 0 28px 0;
+}
+
+.fury-nxt-hero p {
+    color: #eeeeee !important;
+    font-size: 20px !important;
+    line-height: 1.65 !important;
+    max-width: 790px;
+    margin: 0 0 30px 0 !important;
+}
+
+.fury-nxt-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.fury-nxt-btn {
+    display: inline-block;
+    padding: 15px 25px;
+    background: #ff5a1f;
+    color: #000000 !important;
+    text-decoration: none !important;
+    font-size: 14px !important;
+    font-weight: 900 !important;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 2px solid #ff5a1f;
+    transition: all .2s ease;
+}
+
+.fury-nxt-btn:hover {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: #000000 !important;
+}
+
+.fury-nxt-btn-outline {
+    background: transparent;
+    color: #ffffff !important;
+}
+
+.fury-nxt-btn-outline:hover {
+    background: #ff5a1f;
+    border-color: #ff5a1f;
+    color: #000000 !important;
+}
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.fury-nxt-intro {
+    padding: 72px 8%;
+    background: #151515;
+}
+
+.fury-nxt-content {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.fury-nxt-section-label {
+    color: #ff5a1f !important;
+    font-size: 14px !important;
+    font-weight: 900 !important;
+    letter-spacing: 2.5px !important;
+    text-transform: uppercase !important;
+    margin: 0 0 20px 0 !important;
+}
+
+.fury-nxt-intro h2 {
+    color: #ffffff !important;
+    font-size: 42px !important;
+    font-weight: 900 !important;
+    line-height: 1.05 !important;
+    letter-spacing: -1px !important;
+    margin: 0 0 25px 0 !important;
+    padding: 0 !important;
+}
+
+.fury-nxt-intro p {
+    color: #eeeeee !important;
+    font-size: 18px !important;
+    line-height: 1.7 !important;
+    max-width: 850px;
+    margin: 0 0 22px 0 !important;
+}
+
+/* =========================================================
+   FOUR PILLARS
+   ========================================================= */
+
+.fury-nxt-pillars {
+    padding: 0 8% 72px 8%;
+    background: #151515;
+}
+
+.fury-nxt-pillar-grid {
+    max-width: 1050px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.fury-nxt-pillar {
+    border-top: 2px solid #3a3a3a;
+    padding-top: 22px;
+}
+
+.fury-nxt-pillar h3 {
+    color: #ffffff !important;
+    font-size: 17px !important;
+    font-weight: 900 !important;
+    line-height: 1.15 !important;
+    margin: 0 0 13px 0 !important;
+}
+
+.fury-nxt-pillar p {
+    color: #cccccc !important;
+    font-size: 15px !important;
+    line-height: 1.55 !important;
+    margin: 0 !important;
+}
+
+/* =========================================================
+   DEVELOPMENT SECTION
+   ========================================================= */
+
+.fury-nxt-feature {
+    padding: 76px 8%;
+    background: #0d0d0d;
+}
+
+.fury-nxt-feature-grid {
+    max-width: 1050px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.fury-nxt-feature h2 {
+    color: #ffffff !important;
+    font-size: 42px !important;
+    font-weight: 900 !important;
+    line-height: 1.05 !important;
+    letter-spacing: -1px !important;
+    margin: 0 0 22px 0 !important;
+}
+
+.fury-nxt-feature p {
+    color: #dddddd !important;
+    font-size: 17px !important;
+    line-height: 1.7 !important;
+    margin: 0 0 25px 0 !important;
+}
+
+/* =========================================================
+   IMAGE SYSTEM
+   All Fury NXT photography uses a 16:9 display area.
+   The SoccerShift source images are square files containing
+   the wider photograph inside them, so object-fit: cover
+   crops the excess top and bottom space automatically.
+   ========================================================= */
+
+.fury-nxt-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #191919;
+    position: relative;
+}
+
+.fury-nxt-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+}
+
+/* =========================================================
+   PATHWAY CARDS
+   ========================================================= */
+
+.fury-nxt-pathway {
+    padding: 76px 8%;
+    background: #151515;
+}
+
+.fury-nxt-pathway-intro {
+    max-width: 1050px;
+    margin: 0 auto 38px auto;
+}
+
+.fury-nxt-pathway-intro h2 {
+    color: #ffffff !important;
+    font-size: 42px !important;
+    font-weight: 900 !important;
+    line-height: 1.05 !important;
+    margin: 0 0 18px 0 !important;
+}
+
+.fury-nxt-pathway-intro p {
+    color: #dddddd !important;
+    font-size: 17px !important;
+    line-height: 1.65 !important;
+    max-width: 800px;
+    margin: 0 !important;
+}
+
+.fury-nxt-card-grid {
+    max-width: 1050px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.fury-nxt-card {
+    display: block;
+    min-height: 245px;
+    padding: 30px;
+    background: #0c0c0c;
+    border: 1px solid #292929;
+    text-decoration: none !important;
+    transition: transform .2s ease, border-color .2s ease;
+}
+
+.fury-nxt-card:hover {
+    transform: translateY(-4px);
+    border-color: #ff5a1f;
+}
+
+.fury-nxt-card-number {
+    color: #ff5a1f !important;
+    font-size: 13px !important;
+    font-weight: 900 !important;
+    letter-spacing: 2px;
+    margin-bottom: 22px;
+}
+
+.fury-nxt-card h3 {
+    color: #ffffff !important;
+    font-size: 24px !important;
+    font-weight: 900 !important;
+    line-height: 1.1 !important;
+    margin: 0 0 14px 0 !important;
+}
+
+.fury-nxt-card p {
+    color: #bbbbbb !important;
+    font-size: 15px !important;
+    line-height: 1.55 !important;
+    margin: 0 !important;
+}
+
+/* =========================================================
+   COMPETITION
+   ========================================================= */
+
+.fury-nxt-competition {
+    padding: 76px 8%;
+    background: #0d0d0d;
+}
+
+.fury-nxt-competition-grid {
+    max-width: 1050px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.fury-nxt-competition h2 {
+    color: #ffffff !important;
+    font-size: 42px !important;
+    font-weight: 900 !important;
+    line-height: 1.05 !important;
+    margin: 0 0 22px 0 !important;
+}
+
+.fury-nxt-competition p {
+    color: #dddddd !important;
+    font-size: 17px !important;
+    line-height: 1.7 !important;
+    margin: 0 0 25px 0 !important;
+}
+
+/* =========================================================
+   HIGH SCHOOL
+   ========================================================= */
+
+.fury-nxt-highschool {
+    padding: 76px 8%;
+    background: #151515;
+}
+
+.fury-nxt-highschool-grid {
+    max-width: 1050px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.fury-nxt-highschool h2 {
+    color: #ffffff !important;
+    font-size: 42px !important;
+    font-weight: 900 !important;
+    line-height: 1.05 !important;
+    margin: 0 0 22px 0 !important;
+}
+
+.fury-nxt-highschool p {
+    color: #dddddd !important;
+    font-size: 17px !important;
+    line-height: 1.7 !important;
+    margin: 0 0 25px 0 !important;
+}
+
+/* =========================================================
+   FINAL CTA
+   ========================================================= */
+
+.fury-nxt-cta {
+    background: #ff5a1f;
+    padding: 34px 8%;
+}
+
+.fury-nxt-cta-inner {
+    max-width: 1050px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.fury-nxt-cta h2 {
+    color: #000000 !important;
+    font-size: 25px !important;
+    font-weight: 900 !important;
+    margin: 0 0 7px 0 !important;
+}
+
+.fury-nxt-cta p {
+    color: #000000 !important;
+    font-size: 15px !important;
+    margin: 0 !important;
+}
+
+.fury-nxt-cta .fury-nxt-btn {
+    background: #000000;
+    border-color: #000000;
+    color: #ffffff !important;
+    white-space: nowrap;
+}
+
+.fury-nxt-cta .fury-nxt-btn:hover {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: #000000 !important;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .fury-nxt-hero h1 {
+        font-size: 45px !important;
+    }
+
+    .fury-nxt-pillars {
+        padding-bottom: 55px;
+    }
+
+    .fury-nxt-pillar-grid {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 35px;
+    }
+
+    .fury-nxt-feature-grid,
+    .fury-nxt-competition-grid,
+    .fury-nxt-highschool-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .fury-nxt-card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fury-nxt-cta-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .fury-nxt-hero,
+    .fury-nxt-intro,
+    .fury-nxt-feature,
+    .fury-nxt-pathway,
+    .fury-nxt-competition,
+    .fury-nxt-highschool {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .fury-nxt-hero {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .fury-nxt-hero h1 {
+        font-size: 36px !important;
+        letter-spacing: -.5px !important;
+    }
+
+    .fury-nxt-hero p {
+        font-size: 17px !important;
+    }
+
+    .fury-nxt-intro h2,
+    .fury-nxt-feature h2,
+    .fury-nxt-pathway-intro h2,
+    .fury-nxt-competition h2,
+    .fury-nxt-highschool h2 {
+        font-size: 32px !important;
+    }
+
+    .fury-nxt-pillar-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fury-nxt-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .fury-nxt-cta {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .fury-nxt-cta h2 {
+        font-size: 22px !important;
+    }
+
+    /* Keep all photography at the same wide ratio on phones */
+    .fury-nxt-image {
+        aspect-ratio: 16 / 9;
+    }
+}
+</style>
+
+
+<div class="fury-nxt-page">
+
+    <!-- TOP ORANGE ACCENT -->
+    <div class="fury-nxt-top"></div>
+
+
+    <!-- =====================================================
+         HERO
+         ===================================================== -->
+
+    <section class="fury-nxt-hero">
+
+        <div class="fury-nxt-hero-inner">
+
+            <div class="fury-nxt-kicker">
+                FAYETTEVILLE FURY NXT
+            </div>
+
+            <h1 style="color:#ffffff !important;">
+                THE NEXT GENERATION<br>
+                OF FURY PLAYERS.
+            </h1>
+
+            <div class="fury-nxt-orange-line"></div>
+
+            <p>
+                Fury NXT is built around player development, meaningful
+                competition and a clear pathway for players who want to
+                keep growing.
+            </p>
+
+            <div class="fury-nxt-actions">
+
+                <a href="/register" class="fury-nxt-btn">
+                    JOIN FURY
+                </a>
+
+                <a href="/nxt/assessments"
+                   class="fury-nxt-btn fury-nxt-btn-outline">
+                    ASSESSMENTS &amp; TRYOUTS
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         INTRO
+         ===================================================== -->
+
+    <section class="fury-nxt-intro">
+
+        <div class="fury-nxt-content">
+
+            <div class="fury-nxt-section-label">
+                MORE THAN A TEAM
+            </div>
+
+            <h2 style="color:#ffffff !important;">
+                DEVELOP THE PLAYER.
+            </h2>
+
+            <p>
+                Fayetteville Fury NXT represents the next generation of
+                Fayetteville Fury players. The program is designed around
+                the idea that development should be intentional,
+                challenging and connected to what a player wants to do next.
+            </p>
+
+            <p>
+                Players receive focused training, opportunities to compete
+                and support as they continue developing technically,
+                tactically, physically and mentally.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FOUR PILLARS
+         ===================================================== -->
+
+    <section class="fury-nxt-pillars">
+
+        <div class="fury-nxt-pillar-grid">
+
+            <div class="fury-nxt-pillar">
+
+                <h3 style="color:#ffffff !important;">
+                    TECHNICAL DEVELOPMENT
+                </h3>
+
+                <p>
+                    Build confidence, control and ability on the ball
+                    through purposeful training.
+                </p>
+
+            </div>
+
+
+            <div class="fury-nxt-pillar">
+
+                <h3 style="color:#ffffff !important;">
+                    SOCCER IQ
+                </h3>
+
+                <p>
+                    Learn to read the game, make decisions and solve
+                    problems under pressure.
+                </p>
+
+            </div>
+
+
+            <div class="fury-nxt-pillar">
+
+                <h3 style="color:#ffffff !important;">
+                    MEANINGFUL COMPETITION
+                </h3>
+
+                <p>
+                    Use matches and tournaments to test development
+                    in real competitive environments.
+                </p>
+
+            </div>
+
+
+            <div class="fury-nxt-pillar">
+
+                <h3 style="color:#ffffff !important;">
+                    LONG-TERM GROWTH
+                </h3>
+
+                <p>
+                    Meet players where they are and challenge them toward
+                    where they want to go.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PLAYER DEVELOPMENT
+         ===================================================== -->
+
+    <section class="fury-nxt-feature">
+
+        <div class="fury-nxt-feature-grid">
+
+            <div>
+
+                <div class="fury-nxt-section-label">
+                    PLAYER DEVELOPMENT
+                </div>
+
+                <h2 style="color:#ffffff !important;">
+                    BUILDING PLAYERS<br>
+                    FOR WHAT'S NEXT.
+                </h2>
+
+                <p>
+                    Development is more than running drills. Fury NXT
+                    focuses on helping players understand the game,
+                    improve their individual abilities and become more
+                    confident decision-makers.
+                </p>
+
+                <a href="/player-development"
+                   class="fury-nxt-btn">
+                    EXPLORE PLAYER DEVELOPMENT
+                </a>
+
+            </div>
+
+
+            <div class="fury-nxt-image">
+
+                <img
+                    src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-9d59acd8-30c2-4df4-b013-60b794d91640/1790802955-full.png"
+                    alt="Fayetteville Fury player development"
+                    loading="lazy"
+                >
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PATHWAY
+         ===================================================== -->
+
+    <section class="fury-nxt-pathway">
+
+        <div class="fury-nxt-pathway-intro">
+
+            <div class="fury-nxt-section-label">
+                THE FURY PATHWAY
+            </div>
+
+            <h2 style="color:#ffffff !important;">
+                WHERE DOES YOUR PLAYER<br>
+                WANT TO GO NEXT?
+            </h2>
+
+            <p>
+                Every player develops differently. Fury NXT provides
+                multiple opportunities for players to train, compete
+                and continue moving forward.
+            </p>
+
+        </div>
+
+
+        <div class="fury-nxt-card-grid">
+
+            <a href="/player-development"
+               class="fury-nxt-card">
+
+                <div class="fury-nxt-card-number">
+                    01
+                </div>
+
+                <h3 style="color:#ffffff !important;">
+                    PLAYER DEVELOPMENT
+                </h3>
+
+                <p>
+                    Explore how Fury develops technical ability,
+                    soccer intelligence, confidence and complete players.
+                </p>
+
+            </a>
+
+
+            <a href="/nxt/tournaments"
+               class="fury-nxt-card">
+
+                <div class="fury-nxt-card-number">
+                    02
+                </div>
+
+                <h3 style="color:#ffffff !important;">
+                    TOURNAMENTS
+                </h3>
+
+                <p>
+                    Put development to the test through competitive
+                    tournament experiences.
+                </p>
+
+            </a>
+
+
+            <a href="/nxt/player-pathway"
+               class="fury-nxt-card">
+
+                <div class="fury-nxt-card-number">
+                    03
+                </div>
+
+                <h3 style="color:#ffffff !important;">
+                    PLAYER PATHWAY
+                </h3>
+
+                <p>
+                    Understand the opportunities available as players
+                    continue to grow and define what's next.
+                </p>
+
+            </a>
+
+
+            <a href="/nxt/age-groups"
+               class="fury-nxt-card">
+
+                <div class="fury-nxt-card-number">
+                    04
+                </div>
+
+                <h3 style="color:#ffffff !important;">
+                    AGE GROUPS
+                </h3>
+
+                <p>
+                    Find the right Fury NXT environment for your player's
+                    current stage of development.
+                </p>
+
+            </a>
+
+
+            <a href="/nxt/assessments"
+               class="fury-nxt-card">
+
+                <div class="fury-nxt-card-number">
+                    05
+                </div>
+
+                <h3 style="color:#ffffff !important;">
+                    ASSESSMENTS
+                </h3>
+
+                <p>
+                    Learn about upcoming assessments, tryouts and
+                    opportunities to get started.
+                </p>
+
+            </a>
+
+
+            <a href="/register"
+               class="fury-nxt-card">
+
+                <div class="fury-nxt-card-number">
+                    06
+                </div>
+
+                <h3 style="color:#ffffff !important;">
+                    JOIN FURY
+                </h3>
+
+                <p>
+                    Ready to take the next step? Start the registration
+                    process with Fayetteville Fury.
+                </p>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         COMPETITION
+         ===================================================== -->
+
+    <section class="fury-nxt-competition">
+
+        <div class="fury-nxt-competition-grid">
+
+            <div class="fury-nxt-image">
+
+                <img
+                    src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-afd685ad-9671-46b0-8c1a-827832ecf684/1790807705-full.png"
+                    alt="Fayetteville Fury tournament competition"
+                    loading="lazy"
+                >
+
+            </div>
+
+
+            <div>
+
+                <div class="fury-nxt-section-label">
+                    COMPETE WITH PURPOSE
+                </div>
+
+                <h2 style="color:#ffffff !important;">
+                    DEVELOPMENT<br>
+                    NEEDS A TEST.
+                </h2>
+
+                <p>
+                    Competition gives players an opportunity to take what
+                    they have learned in training and apply it when the
+                    game gets real.
+                </p>
+
+                <p>
+                    Fury NXT uses meaningful competition and tournament
+                    experiences as part of the development process.
+                </p>
+
+                <a href="/nxt/tournaments"
+                   class="fury-nxt-btn">
+                    EXPLORE TOURNAMENTS
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         HIGH SCHOOL
+         ===================================================== -->
+
+    <section class="fury-nxt-highschool">
+
+        <div class="fury-nxt-highschool-grid">
+
+            <div>
+
+                <div class="fury-nxt-section-label">
+                    HIGH SCHOOL PLAYERS
+                </div>
+
+                <h2 style="color:#ffffff !important;">
+                    KEEP DEVELOPING<br>
+                    THROUGH HIGH SCHOOL.
+                </h2>
+
+                <p>
+                    The high school years are an important part of a
+                    player's development. Fury provides an environment
+                    where players can continue training, competing and
+                    preparing for whatever comes next.
+                </p>
+
+                <a href="/nxt/player-pathway"
+                   class="fury-nxt-btn">
+                    EXPLORE THE PATHWAY
+                </a>
+
+            </div>
+
+
+            <div class="fury-nxt-image">
+
+                <img
+                    src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-c8315697-8536-442e-b356-cf8b59e94689/1790803470-full.png"
+                    alt="Fayetteville Fury high school players"
+                    loading="lazy"
+                >
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FINAL CTA
+         ===================================================== -->
+
+    <section class="fury-nxt-cta">
+
+        <div class="fury-nxt-cta-inner">
+
+            <div>
+
+                <h2 style="color:#000000 !important;">
+                    READY FOR YOUR PLAYER'S NEXT CHALLENGE?
+                </h2>
+
+                <p>
+                    Start with Fury NXT assessments and registration.
+                </p>
+
+            </div>
+
+            <a href="/register"
+               class="fury-nxt-btn">
+                GET STARTED
+            </a>
+
+        </div>
+
+    </section>
+
+</div>

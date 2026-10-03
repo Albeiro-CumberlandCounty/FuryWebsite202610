@@ -1,0 +1,1795 @@
+<style>
+/* =========================================================
+   FAYETTEVILLE FURY
+   PLAYER DEVELOPMENT PAGE
+   ========================================================= */
+
+.fury-pd {
+  --fury-orange: #ff5a1f;
+  --fury-black: #0b0b0b;
+  --fury-dark: #111111;
+  --fury-card: #171717;
+  --fury-white: #ffffff;
+  --fury-gray: #bdbdbd;
+
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  background: #0b0b0b !important;
+  color: #ffffff !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+}
+
+.fury-pd *,
+.fury-pd *::before,
+.fury-pd *::after {
+  box-sizing: border-box !important;
+}
+
+.fury-pd img {
+  max-width: 100% !important;
+}
+
+.fury-pd a {
+  box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   UNIVERSAL FURY HEADINGS
+
+   DIVS are intentionally used instead of H1/H2/H3
+   to prevent SoccerShift theme typography from overriding
+   the design.
+   ========================================================= */
+
+.fury-pd-title {
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  background: transparent !important;
+  border: 0 !important;
+  text-shadow: none !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+}
+
+.fury-pd-title-white {
+  color: #ffffff !important;
+}
+
+.fury-pd-title-orange {
+  color: #ff5a1f !important;
+}
+
+
+/* =========================================================
+   FURY BUTTONS
+   Scoped aggressively so SoccerShift/theme link styles cannot
+   override the button treatment.
+   ========================================================= */
+
+.fury-pd .fury-pd-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 54px !important;
+  padding: 16px 28px !important;
+  margin: 0 !important;
+
+  background: #ff5a1f !important;
+  color: #0b0b0b !important;
+  border: 2px solid #ff5a1f !important;
+  border-radius: 0 !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1 !important;
+  font-weight: 900 !important;
+  letter-spacing: 1.2px !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  text-shadow: none !important;
+
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+}
+
+.fury-pd .fury-pd-button:hover,
+.fury-pd .fury-pd-button:focus {
+  background: #ffffff !important;
+  color: #0b0b0b !important;
+  border-color: #ffffff !important;
+  text-decoration: none !important;
+  transform: translateY(-2px) !important;
+}
+
+.fury-pd .fury-pd-button-outline {
+  background: transparent !important;
+  color: #ffffff !important;
+  border-color: #ff5a1f !important;
+}
+
+.fury-pd .fury-pd-button-outline:hover,
+.fury-pd .fury-pd-button-outline:focus {
+  background: #ff5a1f !important;
+  color: #0b0b0b !important;
+  border-color: #ff5a1f !important;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.fury-pd-hero {
+  position: relative !important;
+
+  height: auto !important;
+  min-height: 0 !important;
+
+  display: grid !important;
+  grid-template-columns: 48% 52% !important;
+  grid-template-rows: auto auto !important;
+
+  background: #0b0b0b !important;
+
+  overflow: hidden !important;
+
+  border-left: 7px solid #ff5a1f !important;
+}
+
+.fury-pd-hero-content {
+  position: relative !important;
+  z-index: 2 !important;
+
+  min-width: 0 !important;
+  min-height: 455px !important;
+
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+
+  padding: 65px 7vw 55px 8vw !important;
+}
+
+.fury-pd-eyebrow {
+  display: block !important;
+
+  margin: 0 0 22px 0 !important;
+  padding: 0 !important;
+
+  background: transparent !important;
+
+  color: #ff5a1f !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 15px !important;
+  line-height: 1.2 !important;
+  font-weight: 900 !important;
+
+  letter-spacing: 4px !important;
+  text-transform: uppercase !important;
+}
+
+.fury-pd-hero-title {
+  display: block !important;
+
+  width: 100% !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  background: transparent !important;
+
+  color: #ffffff !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: clamp(48px, 6vw, 88px) !important;
+  line-height: 0.94 !important;
+  font-weight: 900 !important;
+
+  letter-spacing: -2px !important;
+
+  text-transform: uppercase !important;
+
+  text-shadow: none !important;
+}
+
+.fury-pd-hero-title-orange {
+  color: #ff5a1f !important;
+}
+
+.fury-pd-hero-image {
+  position: relative !important;
+
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+
+  min-width: 0 !important;
+  height: 455px !important;
+  min-height: 0 !important;
+
+  overflow: hidden !important;
+
+  background: #151515 !important;
+}
+
+.fury-pd-hero-image::after {
+  content: "" !important;
+
+  position: absolute !important;
+  inset: 0 !important;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(11,11,11,0.95) 0%,
+      rgba(11,11,11,0.35) 18%,
+      rgba(11,11,11,0) 42%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(11,11,11,0.55) 0%,
+      rgba(11,11,11,0) 40%
+    ) !important;
+
+  pointer-events: none !important;
+}
+
+.fury-pd-hero-image img {
+  display: block !important;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  object-fit: cover !important;
+  object-position: center center !important;
+}
+
+.fury-pd-hero-copy-row {
+  grid-column: 1 / -1 !important;
+  grid-row: 2 !important;
+
+  padding: 42px 8vw 48px 8vw !important;
+
+  background: #0b0b0b !important;
+  border-top: 1px solid #222222 !important;
+}
+
+.fury-pd-hero-copy {
+  display: block !important;
+
+  width: 100% !important;
+  max-width: none !important;
+
+  margin: 0 0 28px 0 !important;
+  padding: 0 !important;
+
+  background: transparent !important;
+
+  color: #eeeeee !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 20px !important;
+  line-height: 1.7 !important;
+  font-weight: 400 !important;
+}
+
+.fury-pd-hero-buttons {
+  display: flex !important;
+  flex-wrap: wrap !important;
+
+  gap: 14px !important;
+
+  align-items: center !important;
+}
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.fury-pd-intro {
+  padding: 110px 8vw !important;
+
+  background: #111111 !important;
+}
+
+.fury-pd-intro-inner {
+  max-width: 1200px !important;
+
+  margin: 0 auto !important;
+
+  display: grid !important;
+  grid-template-columns: 0.8fr 1.2fr !important;
+
+  gap: 80px !important;
+
+  align-items: start !important;
+}
+
+.fury-pd-section-label {
+  display: block !important;
+
+  margin: 0 0 18px 0 !important;
+  padding: 0 !important;
+
+  background: transparent !important;
+
+  color: #ff5a1f !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.2 !important;
+  font-weight: 900 !important;
+
+  letter-spacing: 3px !important;
+
+  text-transform: uppercase !important;
+}
+
+.fury-pd-section-title {
+  display: block !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  background: transparent !important;
+
+  color: #ffffff !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: clamp(34px, 4vw, 56px) !important;
+  line-height: 1.02 !important;
+  font-weight: 900 !important;
+
+  text-transform: uppercase !important;
+
+  text-shadow: none !important;
+}
+
+.fury-pd-intro-text p {
+  margin: 0 0 22px 0 !important;
+  padding: 0 !important;
+
+  color: #dddddd !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 19px !important;
+  line-height: 1.75 !important;
+}
+
+.fury-pd-intro-text p:last-child {
+  margin-bottom: 0 !important;
+}
+
+
+/* =========================================================
+   DEVELOPMENT MODEL
+   ========================================================= */
+
+.fury-pd-model {
+  padding: 110px 8vw !important;
+
+  background: #0b0b0b !important;
+}
+
+.fury-pd-model-header {
+  max-width: 800px !important;
+
+  margin: 0 auto 65px auto !important;
+
+  text-align: center !important;
+}
+
+.fury-pd-model-header .fury-pd-section-title {
+  margin-bottom: 20px !important;
+
+  font-size: clamp(36px, 5vw, 62px) !important;
+  line-height: 1 !important;
+}
+
+.fury-pd-model-header p {
+  margin: 0 !important;
+
+  color: #bdbdbd !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 18px !important;
+  line-height: 1.7 !important;
+}
+
+.fury-pd-model-grid {
+  max-width: 1200px !important;
+
+  margin: 0 auto !important;
+
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+
+  gap: 2px !important;
+}
+
+.fury-pd-model-card {
+  position: relative !important;
+
+  min-width: 0 !important;
+  min-height: 310px !important;
+
+  padding: 38px 30px !important;
+
+  background: #171717 !important;
+
+  border-top: 4px solid transparent !important;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease !important;
+}
+
+.fury-pd-model-card:hover {
+  background: #202020 !important;
+
+  border-top-color: #ff5a1f !important;
+
+  transform: translateY(-4px) !important;
+}
+
+.fury-pd-number {
+  display: block !important;
+
+  margin-bottom: 55px !important;
+
+  color: #ff5a1f !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 15px !important;
+  line-height: 1 !important;
+  font-weight: 900 !important;
+
+  letter-spacing: 2px !important;
+}
+
+.fury-pd-card-title {
+  display: block !important;
+
+  margin: 0 0 14px 0 !important;
+  padding: 0 !important;
+
+  background: transparent !important;
+
+  color: #ffffff !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 28px !important;
+  line-height: 1 !important;
+  font-weight: 900 !important;
+
+  text-transform: uppercase !important;
+}
+
+.fury-pd-model-card p {
+  margin: 0 !important;
+
+  color: #bdbdbd !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 16px !important;
+  line-height: 1.65 !important;
+}
+
+
+/* =========================================================
+   DEVELOPMENT PILLARS
+   ========================================================= */
+
+.fury-pd-pillars {
+  padding: 110px 8vw !important;
+
+  background: #151515 !important;
+}
+
+.fury-pd-pillars-inner {
+  max-width: 1200px !important;
+
+  margin: 0 auto !important;
+}
+
+.fury-pd-pillars-header {
+  display: grid !important;
+  grid-template-columns: 0.8fr 1.2fr !important;
+
+  gap: 80px !important;
+
+  margin-bottom: 60px !important;
+}
+
+.fury-pd-pillars-header .fury-pd-section-title {
+  font-size: clamp(34px, 4vw, 55px) !important;
+  line-height: 1 !important;
+}
+
+.fury-pd-pillars-header p {
+  margin: 0 !important;
+
+  color: #d0d0d0 !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 18px !important;
+  line-height: 1.7 !important;
+}
+
+.fury-pd-pillar-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+
+  gap: 18px !important;
+}
+
+.fury-pd-pillar {
+  min-width: 0 !important;
+
+  padding: 38px !important;
+
+  background: #0e0e0e !important;
+
+  border-left: 4px solid #ff5a1f !important;
+}
+
+.fury-pd-card-title-small {
+  display: block !important;
+
+  margin: 0 0 15px 0 !important;
+  padding: 0 !important;
+
+  background: transparent !important;
+
+  color: #ffffff !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 25px !important;
+  line-height: 1.1 !important;
+  font-weight: 900 !important;
+
+  text-transform: uppercase !important;
+}
+
+.fury-pd-pillar p {
+  margin: 0 !important;
+
+  color: #bdbdbd !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 16px !important;
+  line-height: 1.7 !important;
+}
+
+
+/* =========================================================
+   COMPETITION STORY
+   ========================================================= */
+
+.fury-pd-story {
+  display: grid !important;
+
+  grid-template-columns: 52% 48% !important;
+  grid-template-rows: 470px auto !important;
+
+  height: auto !important;
+  min-height: 0 !important;
+
+  background: #0b0b0b !important;
+}
+
+.fury-pd-story-image {
+  min-width: 0 !important;
+  height: 470px !important;
+  min-height: 0 !important;
+
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+
+  overflow: hidden !important;
+}
+
+.fury-pd-story-image img {
+  display: block !important;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  object-fit: cover !important;
+  object-position: center center !important;
+}
+
+.fury-pd-story-content {
+  min-width: 0 !important;
+
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+
+  padding: 70px 8vw 70px 7vw !important;
+}
+
+.fury-pd-story-title {
+  display: block !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  background: transparent !important;
+
+  color: #ffffff !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: clamp(36px, 4vw, 58px) !important;
+  line-height: 1 !important;
+  font-weight: 900 !important;
+
+  text-transform: uppercase !important;
+}
+
+.fury-pd-story-title span {
+  color: #ff5a1f !important;
+}
+
+.fury-pd-story-copy-row {
+  grid-column: 1 / -1 !important;
+  grid-row: 2 !important;
+
+  padding: 12px 8vw 50px 8vw !important;
+
+  background: #0b0b0b !important;
+  border-top: 1px solid #222222 !important;
+}
+
+.fury-pd-story-copy-row p {
+  margin: 0 0 18px 0 !important;
+
+  color: #d1d1d1 !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 18px !important;
+  line-height: 1.75 !important;
+}
+
+.fury-pd-story-copy-row p:last-of-type {
+  margin-bottom: 30px !important;
+}
+
+.fury-pd-story-lead {
+  margin: 0 0 24px 0 !important;
+  padding: 0 0 22px 0 !important;
+  border-bottom: 2px solid #ff5a1f !important;
+
+  color: #f0f0f0 !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 20px !important;
+  line-height: 1.55 !important;
+}
+
+.fury-pd-story-lead strong {
+  display: block !important;
+  margin-bottom: 7px !important;
+  color: #ff5a1f !important;
+  font-size: 15px !important;
+  line-height: 1.2 !important;
+  font-weight: 900 !important;
+  letter-spacing: 2px !important;
+}
+
+
+/* =========================================================
+   PLAYER JOURNEY
+   ========================================================= */
+
+.fury-pd-journey {
+  padding: 110px 8vw !important;
+
+  background: #111111 !important;
+}
+
+.fury-pd-journey-inner {
+  max-width: 1200px !important;
+
+  margin: 0 auto !important;
+}
+
+.fury-pd-journey-header {
+  max-width: 760px !important;
+
+  margin-bottom: 60px !important;
+}
+
+.fury-pd-journey-header .fury-pd-section-title {
+  margin-bottom: 20px !important;
+
+  font-size: clamp(36px, 5vw, 60px) !important;
+  line-height: 1 !important;
+}
+
+.fury-pd-journey-header p {
+  margin: 0 !important;
+
+  color: #c8c8c8 !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 18px !important;
+  line-height: 1.7 !important;
+}
+
+.fury-pd-journey-grid {
+  display: grid !important;
+
+  grid-template-columns: 1fr 1fr !important;
+
+  gap: 24px !important;
+}
+
+.fury-pd-journey-card {
+  position: relative !important;
+
+  min-width: 0 !important;
+  height: 360px !important;
+  min-height: 0 !important;
+
+  overflow: hidden !important;
+
+  background: #181818 !important;
+}
+
+.fury-pd-journey-card img {
+  display: block !important;
+
+  width: 100% !important;
+  height: 360px !important;
+
+  min-height: 0 !important;
+
+  object-fit: cover !important;
+  object-position: center !important;
+
+  transition: transform 0.4s ease !important;
+}
+
+.fury-pd-journey-card:hover img {
+  transform: scale(1.04) !important;
+}
+
+.fury-pd-journey-overlay {
+  position: absolute !important;
+
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+
+  padding: 60px 30px 30px 30px !important;
+
+  background:
+    linear-gradient(
+      0deg,
+      rgba(0,0,0,0.95) 0%,
+      rgba(0,0,0,0.7) 55%,
+      rgba(0,0,0,0) 100%
+    ) !important;
+}
+
+.fury-pd-journey-overlay-title {
+  display: block !important;
+
+  margin: 0 0 8px 0 !important;
+  padding: 0 !important;
+
+  background: transparent !important;
+
+  color: #ffffff !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 26px !important;
+  line-height: 1.1 !important;
+  font-weight: 900 !important;
+
+  text-transform: uppercase !important;
+}
+
+.fury-pd-journey-overlay p {
+  margin: 0 !important;
+
+  color: #dddddd !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 15px !important;
+  line-height: 1.5 !important;
+}
+
+
+/* =========================================================
+   ORANGE ENVIRONMENT SECTION
+   ========================================================= */
+
+.fury-pd-fit {
+  padding: 105px 8vw !important;
+
+  background: #ff5a1f !important;
+
+  color: #000000 !important;
+}
+
+.fury-pd-fit-inner {
+  max-width: 1200px !important;
+
+  margin: 0 auto !important;
+
+  display: grid !important;
+
+  grid-template-columns: 0.8fr 1.2fr !important;
+
+  gap: 80px !important;
+
+  align-items: center !important;
+}
+
+.fury-pd-fit .fury-pd-section-label {
+  color: #000000 !important;
+}
+
+.fury-pd-fit-title {
+  display: block !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  background: transparent !important;
+
+  color: #000000 !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: clamp(36px, 5vw, 62px) !important;
+  line-height: 0.98 !important;
+  font-weight: 900 !important;
+
+  text-transform: uppercase !important;
+}
+
+.fury-pd-fit-text p {
+  margin: 0 0 18px 0 !important;
+
+  color: #000000 !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 18px !important;
+  line-height: 1.7 !important;
+}
+
+.fury-pd-fit-list {
+  margin: 28px 0 0 0 !important;
+  padding: 0 !important;
+
+  list-style: none !important;
+}
+
+.fury-pd-fit-list li {
+  position: relative !important;
+
+  margin: 0 0 13px 0 !important;
+  padding: 0 0 0 28px !important;
+
+  color: #000000 !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 16px !important;
+  line-height: 1.5 !important;
+  font-weight: 700 !important;
+}
+
+.fury-pd-fit-list li::before {
+  content: "✓" !important;
+
+  position: absolute !important;
+
+  left: 0 !important;
+  top: 0 !important;
+
+  font-weight: 900 !important;
+}
+
+
+/* =========================================================
+   FINAL CTA
+   ========================================================= */
+
+.fury-pd-cta {
+  position: relative !important;
+
+  padding: 115px 8vw !important;
+
+  background: #080808 !important;
+
+  text-align: center !important;
+
+  overflow: hidden !important;
+}
+
+.fury-pd-cta-inner {
+  position: relative !important;
+  z-index: 2 !important;
+
+  max-width: 850px !important;
+
+  margin: 0 auto !important;
+}
+
+.fury-pd-cta-title {
+  display: block !important;
+
+  margin: 0 0 22px 0 !important;
+  padding: 0 !important;
+
+  background: transparent !important;
+
+  color: #ffffff !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: clamp(40px, 6vw, 72px) !important;
+  line-height: 0.95 !important;
+  font-weight: 900 !important;
+
+  text-transform: uppercase !important;
+}
+
+.fury-pd-cta-title span {
+  color: #ff5a1f !important;
+}
+
+.fury-pd-cta p {
+  max-width: 680px !important;
+
+  margin: 0 auto 35px auto !important;
+
+  color: #c8c8c8 !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 19px !important;
+  line-height: 1.7 !important;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+  .fury-pd-hero {
+    height: auto !important;
+    min-height: 0 !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto auto auto !important;
+  }
+
+  .fury-pd-hero-content {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    min-height: 0 !important;
+    padding: 75px 8vw 60px !important;
+  }
+
+  .fury-pd-hero-image {
+    grid-column: 1 !important;
+    grid-row: 2 !important;
+    height: 500px !important;
+    min-height: 0 !important;
+  }
+
+  .fury-pd-hero-copy-row {
+    grid-column: 1 !important;
+    grid-row: 3 !important;
+    padding: 42px 8vw 50px !important;
+  }
+
+  .fury-pd-intro-inner,
+  .fury-pd-pillars-header,
+  .fury-pd-fit-inner {
+    grid-template-columns: 1fr !important;
+
+    gap: 40px !important;
+  }
+
+  .fury-pd-model-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .fury-pd-story {
+    height: auto !important;
+    min-height: 0 !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 500px auto auto !important;
+  }
+
+  .fury-pd-story-image {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    height: 500px !important;
+    min-height: 0 !important;
+  }
+
+  .fury-pd-story-content {
+    grid-column: 1 !important;
+    grid-row: 2 !important;
+    padding: 70px 8vw !important;
+  }
+
+  .fury-pd-story-copy-row {
+    grid-column: 1 !important;
+    grid-row: 3 !important;
+    padding: 42px 8vw 50px !important;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+  .fury-pd {
+    border: 0 !important;
+  }
+
+  .fury-pd-hero {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .fury-pd-hero {
+    border-left: 5px solid #ff5a1f !important;
+  }
+
+  .fury-pd-hero-content {
+    min-height: auto !important;
+
+    padding: 70px 7vw 55px 7vw !important;
+  }
+
+  .fury-pd-eyebrow {
+    font-size: 13px !important;
+    letter-spacing: 3px !important;
+  }
+
+  .fury-pd-hero-title {
+    font-size: 48px !important;
+    line-height: 0.95 !important;
+
+    letter-spacing: -1px !important;
+  }
+
+  .fury-pd-hero-copy,
+  .fury-pd-story-copy-row p {
+    font-size: 17px !important;
+    line-height: 1.65 !important;
+  }
+
+  .fury-pd-hero-buttons {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .fury-pd-button {
+    width: 100% !important;
+  }
+
+  .fury-pd-hero-image {
+    height: 420px !important;
+    min-height: 0 !important;
+  }
+
+  .fury-pd-intro,
+  .fury-pd-model,
+  .fury-pd-pillars,
+  .fury-pd-journey {
+    padding: 75px 7vw !important;
+  }
+
+  .fury-pd-model-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .fury-pd-model-card {
+    min-height: auto !important;
+  }
+
+  .fury-pd-pillar-grid,
+  .fury-pd-journey-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .fury-pd-pillar {
+    padding: 30px !important;
+  }
+
+  .fury-pd-story-image {
+    height: 400px !important;
+    min-height: 0 !important;
+  }
+
+  .fury-pd-story-content {
+    padding: 65px 7vw !important;
+  }
+
+  .fury-pd-story-copy-row {
+    padding: 28px 7vw 42px 7vw !important;
+  }
+
+  .fury-pd-story-lead {
+    font-size: 18px !important;
+  }
+
+  .fury-pd-fit {
+    padding: 75px 7vw !important;
+  }
+
+  .fury-pd-cta {
+    padding: 85px 7vw !important;
+  }
+
+  .fury-pd-cta .fury-pd-hero-buttons {
+    width: 100% !important;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .fury-pd-button,
+  .fury-pd-model-card,
+  .fury-pd-journey-card img {
+    transition: none !important;
+  }
+
+  .fury-pd-model-card:hover,
+  .fury-pd-button:hover,
+  .fury-pd-journey-card:hover img {
+    transform: none !important;
+  }
+}
+</style>
+
+
+<div class="fury-pd">
+
+
+  <!-- =====================================================
+       HERO
+       ===================================================== -->
+
+  <section class="fury-pd-hero">
+
+    <div class="fury-pd-hero-content">
+
+      <div class="fury-pd-eyebrow">
+        PLAYER DEVELOPMENT
+      </div>
+
+      <div class="fury-pd-hero-title">
+        DEVELOP<br>
+        THE <span class="fury-pd-hero-title-orange">PLAYER.</span>
+      </div>
+
+    </div>
+
+
+    <div class="fury-pd-hero-image">
+
+      <img
+        src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-fed45f8c-46f6-48b8-8b5e-a75249fd7e02/1790802659-full.png"
+        alt="Fayetteville Fury player development"
+        loading="eager">
+
+    </div>
+
+
+    <div class="fury-pd-hero-copy-row">
+
+      <div class="fury-pd-hero-copy">
+        At Fayetteville Fury, development starts with the individual.
+        We help players build the technical ability, confidence,
+        awareness and decision-making skills they need for whatever
+        comes next. Our goal is simple: give every player the tools,
+        experiences and environment to take a meaningful next step.
+        Whether a player is building a foundation, preparing for
+        high school or chasing the next level, development should
+        always have a purpose.
+      </div>
+
+      <div class="fury-pd-hero-buttons">
+
+        <a
+          class="fury-pd-button"
+          href="/nxt">
+          EXPLORE FURY NXT
+        </a>
+
+        <a
+          class="fury-pd-button fury-pd-button-outline"
+          href="/player-pathway">
+          PLAYER PATHWAY
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       INTRO
+       ===================================================== -->
+
+  <section class="fury-pd-intro">
+
+    <div class="fury-pd-intro-inner">
+
+      <div>
+
+        <div class="fury-pd-section-label">
+          THE FURY APPROACH
+        </div>
+
+        <div class="fury-pd-section-title">
+          THE PLAYER<br>
+          COMES FIRST.
+        </div>
+
+      </div>
+
+
+      <div class="fury-pd-intro-text">
+
+        <p>
+          Development is more than running drills. It is about
+          helping players understand the game, improve their
+          individual abilities and become more confident
+          decision-makers.
+        </p>
+
+        <p>
+          Fury creates an environment where players can train
+          with purpose, compete with meaning and continue
+          developing as their ability and ambitions grow.
+        </p>
+
+        <p>
+          The goal is not simply to build a stronger team.
+          The goal is to help every player become a better
+          soccer player.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       DEVELOPMENT MODEL
+       ===================================================== -->
+
+  <section class="fury-pd-model">
+
+    <div class="fury-pd-model-header">
+
+      <div class="fury-pd-section-label">
+        OUR DEVELOPMENT MODEL
+      </div>
+
+      <div class="fury-pd-section-title">
+        TRAIN. DEVELOP.<br>
+        COMPETE. ADVANCE.
+      </div>
+
+      <p>
+        A clear process built around the growth of the individual
+        player, from the training environment to meaningful
+        competition and the next challenge.
+      </p>
+
+    </div>
+
+
+    <div class="fury-pd-model-grid">
+
+
+      <div class="fury-pd-model-card">
+
+        <span class="fury-pd-number">
+          01
+        </span>
+
+        <div class="fury-pd-card-title">
+          TRAIN
+        </div>
+
+        <p>
+          Build strong technical foundations through purposeful
+          instruction, repetition and quality training habits.
+        </p>
+
+      </div>
+
+
+      <div class="fury-pd-model-card">
+
+        <span class="fury-pd-number">
+          02
+        </span>
+
+        <div class="fury-pd-card-title">
+          DEVELOP
+        </div>
+
+        <p>
+          Improve confidence, awareness, decision-making and
+          soccer IQ while developing the individual player's
+          strengths.
+        </p>
+
+      </div>
+
+
+      <div class="fury-pd-model-card">
+
+        <span class="fury-pd-number">
+          03
+        </span>
+
+        <div class="fury-pd-card-title">
+          COMPETE
+        </div>
+
+        <p>
+          Put development into action through meaningful
+          competition that challenges players to apply what
+          they have learned.
+        </p>
+
+      </div>
+
+
+      <div class="fury-pd-model-card">
+
+        <span class="fury-pd-number">
+          04
+        </span>
+
+        <div class="fury-pd-card-title">
+          ADVANCE
+        </div>
+
+        <p>
+          Prepare players for the next appropriate challenge
+          as their ability, confidence and ambitions continue
+          to grow.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       DEVELOPMENT PILLARS
+       ===================================================== -->
+
+  <section class="fury-pd-pillars">
+
+    <div class="fury-pd-pillars-inner">
+
+
+      <div class="fury-pd-pillars-header">
+
+        <div>
+
+          <div class="fury-pd-section-label">
+            WHAT WE DEVELOP
+          </div>
+
+          <div class="fury-pd-section-title">
+            MORE THAN<br>
+            SKILLS.
+          </div>
+
+        </div>
+
+
+        <div>
+
+          <p>
+            A complete player needs more than technical ability.
+            Fury development focuses on the different parts of
+            the game that help players perform, understand and
+            grow.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="fury-pd-pillar-grid">
+
+
+        <div class="fury-pd-pillar">
+
+          <div class="fury-pd-card-title-small">
+            TECHNICAL
+          </div>
+
+          <p>
+            Ball mastery, first touch, passing, receiving,
+            dribbling, finishing and the individual tools players
+            use to execute on the field.
+          </p>
+
+        </div>
+
+
+        <div class="fury-pd-pillar">
+
+          <div class="fury-pd-card-title-small">
+            TACTICAL
+          </div>
+
+          <p>
+            Understanding space, movement, positioning, choices
+            and how individual decisions contribute to the game.
+          </p>
+
+        </div>
+
+
+        <div class="fury-pd-pillar">
+
+          <div class="fury-pd-card-title-small">
+            DECISION-MAKING
+          </div>
+
+          <p>
+            Helping players recognize situations, process
+            information and make better decisions under pressure.
+          </p>
+
+        </div>
+
+
+        <div class="fury-pd-pillar">
+
+          <div class="fury-pd-card-title-small">
+            CONFIDENCE
+          </div>
+
+          <p>
+            Creating an environment where players can challenge
+            themselves, learn from mistakes and become more
+            confident competitors.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       COMPETITION
+       ===================================================== -->
+
+  <section class="fury-pd-story">
+
+
+    <div class="fury-pd-story-image">
+
+      <img
+        src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-9d59acd8-30c2-4df4-b013-60b794d91640/1790802955-full.png"
+        alt="Fayetteville Fury tournament competition"
+        loading="lazy">
+
+    </div>
+
+
+    <div class="fury-pd-story-content">
+
+      <div class="fury-pd-section-label">
+        DEVELOPMENT MEETS COMPETITION
+      </div>
+
+      <div class="fury-pd-story-title">
+        TRAIN TO<br>
+        <span>COMPETE.</span>
+      </div>
+
+    </div>
+
+
+    <div class="fury-pd-story-copy-row">
+
+      <div class="fury-pd-story-lead">
+        <strong>TRAIN WITH PURPOSE. COMPETE WITH INTENT.</strong>
+        The next level is built through the moments players experience
+        when the game gets real.
+      </div>
+
+      <p>
+        Training gives players the tools. Competition gives
+        them the opportunity to use those tools when pressure,
+        opponents and decisions are no longer predictable.
+      </p>
+
+      <p>
+        Fury uses meaningful competition to challenge players
+        to solve problems, make decisions and perform in
+        situations that cannot always be recreated in training.
+        Every match becomes another opportunity to test the
+        player's understanding, resilience and ability to respond.
+      </p>
+
+      <p>
+        The objective is not simply to win a game. It is to
+        give players experiences that help them understand
+        what they need to improve next, then take that lesson
+        back into training and turn it into progress.
+      </p>
+
+      <div class="fury-pd-hero-buttons">
+
+        <a
+          class="fury-pd-button"
+          href="/nxt">
+          EXPLORE FURY NXT
+        </a>
+
+        <a
+          class="fury-pd-button fury-pd-button-outline"
+          href="/tournaments">
+          SEE OUR COMPETITION
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       PLAYER JOURNEY
+       ===================================================== -->
+
+  <section class="fury-pd-journey">
+
+    <div class="fury-pd-journey-inner">
+
+
+      <div class="fury-pd-journey-header">
+
+        <div class="fury-pd-section-label">
+          DEVELOPMENT ACROSS THE JOURNEY
+        </div>
+
+        <div class="fury-pd-section-title">
+          EVERY PLAYER<br>
+          HAS A NEXT STEP.
+        </div>
+
+        <p>
+          Players develop at different rates and have different
+          goals. Fury focuses on helping each player prepare for
+          the next appropriate challenge.
+        </p>
+
+      </div>
+
+
+      <div class="fury-pd-journey-grid">
+
+
+        <div class="fury-pd-journey-card">
+
+          <img
+            src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-fed45f8c-46f6-48b8-8b5e-a75249fd7e02/1790802659-full.png"
+            alt="Fayetteville Fury youth player development"
+            loading="lazy">
+
+          <div class="fury-pd-journey-overlay">
+
+            <div class="fury-pd-journey-overlay-title">
+              YOUTH DEVELOPMENT
+            </div>
+
+            <p>
+              Build technical foundations, confidence and a
+              love for the game.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="fury-pd-journey-card">
+
+          <img
+            src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-c8315697-8536-442e-b356-cf8b59e94689/1790803470-full.png"
+            alt="Fayetteville Fury high school players"
+            loading="lazy">
+
+          <div class="fury-pd-journey-overlay">
+
+            <div class="fury-pd-journey-overlay-title">
+              HIGH SCHOOL DEVELOPMENT
+            </div>
+
+            <p>
+              Continue developing the player while preparing
+              for the opportunities ahead.
+            </p>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       WHO IT IS FOR
+       ===================================================== -->
+
+  <section class="fury-pd-fit">
+
+    <div class="fury-pd-fit-inner">
+
+
+      <div>
+
+        <div class="fury-pd-section-label">
+          THE FURY ENVIRONMENT
+        </div>
+
+        <div class="fury-pd-fit-title">
+          FOR PLAYERS<br>
+          WHO WANT<br>
+          TO GROW.
+        </div>
+
+      </div>
+
+
+      <div class="fury-pd-fit-text">
+
+        <p>
+          Fury is built for players who want to improve and
+          families who want a development environment that
+          puts the player first.
+        </p>
+
+        <ul class="fury-pd-fit-list">
+
+          <li>
+            Players who want purposeful training
+          </li>
+
+          <li>
+            Players who want to understand the game
+          </li>
+
+          <li>
+            Players who want meaningful competition
+          </li>
+
+          <li>
+            Players preparing for their next level
+          </li>
+
+          <li>
+            Families looking for a connected player pathway
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       FINAL CTA
+       ===================================================== -->
+
+  <section class="fury-pd-cta">
+
+    <div class="fury-pd-cta-inner">
+
+      <div class="fury-pd-section-label">
+        READY FOR WHAT'S NEXT?
+      </div>
+
+      <div class="fury-pd-cta-title">
+        DEVELOP THE PLAYER.<br>
+        <span>BUILD WHAT'S NEXT.</span>
+      </div>
+
+      <p>
+        Explore Fury NXT, learn about the player pathway,
+        or take the first step toward becoming part of
+        Fayetteville Fury.
+      </p>
+
+
+      <div
+        class="fury-pd-hero-buttons"
+        style="justify-content:center !important;">
+
+        <a
+          class="fury-pd-button"
+          href="/nxt">
+          FURY NXT
+        </a>
+
+        <a
+          class="fury-pd-button fury-pd-button-outline"
+          href="/player-pathway">
+          PLAYER PATHWAY
+        </a>
+
+        <a
+          class="fury-pd-button fury-pd-button-outline"
+          href="/register">
+          JOIN FURY
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+</div>

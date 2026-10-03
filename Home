@@ -1,0 +1,1570 @@
+<style>
+/* =========================================================
+   FAYETTEVILLE FURY
+   HOME PAGE
+   ========================================================= */
+
+.fury-home,
+.fury-home * {
+    box-sizing: border-box;
+}
+
+.fury-home {
+    --orange: #F15A24;
+    --orange-light: #FF6B2C;
+    --black: #000000;
+    --dark: #090909;
+    --charcoal: #151515;
+    --text: #F0F0F0;
+    --muted: #D0D0D0;
+    --border: #414141;
+    --white: #FFFFFF;
+
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+
+    background: #000000 !important;
+    color: #FFFFFF !important;
+
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 17px !important;
+    line-height: 1.6 !important;
+}
+
+/* =========================================================
+   SOCCERSHIFT OVERRIDES
+   ========================================================= */
+
+.fury-home h1,
+.fury-home h2,
+.fury-home h3,
+.fury-home h4,
+.fury-home h5,
+.fury-home h6 {
+    margin-top: 0 !important;
+
+    color: #FFFFFF !important;
+
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-weight: 900 !important;
+    line-height: 1.08 !important;
+
+    text-transform: uppercase !important;
+}
+
+.fury-home p,
+.fury-home li {
+    color: #F0F0F0 !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.fury-home a {
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.fury-home strong {
+    color: #FFFFFF !important;
+}
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+.fury-wrap {
+    width: min(1080px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+.fury-section {
+    padding: 64px 0;
+}
+
+.fury-eyebrow {
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: #FF6B2C !important;
+
+    font-size: 13px !important;
+    line-height: 1.3 !important;
+    font-weight: 900 !important;
+
+    letter-spacing: 2px !important;
+
+    text-transform: uppercase !important;
+}
+
+.fury-title {
+    margin-bottom: 16px !important;
+
+    color: #FFFFFF !important;
+
+    font-size: clamp(31px, 4.4vw, 49px) !important;
+}
+
+.fury-copy {
+    max-width: 730px;
+
+    color: #F0F0F0 !important;
+
+    font-size: 17px !important;
+    line-height: 1.65 !important;
+}
+
+.fury-accent {
+    width: 70px;
+    height: 5px;
+
+    margin: 20px 0 24px;
+
+    background: #F15A24;
+}
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.fury-buttons {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+.fury-home .fury-btn {
+    display: inline-flex !important;
+
+    min-height: 48px;
+
+    padding: 12px 24px !important;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #F15A24 !important;
+
+    font-size: 14px !important;
+    font-weight: 900 !important;
+
+    letter-spacing: .3px !important;
+
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+
+    transition:
+        background .2s ease,
+        color .2s ease,
+        border-color .2s ease,
+        transform .2s ease;
+}
+
+.fury-home .fury-btn-primary {
+    background: #F15A24 !important;
+    color: #000000 !important;
+}
+
+.fury-home .fury-btn-primary:hover,
+.fury-home .fury-btn-primary:focus {
+    background: #FFFFFF !important;
+    border-color: #FFFFFF !important;
+    color: #000000 !important;
+
+    transform: translateY(-2px);
+}
+
+.fury-home .fury-btn-outline {
+    background: transparent !important;
+    color: #FFFFFF !important;
+}
+
+.fury-home .fury-btn-outline:hover,
+.fury-home .fury-btn-outline:focus {
+    background: #FFFFFF !important;
+    border-color: #FFFFFF !important;
+    color: #000000 !important;
+
+    transform: translateY(-2px);
+}
+
+.fury-home a:focus-visible {
+    outline: 3px solid #FFFFFF !important;
+    outline-offset: 4px !important;
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.fury-hero {
+    min-height: 480px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            110deg,
+            #000000 0%,
+            #050505 65%,
+            #210A02 100%
+        ) !important;
+
+    border-top: 5px solid #F15A24;
+}
+
+.fury-hero-inner {
+    padding: 68px 0;
+}
+
+.fury-home .fury-hero h1 {
+    max-width: 860px;
+
+    margin-bottom: 18px !important;
+
+    color: #FFFFFF !important;
+
+    font-size: clamp(45px, 7vw, 74px) !important;
+
+    letter-spacing: -2px !important;
+}
+
+.fury-home .fury-hero h1 span {
+    color: #F15A24 !important;
+}
+
+.fury-hero-copy {
+    max-width: 720px;
+
+    margin: 0 !important;
+
+    color: #F0F0F0 !important;
+
+    font-size: clamp(18px, 2vw, 21px) !important;
+    line-height: 1.55 !important;
+}
+
+.fury-model {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px 18px;
+
+    margin-top: 21px;
+
+    color: #FFFFFF !important;
+
+    font-size: 14px !important;
+    font-weight: 900 !important;
+
+    letter-spacing: 1.5px !important;
+
+    text-transform: uppercase !important;
+}
+
+.fury-model span {
+    color: #FFFFFF !important;
+}
+
+.fury-model span:not(:last-child)::after {
+    content: "•";
+
+    margin-left: 18px;
+
+    color: #F15A24;
+}
+
+/* =========================================================
+   QUICK CTA
+   ========================================================= */
+
+.fury-quick {
+    background: #F15A24 !important;
+}
+
+.fury-quick-inner {
+    min-height: 84px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+
+    padding: 14px 0;
+}
+
+.fury-quick-copy {
+    color: #000000 !important;
+}
+
+.fury-quick-copy strong {
+    display: block;
+
+    color: #000000 !important;
+
+    font-size: 18px !important;
+    font-weight: 900 !important;
+
+    text-transform: uppercase !important;
+}
+
+.fury-quick-copy span {
+    color: #000000 !important;
+
+    font-size: 14px !important;
+    font-weight: 700 !important;
+}
+
+.fury-home .fury-quick .fury-btn {
+    border-color: #000000 !important;
+
+    background: #000000 !important;
+    color: #FFFFFF !important;
+
+    white-space: nowrap;
+}
+
+.fury-home .fury-quick .fury-btn:hover,
+.fury-home .fury-quick .fury-btn:focus {
+    background: #FFFFFF !important;
+    border-color: #FFFFFF !important;
+    color: #000000 !important;
+}
+
+/* =========================================================
+   SPLIT SECTIONS
+   ========================================================= */
+
+.fury-split {
+    display: grid;
+
+    grid-template-columns: 1.08fr .92fr;
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+.fury-split-reverse {
+    grid-template-columns: .92fr 1.08fr;
+}
+
+/* =========================================================
+   CONTENT PHOTOS
+   ========================================================= */
+
+.fury-photo {
+    position: relative;
+
+    min-height: 330px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #242424,
+            #050505
+        );
+
+    border-bottom: 5px solid #F15A24;
+}
+
+.fury-photo img {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.fury-photo-placeholder {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #282828 0%,
+            #111111 55%,
+            #050505 100%
+        );
+
+    color: #BEBEBE !important;
+
+    font-size: 12px !important;
+    font-weight: 900 !important;
+
+    letter-spacing: 1.5px !important;
+
+    text-align: center;
+    text-transform: uppercase !important;
+}
+
+/* =========================================================
+   PLAYER FIRST
+   ========================================================= */
+
+.fury-intro {
+    background: #090909 !important;
+}
+
+/* =========================================================
+   FURY NXT
+   ========================================================= */
+
+.fury-nxt {
+    background:
+        linear-gradient(
+            130deg,
+            #171717 0%,
+            #050505 62%,
+            #230A02 100%
+        ) !important;
+}
+
+.fury-home .fury-nxt h2 span {
+    color: #F15A24 !important;
+}
+
+.fury-tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 20px;
+}
+
+.fury-tag {
+    padding: 8px 11px;
+
+    border: 1px solid #555555;
+
+    background: #000000 !important;
+    color: #FFFFFF !important;
+
+    font-size: 11px !important;
+    font-weight: 900 !important;
+
+    letter-spacing: .4px !important;
+
+    text-transform: uppercase !important;
+}
+
+/* =========================================================
+   DEVELOPMENT MODEL
+   ========================================================= */
+
+.fury-development {
+    background: #000000 !important;
+}
+
+.fury-development-header {
+    max-width: 790px;
+}
+
+.fury-steps {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    margin-top: 34px;
+}
+
+.fury-step {
+    min-height: 170px;
+
+    padding: 23px;
+
+    border: 1px solid #414141;
+
+    background: #111111 !important;
+}
+
+.fury-step:not(:last-child) {
+    border-right: 0;
+}
+
+.fury-step-number {
+    color: #FF6B2C !important;
+
+    font-size: 12px !important;
+    font-weight: 900 !important;
+}
+
+.fury-home .fury-step h3 {
+    margin: 8px 0 !important;
+
+    color: #FFFFFF !important;
+
+    font-size: 22px !important;
+}
+
+.fury-home .fury-step p {
+    margin: 0 !important;
+
+    color: #E6E6E6 !important;
+
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+}
+
+/* =========================================================
+   PATHWAY
+   ========================================================= */
+
+.fury-pathway {
+    background: #151515 !important;
+}
+
+/* =========================================================
+   PEOPLE
+   ========================================================= */
+
+.fury-people {
+    background: #050505 !important;
+}
+
+.fury-people-header {
+    max-width: 790px;
+
+    margin-bottom: 34px;
+}
+
+.fury-people-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.fury-person {
+    position: relative;
+
+    overflow: hidden;
+
+    background: #151515 !important;
+
+    border: 1px solid #333333;
+    border-bottom: 4px solid #F15A24;
+
+    transition:
+        transform .2s ease,
+        border-color .2s ease;
+}
+
+.fury-person:hover {
+    transform: translateY(-4px);
+
+    border-color: #F15A24;
+}
+
+.fury-person-photo {
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    overflow: hidden;
+
+    background: #090909;
+}
+
+.fury-person-photo img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.fury-person-info {
+    min-height: 90px;
+
+    padding: 16px;
+}
+
+.fury-home .fury-person h3 {
+    margin-bottom: 4px !important;
+
+    color: #FFFFFF !important;
+
+    font-size: 17px !important;
+    line-height: 1.15 !important;
+}
+
+.fury-person-role {
+    margin: 0 !important;
+
+    color: #FF6B2C !important;
+
+    font-size: 11px !important;
+    font-weight: 900 !important;
+
+    letter-spacing: .6px !important;
+    line-height: 1.4 !important;
+
+    text-transform: uppercase !important;
+}
+
+/* Parent liaison */
+
+.fury-person-parent {
+    border-color: #F15A24;
+}
+
+.fury-person-parent::before {
+    content: "PARENT RESOURCE";
+
+    position: absolute;
+    z-index: 3;
+
+    top: 12px;
+    left: 12px;
+
+    padding: 5px 8px;
+
+    background: #F15A24;
+
+    color: #000000;
+
+    font-size: 9px;
+    font-weight: 900;
+
+    letter-spacing: .7px;
+
+    text-transform: uppercase;
+}
+
+/* Full staff card */
+
+.fury-staff-more {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #2B1006 0%,
+            #111111 55%,
+            #050505 100%
+        );
+}
+
+.fury-home .fury-staff-more h3 {
+    margin: 0 !important;
+
+    color: #FFFFFF !important;
+
+    font-size: 25px !important;
+    line-height: 1.15 !important;
+}
+
+/* =========================================================
+   FINAL CTA
+   ========================================================= */
+
+.fury-final {
+    padding: 64px 0;
+
+    background: #F15A24 !important;
+
+    text-align: center;
+}
+
+.fury-home .fury-final h2 {
+    margin-bottom: 13px !important;
+
+    color: #000000 !important;
+
+    font-size: clamp(35px, 5vw, 54px) !important;
+}
+
+.fury-home .fury-final p {
+    max-width: 680px;
+
+    margin: 0 auto !important;
+
+    color: #000000 !important;
+
+    font-size: 17px !important;
+    font-weight: 700 !important;
+}
+
+.fury-final .fury-buttons {
+    justify-content: center;
+}
+
+.fury-home .fury-final .fury-btn-primary {
+    background: #000000 !important;
+    border-color: #000000 !important;
+    color: #FFFFFF !important;
+}
+
+.fury-home .fury-final .fury-btn-primary:hover,
+.fury-home .fury-final .fury-btn-primary:focus {
+    background: #FFFFFF !important;
+    border-color: #FFFFFF !important;
+    color: #000000 !important;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .fury-split,
+    .fury-split-reverse {
+        grid-template-columns: 1fr;
+    }
+
+    .fury-steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fury-step:not(:last-child) {
+        border-right: 1px solid #414141;
+    }
+
+    .fury-people-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .fury-wrap {
+        width: calc(100% - 30px);
+    }
+
+    .fury-section {
+        padding: 50px 0;
+    }
+
+    .fury-hero {
+        min-height: auto;
+    }
+
+    .fury-hero-inner {
+        padding: 52px 0;
+    }
+
+    .fury-home .fury-hero h1 {
+        font-size: clamp(39px, 13vw, 57px) !important;
+
+        letter-spacing: -1px !important;
+    }
+
+    .fury-model {
+        display: grid;
+    }
+
+    .fury-model span:not(:last-child)::after {
+        content: "";
+
+        margin: 0;
+    }
+
+    .fury-buttons {
+        display: grid;
+    }
+
+    .fury-home .fury-btn {
+        width: 100%;
+    }
+
+    .fury-quick-inner {
+        display: block;
+
+        padding: 20px 0;
+    }
+
+    .fury-quick-copy {
+        margin-bottom: 14px;
+    }
+
+    .fury-steps,
+    .fury-people-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fury-step:not(:last-child) {
+        border-bottom: 0;
+    }
+
+    .fury-photo {
+        min-height: 280px;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .fury-home *,
+    .fury-home *::before,
+    .fury-home *::after {
+        transition: none !important;
+        animation: none !important;
+    }
+
+}
+
+
+/* =========================================================
+   END CSS
+   ========================================================= */
+</style>
+
+
+<main class="fury-home">
+
+
+<!-- =====================================================
+     HERO
+     ===================================================== -->
+
+<section class="fury-hero"
+         aria-labelledby="fury-home-title">
+
+    <div class="fury-wrap fury-hero-inner">
+
+        <span class="fury-eyebrow">
+            Fayetteville Fury Youth Soccer
+        </span>
+
+        <h1 id="fury-home-title">
+            Develop the Player.<br>
+            <span>Not Just the Team.</span>
+        </h1>
+
+        <div class="fury-accent"
+             aria-hidden="true"></div>
+
+        <p class="fury-hero-copy">
+            Player-first soccer development and tournament
+            competition for boys and girls, from developing
+            youth players through high school.
+        </p>
+
+        <div class="fury-model"
+             aria-label="Fury development model">
+
+            <span>Train</span>
+            <span>Develop</span>
+            <span>Compete</span>
+            <span>Advance</span>
+
+        </div>
+
+        <div class="fury-buttons">
+
+            <a class="fury-btn fury-btn-primary"
+               href="/register">
+                Join Fury
+            </a>
+
+            <a class="fury-btn fury-btn-outline"
+               href="/nxt">
+                Explore Fury NXT
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     QUICK CALL TO ACTION
+     ===================================================== -->
+
+<section class="fury-quick"
+         aria-label="Player assessments and registration">
+
+    <div class="fury-wrap fury-quick-inner">
+
+        <div class="fury-quick-copy">
+
+            <strong>
+                Ready for your player's next challenge?
+            </strong>
+
+            <span>
+                Start with Fury NXT assessments and registration.
+            </span>
+
+        </div>
+
+        <a class="fury-btn"
+           href="/register">
+            Get Started
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PLAYER DEVELOPMENT
+     ===================================================== -->
+
+<section class="fury-section fury-intro"
+         aria-labelledby="fury-intro-title">
+
+    <div class="fury-wrap fury-split">
+
+        <div>
+
+            <span class="fury-eyebrow">
+                Player Development First
+            </span>
+
+            <h2 class="fury-title"
+                id="fury-intro-title">
+                The Player Comes First.
+            </h2>
+
+            <p class="fury-copy">
+                Fury develops individual players through purposeful
+                training, technical growth, confidence and soccer IQ.
+                Tournament competition gives them a place to put
+                that development to the test.
+            </p>
+
+            <div class="fury-buttons">
+
+                <a class="fury-btn fury-btn-outline"
+                   href="/player-development">
+                    Our Development Model
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="fury-photo">
+
+            <img
+                src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-4e70d588-9c4c-461c-a270-1aee605d1268/1790807251-full.png"
+                alt="Fayetteville Fury youth players developing their soccer skills"
+                loading="lazy">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FURY NXT
+     ===================================================== -->
+
+<section class="fury-section fury-nxt"
+         aria-labelledby="fury-nxt-title">
+
+    <div class="fury-wrap fury-split fury-split-reverse">
+
+
+        <div class="fury-photo">
+
+            <img
+                src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-f381cae9-5025-4a44-b3d3-4a1edeb71692/1791068282-full.png"
+                alt="Fayetteville Fury players competing in tournament soccer"
+                loading="lazy">
+
+        </div>
+
+
+        <div>
+
+            <span class="fury-eyebrow">
+                Our Competitive Program
+            </span>
+
+            <h2 class="fury-title"
+                id="fury-nxt-title">
+                This Is <span>Fury NXT.</span>
+            </h2>
+
+            <p class="fury-copy">
+                Fury NXT combines player-first training with
+                tournament and travel competition. Players train
+                to improve, then compete to apply what they learn.
+            </p>
+
+            <div class="fury-tags"
+                 aria-label="Fury NXT program features">
+
+                <span class="fury-tag">
+                    Boys &amp; Girls
+                </span>
+
+                <span class="fury-tag">
+                    Youth Through High School
+                </span>
+
+                <span class="fury-tag">
+                    Player Development
+                </span>
+
+                <span class="fury-tag">
+                    Tournament Competition
+                </span>
+
+            </div>
+
+            <div class="fury-buttons">
+
+                <a class="fury-btn fury-btn-primary"
+                   href="/nxt">
+                    Explore Fury NXT
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     DEVELOPMENT MODEL
+     ===================================================== -->
+
+<section class="fury-section fury-development"
+         aria-labelledby="fury-development-title">
+
+    <div class="fury-wrap">
+
+        <div class="fury-development-header">
+
+            <span class="fury-eyebrow">
+                The Fury Development Model
+            </span>
+
+            <h2 class="fury-title"
+                id="fury-development-title">
+                Train. Develop. Compete. Advance.
+            </h2>
+
+            <p class="fury-copy">
+                A clear process built around the growth
+                of the individual player.
+            </p>
+
+        </div>
+
+
+        <div class="fury-steps">
+
+
+            <div class="fury-step">
+
+                <span class="fury-step-number">
+                    01
+                </span>
+
+                <h3>
+                    Train
+                </h3>
+
+                <p>
+                    Build strong technical foundations through
+                    purposeful instruction.
+                </p>
+
+            </div>
+
+
+            <div class="fury-step">
+
+                <span class="fury-step-number">
+                    02
+                </span>
+
+                <h3>
+                    Develop
+                </h3>
+
+                <p>
+                    Improve confidence, awareness,
+                    decision-making and soccer IQ.
+                </p>
+
+            </div>
+
+
+            <div class="fury-step">
+
+                <span class="fury-step-number">
+                    03
+                </span>
+
+                <h3>
+                    Compete
+                </h3>
+
+                <p>
+                    Apply development in meaningful
+                    tournament competition.
+                </p>
+
+            </div>
+
+
+            <div class="fury-step">
+
+                <span class="fury-step-number">
+                    04
+                </span>
+
+                <h3>
+                    Advance
+                </h3>
+
+                <p>
+                    Prepare for the next challenge as
+                    ability and ambitions grow.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="fury-buttons">
+
+            <a class="fury-btn fury-btn-outline"
+               href="/player-development">
+                Learn How We Develop Players
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PLAYER PATHWAY
+     ===================================================== -->
+
+<section class="fury-section fury-pathway"
+         aria-labelledby="fury-pathway-title">
+
+    <div class="fury-wrap fury-split">
+
+        <div>
+
+            <span class="fury-eyebrow">
+                The Fury Player Pathway
+            </span>
+
+            <h2 class="fury-title"
+                id="fury-pathway-title">
+                Your Next Level Starts Here.
+            </h2>
+
+            <p class="fury-copy">
+                Every player's journey is different. Fury helps
+                players prepare for the next appropriate challenge,
+                from youth development through high school and
+                future playing opportunities.
+            </p>
+
+            <div class="fury-buttons">
+
+                <a class="fury-btn fury-btn-primary"
+                   href="/player-pathway">
+                    Explore the Player Pathway
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="fury-photo">
+
+            <img
+                src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-d4822a11-553a-4a94-8d3d-fd9c51bff336/1790808001-full.png"
+                alt="Older Fayetteville Fury player competing in soccer"
+                loading="lazy">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PEOPLE BEHIND THE FURY
+     ===================================================== -->
+
+<section class="fury-section fury-people"
+         aria-labelledby="fury-people-title">
+
+    <div class="fury-wrap">
+
+        <div class="fury-people-header">
+
+            <span class="fury-eyebrow">
+                The People Behind the Development
+            </span>
+
+            <h2 class="fury-title"
+                id="fury-people-title">
+                Meet the Fury.
+            </h2>
+
+            <p class="fury-copy">
+                Coaches who teach. Leadership that supports.
+                People committed to creating the right environment
+                for players and families.
+            </p>
+
+        </div>
+
+
+        <div class="fury-people-grid">
+
+
+            <!-- =================================================
+                 ANN MARIE CHAO
+                 ================================================= -->
+
+            <article class="fury-person">
+
+                <div class="fury-person-photo">
+
+                    <img
+                        src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-a2e41713-318e-4392-8cc5-21f3c1be26eb/1790801714-full.png"
+                        alt="Ann Marie Chao, Fayetteville Fury Director"
+                        loading="lazy">
+
+                </div>
+
+                <div class="fury-person-info">
+
+                    <h3>
+                        Ann Marie Chao
+                    </h3>
+
+                    <p class="fury-person-role">
+                        Director
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================================
+                 AL FLOREZ
+                 ================================================= -->
+
+            <article class="fury-person">
+
+                <div class="fury-person-photo">
+
+                    <img
+                        src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-03773bf5-1e64-424c-9845-d546d81f40cf/1790801716-full.png"
+                        alt="Al Florez, Fayetteville Fury Senior Club Advisor"
+                        loading="lazy">
+
+                </div>
+
+                <div class="fury-person-info">
+
+                    <h3>
+                        Al Florez
+                    </h3>
+
+                    <p class="fury-person-role">
+                        Senior Club Advisor
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================================
+                 KRISTEN ROSSER
+                 ================================================= -->
+
+            <article class="fury-person fury-person-parent">
+
+                <div class="fury-person-photo">
+
+                    <img
+                        src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-1ca1e92c-e285-4087-964b-4986477d2f0e/1790801709-full.png"
+                        alt="Kristen Rosser, Fayetteville Fury Parent Liaison"
+                        loading="lazy">
+
+                </div>
+
+                <div class="fury-person-info">
+
+                    <h3>
+                        Kristen Rosser
+                    </h3>
+
+                    <p class="fury-person-role">
+                        Parent Liaison
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================================
+                 COACH KELVIN
+                 ================================================= -->
+
+            <article class="fury-person">
+
+                <div class="fury-person-photo">
+
+                    <img
+                        src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-4a98f20d-aa39-4d8e-bad0-e76c3ce8ef61/1790801714-full.png"
+                        alt="Coach Kelvin, Fayetteville Fury"
+                        loading="lazy">
+
+                </div>
+
+                <div class="fury-person-info">
+
+                    <h3>
+                        Coach Kelvin
+                    </h3>
+
+                    <p class="fury-person-role">
+                        Coach
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================================
+                 COACH JUAN
+                 ================================================= -->
+
+            <article class="fury-person">
+
+                <div class="fury-person-photo">
+
+                    <img
+                        src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-1124f17b-39c3-4fb6-8ab0-736fd16d5395/1790801712-full.png"
+                        alt="Coach Juan, Fayetteville Fury"
+                        loading="lazy">
+
+                </div>
+
+                <div class="fury-person-info">
+
+                    <h3>
+                        Coach Juan
+                    </h3>
+
+                    <p class="fury-person-role">
+                        Coach
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================================
+                 COACH T
+                 ================================================= -->
+
+            <article class="fury-person">
+
+                <div class="fury-person-photo">
+
+                    <img
+                        src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-64d175de-bb49-467d-a34b-dda5169c7847/1790801711-full.png"
+                        alt="Coach Talavera, Fayetteville Fury"
+                        loading="lazy">
+
+                </div>
+
+                <div class="fury-person-info">
+
+                    <h3>
+                        Coach T
+                    </h3>
+
+                    <p class="fury-person-role">
+                        Coach
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================================
+                 COACH EDWIN
+                 ================================================= -->
+
+            <article class="fury-person">
+
+                <div class="fury-person-photo">
+
+                    <img
+                        src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-e6e20e31-f332-4c4f-a45f-594235c25920/1790801709-full.png"
+                        alt="Coach Edwin, Fayetteville Fury"
+                        loading="lazy">
+
+                </div>
+
+                <div class="fury-person-info">
+
+                    <h3>
+                        Coach Edwin
+                    </h3>
+
+                    <p class="fury-person-role">
+                        Coach
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================================
+                 FULL STAFF
+                 ================================================= -->
+
+            <article class="fury-person">
+
+                <div class="fury-person-photo fury-staff-more">
+
+                    <div>
+
+                        <span class="fury-eyebrow">
+                            One Team
+                        </span>
+
+                        <h3>
+                            Player-First<br>
+                            Leadership
+                        </h3>
+
+                    </div>
+
+                </div>
+
+                <div class="fury-person-info">
+
+                    <h3>
+                        Meet the Full Staff
+                    </h3>
+
+                    <p class="fury-person-role">
+                        Coaches &amp; Leadership
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+
+        <div class="fury-buttons">
+
+            <a class="fury-btn fury-btn-outline"
+               href="/coaching-staff">
+                Meet Our Full Staff
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FINAL CALL TO ACTION
+     ===================================================== -->
+
+<section class="fury-final"
+         aria-labelledby="fury-final-title">
+
+    <div class="fury-wrap">
+
+        <h2 id="fury-final-title">
+            Ready for What's NXT?
+        </h2>
+
+        <p>
+            Take the first step and discover whether
+            Fayetteville Fury is the right environment
+            for your player.
+        </p>
+
+        <div class="fury-buttons">
+
+            <a class="fury-btn fury-btn-primary"
+               href="/register">
+                Join Fury
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
