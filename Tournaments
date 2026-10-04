@@ -30,25 +30,22 @@
   line-height: 1.6 !important;
 }
 
+.fury-tournaments h1,
+.fury-tournaments h2,
+.fury-tournaments h3,
 .fury-tournaments p,
 .fury-tournaments ul {
   margin-top: 0 !important;
 }
 
-.fury-tournaments .ft-title,
-.fury-tournaments .ft-heading,
-.fury-tournaments .ft-card-title {
-  display: block !important;
-  margin-top: 0 !important;
-  padding: 0 !important;
-  background: transparent !important;
-  border: 0 !important;
+.fury-tournaments h1,
+.fury-tournaments h2,
+.fury-tournaments h3 {
   color: var(--ft-white) !important;
   font-family: Arial, Helvetica, sans-serif !important;
   font-weight: 900 !important;
   line-height: 1.02 !important;
   letter-spacing: -0.035em !important;
-  text-shadow: none !important;
   text-transform: uppercase !important;
 }
 
@@ -284,7 +281,7 @@
   letter-spacing: 2px !important;
 }
 
-.fury-tournaments .ft-card-title {
+.fury-tournaments .ft-card h3 {
   margin-bottom: 13px !important;
   font-size: 21px !important;
   letter-spacing: 0 !important;
@@ -539,7 +536,7 @@
     <div class="ft-wrap">
       <div class="ft-hero-content">
         <span class="ft-eyebrow">Fayetteville Fury NXT Tournaments</span>
-        <div class="ft-title" id="ft-page-title" role="heading" aria-level="1">Compete With <span>Purpose.</span></div>
+        <h1 class="ft-title" id="ft-page-title">Compete With <span>Purpose.</span></h1>
         <p class="ft-copy">
           Competition should challenge the player, not simply produce a result. Fury uses tournament competition as an extension of player development—giving players a place to test their skills, decisions and confidence when the game gets real.
         </p>
@@ -555,7 +552,7 @@
     <div class="ft-wrap ft-why-grid">
       <div>
         <span class="ft-eyebrow">Why We Compete</span>
-        <div class="ft-heading" id="ft-why-title" role="heading" aria-level="2">Training Builds The Tools.</div>
+        <h2 class="ft-heading" id="ft-why-title">Training Builds The Tools.</h2>
       </div>
       <div>
         <p class="ft-copy">
@@ -576,7 +573,7 @@
       <div class="ft-section-intro">
         <div>
           <span class="ft-eyebrow">Meaningful Competition</span>
-          <div class="ft-heading" id="ft-meaningful-title" role="heading" aria-level="2">Every Match Is A <span>Challenge.</span></div>
+          <h2 class="ft-heading" id="ft-meaningful-title">Every Match Is A <span>Challenge.</span></h2>
         </div>
         <p class="ft-copy">
           The right competition asks more of a player. Quality opponents and different styles of play create new problems, reward brave decisions and reveal the next opportunity to grow.
@@ -586,22 +583,22 @@
       <div class="ft-card-grid">
         <article class="ft-card">
           <span class="ft-card-number">01</span>
-          <div class="ft-card-title" role="heading" aria-level="3">Decision-Making</div>
+          <h3>Decision-Making</h3>
           <p>Recognize the moment, process options and choose a solution under pressure.</p>
         </article>
         <article class="ft-card">
           <span class="ft-card-number">02</span>
-          <div class="ft-card-title" role="heading" aria-level="3">Adaptability</div>
+          <h3>Adaptability</h3>
           <p>Respond to different opponents, game plans, spaces and styles of play.</p>
         </article>
         <article class="ft-card">
           <span class="ft-card-number">03</span>
-          <div class="ft-card-title" role="heading" aria-level="3">Resilience</div>
+          <h3>Resilience</h3>
           <p>Meet adversity, learn from difficult moments and stay engaged in the game.</p>
         </article>
         <article class="ft-card">
           <span class="ft-card-number">04</span>
-          <div class="ft-card-title" role="heading" aria-level="3">Confidence</div>
+          <h3>Confidence</h3>
           <p>Trust the work, take responsibility and develop competitive maturity.</p>
         </article>
       </div>
@@ -617,7 +614,7 @@
     </div>
     <div class="ft-experience-content">
       <span class="ft-eyebrow">The Tournament Experience</span>
-      <div class="ft-heading" id="ft-experience-title" role="heading" aria-level="2">Learn From Every <span>Match.</span></div>
+      <h2 class="ft-heading" id="ft-experience-title">Learn From Every <span>Match.</span></h2>
       <p class="ft-copy">
         A tournament is more than a schedule of games. It is a connected experience that challenges players and teams to prepare, respond and improve over time.
       </p>
@@ -635,7 +632,7 @@
     <div class="ft-wrap ft-development-inner">
       <div>
         <span class="ft-eyebrow">Development Through Competition</span>
-        <div class="ft-heading" id="ft-development-title" role="heading" aria-level="2">The Result Is Not The <span>Finish Line.</span></div>
+        <h2 class="ft-heading" id="ft-development-title">The Result Is Not The <span>Finish Line.</span></h2>
       </div>
       <div class="ft-statement">
         <strong>The objective is not simply to win a game.</strong>
@@ -650,7 +647,7 @@
     <div class="ft-wrap ft-for-grid">
       <div>
         <span class="ft-eyebrow">Who Is It For?</span>
-        <div class="ft-heading" id="ft-for-title" role="heading" aria-level="2">Players Ready To Be <span>Challenged.</span></div>
+        <h2 class="ft-heading" id="ft-for-title">Players Ready To Be <span>Challenged.</span></h2>
         <p class="ft-copy">For players and families who want development and competition to work together.</p>
       </div>
       <div class="ft-audience-grid" aria-label="Players and teams served">
@@ -667,7 +664,7 @@
   <section class="ft-cta" aria-labelledby="ft-cta-title">
     <div class="ft-wrap">
       <span class="ft-eyebrow">Take The Next Step</span>
-      <div class="ft-heading" id="ft-cta-title" role="heading" aria-level="2">Ready To <span>Compete?</span></div>
+      <h2 class="ft-heading" id="ft-cta-title">Ready To <span>Compete?</span></h2>
       <p class="ft-copy">Discover a player-first environment where purposeful training meets meaningful tournament competition.</p>
       <div class="ft-button-row">
         <a class="ft-button" href="/nxt">Explore Fury NXT</a>
