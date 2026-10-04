@@ -605,8 +605,9 @@
             <img class="fcs-card-image" src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-a2e41713-318e-4392-8cc5-21f3c1be26eb/1790801714-full.png" alt="Ann Marie Chao, Fayetteville Fury Director and 14U coach" loading="lazy">
           </div>
           <div class="fcs-card-info">
-            <h3 class="fcs-card-name">Ann Marie Chao</h3>
-            <p class="fcs-card-role">Director · 14U Coach</p>
+            <h3 class="fcs-card-name">Coach Ann Marie</h3>
+            <p class="fcs-card-role">14U Coach</p>
+            <p class="fcs-card-role">Nxt Director</p>			
           </div>
         </article>
 
@@ -615,8 +616,8 @@
             <img class="fcs-card-image" src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-2b528d21-f1ce-4666-b8a5-f60f14138613/1791083979-full.png" alt="Miguel Sanchez, Fayetteville Fury 16U coach" loading="lazy">
           </div>
           <div class="fcs-card-info">
-            <h3 class="fcs-card-name">Miguel Sanchez</h3>
-            <p class="fcs-card-role">16U Coach</p>
+            <h3 class="fcs-card-name">Coach Miguel</h3>
+            <p class="fcs-card-role">16U, 18U &amp; 19U Coach</p>
           </div>
         </article>
 
@@ -625,8 +626,9 @@
             <img class="fcs-card-image" src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-03773bf5-1e64-424c-9845-d546d81f40cf/1790801716-full.png" alt="Al Florez, Fayetteville Fury coach for 18U and 19U" loading="lazy">
           </div>
           <div class="fcs-card-info">
-            <h3 class="fcs-card-name">Al Florez</h3>
-            <p class="fcs-card-role">18U &amp; 19U Coach</p>
+            <h3 class="fcs-card-name">Coach Al</h3>
+            <p class="fcs-card-role">16U, 18U &amp; 19U Coach</p>
+            <p class="fcs-card-role">Club Senior Advisor</p>				
           </div>
         </article>
 
