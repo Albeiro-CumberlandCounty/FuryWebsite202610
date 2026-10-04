@@ -1,0 +1,451 @@
+<style>
+/* =========================================================
+   FAYETTEVILLE FURY — ABOUT
+   Every rule is scoped to protect the page in SoccerShift.
+   ========================================================= */
+.fury-about,
+.fury-about *,
+.fury-about *::before,
+.fury-about *::after { box-sizing: border-box !important; }
+
+.fury-about {
+  --fa-orange: #f15a24;
+  --fa-orange-bright: #ff6b2c;
+  --fa-black: #050505;
+  --fa-dark: #0d0d0d;
+  --fa-card: #171717;
+  --fa-white: #ffffff;
+  --fa-muted: #d0d0d0;
+  --fa-border: #383838;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  background: var(--fa-black) !important;
+  color: var(--fa-white) !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 17px !important;
+  line-height: 1.65 !important;
+}
+
+.fury-about .fa-wrap { width: min(1140px, calc(100% - 48px)) !important; margin: 0 auto !important; }
+.fury-about .fa-eyebrow {
+  display: block !important; margin: 0 0 14px !important; padding: 0 !important;
+  color: var(--fa-orange-bright) !important; font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 13px !important; font-weight: 900 !important; line-height: 1.25 !important;
+  letter-spacing: 2.5px !important; text-transform: uppercase !important;
+}
+.fury-about .fa-title,
+.fury-about .fa-heading,
+.fury-about .fa-card-title,
+.fury-about .fa-step-title,
+.fury-about .fa-stat-number,
+.fury-about .fa-name {
+  display: block !important; margin: 0 !important; padding: 0 !important;
+  border: 0 !important; background: transparent !important; color: var(--fa-white) !important;
+  font-family: Arial, Helvetica, sans-serif !important; font-weight: 900 !important;
+  line-height: 1.02 !important; letter-spacing: -.035em !important;
+  text-shadow: none !important; text-transform: uppercase !important;
+}
+.fury-about .fa-title { max-width: 920px !important; font-size: clamp(48px, 8vw, 96px) !important; }
+.fury-about .fa-heading { font-size: clamp(32px, 5vw, 58px) !important; }
+.fury-about .fa-title-accent,
+.fury-about .fa-heading-accent { color: var(--fa-orange-bright) !important; }
+.fury-about .fa-copy,
+.fury-about .fa-copy p,
+.fury-about .fa-card p,
+.fury-about .fa-step p,
+.fury-about .fa-history-item p,
+.fury-about .fa-program-card p,
+.fury-about .fa-leader-copy p,
+.fury-about .fa-access-copy p,
+.fury-about .fa-advance-copy p {
+  margin: 0 !important; padding: 0 !important; color: var(--fa-muted) !important;
+  font-family: Arial, Helvetica, sans-serif !important; font-size: 17px !important;
+  font-weight: 400 !important; line-height: 1.7 !important;
+}
+.fury-about .fa-copy p + p,
+.fury-about .fa-leader-copy p + p,
+.fury-about .fa-advance-copy p + p { margin-top: 18px !important; }
+.fury-about .fa-button-row { display: flex !important; flex-wrap: wrap !important; gap: 12px !important; margin-top: 28px !important; }
+.fury-about .fa-button {
+  display: inline-flex !important; align-items: center !important; justify-content: center !important;
+  min-height: 54px !important; margin: 0 !important; padding: 16px 27px !important;
+  border: 2px solid var(--fa-orange) !important; border-radius: 0 !important;
+  background: var(--fa-orange) !important; color: #050505 !important;
+  font-family: Arial, Helvetica, sans-serif !important; font-size: 14px !important;
+  font-weight: 900 !important; line-height: 1.1 !important; letter-spacing: 1px !important;
+  text-align: center !important; text-decoration: none !important; text-transform: uppercase !important;
+  transition: background-color .2s ease, border-color .2s ease, color .2s ease, transform .2s ease !important;
+}
+.fury-about .fa-button-outline { background: transparent !important; color: var(--fa-white) !important; }
+.fury-about .fa-button:hover,
+.fury-about .fa-button:focus-visible { border-color: var(--fa-white) !important; background: var(--fa-white) !important; color: #050505 !important; transform: translateY(-2px) !important; }
+.fury-about .fa-button:focus-visible,
+.fury-about a:focus-visible { outline: 3px solid var(--fa-orange-bright) !important; outline-offset: 4px !important; }
+
+/* HERO */
+.fury-about .fa-hero {
+  position: relative !important; isolation: isolate !important; min-height: 610px !important;
+  display: flex !important; align-items: flex-end !important; margin: 0 !important;
+  padding: 110px 0 82px !important; overflow: hidden !important;
+  border-top: 6px solid var(--fa-orange) !important;
+  background: radial-gradient(circle at 84% 28%, rgba(241,90,36,.2), transparent 30%), linear-gradient(125deg, #050505 0%, #0a0a0a 62%, #17110f 100%) !important;
+}
+.fury-about .fa-hero::before {
+  content: "FURY" !important; position: absolute !important; top: 50% !important; right: -35px !important; z-index: -2 !important;
+  color: transparent !important; font-family: Arial, Helvetica, sans-serif !important; font-size: clamp(150px, 27vw, 420px) !important;
+  font-weight: 900 !important; line-height: .72 !important; letter-spacing: -.09em !important;
+  -webkit-text-stroke: 2px rgba(255,255,255,.07) !important; transform: translateY(-50%) !important; white-space: nowrap !important;
+}
+.fury-about .fa-hero::after {
+  content: "" !important; position: absolute !important; right: -120px !important; bottom: -45px !important; z-index: -1 !important;
+  width: 610px !important; height: 125px !important; background: var(--fa-orange) !important; opacity: .92 !important; transform: skewX(-38deg) !important;
+}
+.fury-about .fa-hero-inner { position: relative !important; z-index: 1 !important; }
+.fury-about .fa-hero .fa-copy { max-width: 720px !important; margin-top: 27px !important; }
+.fury-about .fa-hero .fa-copy p { color: var(--fa-white) !important; font-size: clamp(18px, 2.1vw, 22px) !important; }
+
+/* WHO WE ARE */
+.fury-about .fa-who { padding: 92px 0 !important; background: var(--fa-dark) !important; }
+.fury-about .fa-split { display: grid !important; grid-template-columns: minmax(0,.9fr) minmax(0,1.1fr) !important; gap: clamp(42px, 8vw, 105px) !important; align-items: start !important; }
+.fury-about .fa-identity-line { width: 82px !important; height: 6px !important; margin-top: 28px !important; background: var(--fa-orange) !important; transform: skewX(-28deg) !important; }
+.fury-about .fa-who .fa-copy p { font-size: 19px !important; }
+
+/* WHY */
+.fury-about .fa-why { position: relative !important; padding: 82px 0 !important; background: var(--fa-orange) !important; overflow: hidden !important; }
+.fury-about .fa-why::after { content: "" !important; position: absolute !important; top: -80px !important; right: -120px !important; width: 420px !important; height: 230px !important; border: 34px solid rgba(0,0,0,.1) !important; transform: skewX(-35deg) !important; }
+.fury-about .fa-why blockquote { position: relative !important; z-index: 1 !important; max-width: 990px !important; margin: 0 !important; padding: 0 0 0 30px !important; border-left: 8px solid #050505 !important; color: #050505 !important; font-family: Arial, Helvetica, sans-serif !important; font-size: clamp(28px, 4.4vw, 52px) !important; font-weight: 900 !important; line-height: 1.08 !important; letter-spacing: -.025em !important; text-transform: uppercase !important; }
+
+/* MISSION + VISION */
+.fury-about .fa-purpose { padding: 94px 0 !important; background: var(--fa-black) !important; }
+.fury-about .fa-purpose-grid { display: grid !important; grid-template-columns: repeat(2,minmax(0,1fr)) !important; gap: 24px !important; }
+.fury-about .fa-purpose-card { position: relative !important; padding: 38px !important; border: 1px solid var(--fa-border) !important; border-top: 5px solid var(--fa-orange) !important; background: var(--fa-card) !important; }
+.fury-about .fa-purpose-card .fa-card-title { margin-bottom: 22px !important; font-size: 29px !important; }
+.fury-about .fa-purpose-card p { margin: 0 !important; color: var(--fa-muted) !important; font-family: Arial, Helvetica, sans-serif !important; font-size: 17px !important; line-height: 1.72 !important; }
+
+/* MODEL */
+.fury-about .fa-model { padding: 92px 0 !important; background: var(--fa-dark) !important; }
+.fury-about .fa-model-head { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 48px !important; align-items: end !important; margin-bottom: 42px !important; }
+.fury-about .fa-steps { display: grid !important; grid-template-columns: repeat(4,minmax(0,1fr)) !important; border: 1px solid var(--fa-border) !important; }
+.fury-about .fa-step { position: relative !important; min-width: 0 !important; padding: 31px 24px 34px !important; border-right: 1px solid var(--fa-border) !important; background: #121212 !important; }
+.fury-about .fa-step:last-child { border-right: 0 !important; }
+.fury-about .fa-step::before { content: attr(data-step) !important; display: block !important; margin-bottom: 32px !important; color: var(--fa-orange-bright) !important; font-family: Arial, Helvetica, sans-serif !important; font-size: 13px !important; font-weight: 900 !important; letter-spacing: 2px !important; }
+.fury-about .fa-step-title { margin-bottom: 13px !important; font-size: 24px !important; }
+.fury-about .fa-step p { font-size: 15px !important; }
+
+/* DIFFERENCE */
+.fury-about .fa-difference { padding: 98px 0 !important; background: var(--fa-black) !important; }
+.fury-about .fa-difference-head { max-width: 780px !important; margin-bottom: 43px !important; }
+.fury-about .fa-difference-grid { display: grid !important; grid-template-columns: repeat(6,minmax(0,1fr)) !important; gap: 16px !important; }
+.fury-about .fa-card { grid-column: span 2 !important; min-width: 0 !important; padding: 30px !important; border: 1px solid var(--fa-border) !important; background: var(--fa-card) !important; transition: transform .2s ease, border-color .2s ease !important; }
+.fury-about .fa-card:nth-child(4) { grid-column: 2 / span 2 !important; }
+.fury-about .fa-card:hover { border-color: var(--fa-orange) !important; transform: translateY(-4px) !important; }
+.fury-about .fa-card-number { display: block !important; margin-bottom: 26px !important; color: var(--fa-orange-bright) !important; font-size: 13px !important; font-weight: 900 !important; letter-spacing: 2px !important; }
+.fury-about .fa-card .fa-card-title { margin-bottom: 15px !important; font-size: 21px !important; letter-spacing: -.01em !important; }
+
+/* PROGRAMS */
+.fury-about .fa-programs { padding: 96px 0 !important; background: #101010 !important; }
+.fury-about .fa-programs-head { display: grid !important; grid-template-columns: .85fr 1.15fr !important; gap: 55px !important; align-items: end !important; margin-bottom: 43px !important; }
+.fury-about .fa-program-grid { display: grid !important; grid-template-columns: repeat(3,minmax(0,1fr)) !important; gap: 18px !important; }
+.fury-about .fa-program-card { padding: 32px !important; border-left: 5px solid var(--fa-orange) !important; background: #1a1a1a !important; }
+.fury-about .fa-age { display: block !important; margin-bottom: 16px !important; color: var(--fa-white) !important; font-size: clamp(28px,3vw,39px) !important; font-weight: 900 !important; line-height: 1.1 !important; letter-spacing: -.025em !important; text-transform: uppercase !important; }
+.fury-about .fa-program-links { display: grid !important; grid-template-columns: repeat(3,minmax(0,1fr)) !important; gap: 14px !important; margin-top: 22px !important; }
+.fury-about .fa-program-link { padding: 25px !important; border: 1px solid var(--fa-border) !important; color: var(--fa-white) !important; text-decoration: none !important; background: #080808 !important; }
+.fury-about .fa-program-link strong { display: block !important; margin-bottom: 8px !important; color: var(--fa-white) !important; font-size: 17px !important; font-weight: 900 !important; text-transform: uppercase !important; }
+.fury-about .fa-program-link span { color: var(--fa-orange-bright) !important; font-size: 13px !important; font-weight: 900 !important; text-transform: uppercase !important; }
+.fury-about .fa-program-link:hover { border-color: var(--fa-orange) !important; }
+
+/* STORY */
+.fury-about .fa-story { padding: 98px 0 !important; background: var(--fa-black) !important; }
+.fury-about .fa-story-grid { display: grid !important; grid-template-columns: minmax(280px,.7fr) minmax(0,1.3fr) !important; gap: clamp(50px,8vw,110px) !important; }
+.fury-about .fa-story-kicker { margin-top: 26px !important; color: var(--fa-orange-bright) !important; font-size: 16px !important; font-weight: 900 !important; line-height: 1.35 !important; letter-spacing: 1.2px !important; text-transform: uppercase !important; }
+.fury-about .fa-history { border-left: 2px solid var(--fa-border) !important; }
+.fury-about .fa-history-item { position: relative !important; padding: 0 0 36px 35px !important; }
+.fury-about .fa-history-item:last-child { padding-bottom: 0 !important; }
+.fury-about .fa-history-item::before { content: "" !important; position: absolute !important; top: 4px !important; left: -8px !important; width: 14px !important; height: 14px !important; border: 3px solid var(--fa-black) !important; background: var(--fa-orange) !important; }
+.fury-about .fa-history-item .fa-card-title { margin-bottom: 11px !important; font-size: 22px !important; }
+
+/* MILESTONES */
+.fury-about .fa-milestones { padding: 90px 0 !important; background: var(--fa-orange) !important; }
+.fury-about .fa-milestones .fa-eyebrow { color: #050505 !important; }
+.fury-about .fa-milestones .fa-heading { max-width: 780px !important; color: #050505 !important; }
+.fury-about .fa-stats { display: grid !important; grid-template-columns: repeat(2,minmax(0,1fr)) !important; gap: 2px !important; margin-top: 42px !important; background: rgba(0,0,0,.2) !important; }
+.fury-about .fa-stat { min-width: 0 !important; padding: 31px !important; background: #0a0a0a !important; }
+.fury-about .fa-stat:last-child { grid-column: 1 / -1 !important; }
+.fury-about .fa-stat-number { margin-bottom: 11px !important; color: var(--fa-orange-bright) !important; font-size: 28px !important; letter-spacing: 0 !important; }
+.fury-about .fa-stat-label { margin: 0 !important; color: var(--fa-white) !important; font-size: 15px !important; font-weight: 900 !important; line-height: 1.45 !important; text-transform: uppercase !important; }
+
+/* ADVANCE */
+.fury-about .fa-advance { position: relative !important; padding: 104px 0 !important; background: #090909 !important; overflow: hidden !important; }
+.fury-about .fa-advance::after { content: "ADVANCE" !important; position: absolute !important; right: -18px !important; bottom: -36px !important; color: transparent !important; font-size: clamp(100px,18vw,270px) !important; font-weight: 900 !important; line-height: .8 !important; letter-spacing: -.07em !important; -webkit-text-stroke: 2px rgba(255,255,255,.055) !important; white-space: nowrap !important; }
+.fury-about .fa-advance-grid { position: relative !important; z-index: 1 !important; display: grid !important; grid-template-columns: .8fr 1.2fr !important; gap: clamp(45px,8vw,105px) !important; }
+.fury-about .fa-advance-tag { display: inline-block !important; margin-top: 25px !important; padding: 9px 13px !important; background: var(--fa-orange) !important; color: #050505 !important; font-size: 13px !important; font-weight: 900 !important; letter-spacing: 1.5px !important; text-transform: uppercase !important; }
+.fury-about .fa-advance-list { display: grid !important; grid-template-columns: repeat(2,minmax(0,1fr)) !important; gap: 9px 28px !important; margin: 23px 0 0 !important; padding: 0 !important; list-style: none !important; }
+.fury-about .fa-advance-list li { position: relative !important; padding-left: 18px !important; color: var(--fa-white) !important; font-size: 15px !important; line-height: 1.45 !important; }
+.fury-about .fa-advance-list li::before { content: "+" !important; position: absolute !important; left: 0 !important; color: var(--fa-orange-bright) !important; font-weight: 900 !important; }
+.fury-about .fa-advance-quote { margin: 28px 0 0 !important; padding: 22px 0 0 22px !important; border-top: 1px solid var(--fa-border) !important; border-left: 5px solid var(--fa-orange) !important; color: var(--fa-white) !important; font-size: 19px !important; font-weight: 900 !important; line-height: 1.45 !important; }
+
+/* AFFILIATION + TRAINING */
+.fury-about .fa-details { padding: 84px 0 !important; background: #151515 !important; }
+.fury-about .fa-detail-grid { display: grid !important; grid-template-columns: repeat(2,minmax(0,1fr)) !important; gap: 18px !important; }
+.fury-about .fa-detail { padding: 34px !important; border: 1px solid var(--fa-border) !important; background: #0d0d0d !important; }
+.fury-about .fa-detail .fa-card-title { margin-bottom: 14px !important; font-size: 25px !important; }
+.fury-about .fa-detail p { margin: 0 !important; color: var(--fa-muted) !important; font-size: 17px !important; line-height: 1.65 !important; }
+.fury-about .fa-detail strong { color: var(--fa-white) !important; }
+
+/* LEADERSHIP */
+.fury-about .fa-leadership { padding: 100px 0 !important; background: var(--fa-black) !important; }
+.fury-about .fa-leader-grid { display: grid !important; grid-template-columns: minmax(280px,.8fr) minmax(0,1.2fr) !important; gap: clamp(42px,8vw,100px) !important; align-items: center !important; }
+.fury-about .fa-portrait { position: relative !important; width: 100% !important; aspect-ratio: 4 / 5 !important; overflow: hidden !important; border-left: 7px solid var(--fa-orange) !important; background: var(--fa-card) !important; }
+.fury-about .fa-portrait::after { content: "" !important; position: absolute !important; right: -55px !important; bottom: -28px !important; width: 220px !important; height: 65px !important; background: var(--fa-orange) !important; opacity: .9 !important; transform: skewX(-38deg) !important; }
+.fury-about .fa-portrait img { display: block !important; width: 100% !important; height: 100% !important; margin: 0 !important; object-fit: cover !important; object-position: center top !important; }
+.fury-about .fa-name { margin-bottom: 8px !important; font-size: clamp(40px,6vw,70px) !important; }
+.fury-about .fa-role { margin: 0 0 27px !important; color: var(--fa-orange-bright) !important; font-size: 14px !important; font-weight: 900 !important; letter-spacing: 2px !important; text-transform: uppercase !important; }
+
+/* NONPROFIT */
+.fury-about .fa-access { padding: 94px 0 !important; background: var(--fa-dark) !important; }
+.fury-about .fa-access-grid { display: grid !important; grid-template-columns: .9fr 1.1fr !important; gap: clamp(42px,8vw,100px) !important; align-items: start !important; }
+.fury-about .fa-support-note { margin-top: 26px !important; padding: 22px !important; border-left: 5px solid var(--fa-orange) !important; background: #181818 !important; }
+.fury-about .fa-support-note strong { display: block !important; margin-bottom: 6px !important; color: var(--fa-white) !important; font-size: 15px !important; text-transform: uppercase !important; }
+.fury-about .fa-support-note span { color: var(--fa-muted) !important; font-size: 15px !important; line-height: 1.55 !important; }
+
+/* FINAL CTA */
+.fury-about .fa-cta { position: relative !important; padding: 92px 0 !important; overflow: hidden !important; background: var(--fa-orange) !important; }
+.fury-about .fa-cta::after { content: "" !important; position: absolute !important; right: -110px !important; top: -60px !important; width: 430px !important; height: 250px !important; border: 40px solid rgba(0,0,0,.1) !important; transform: skewX(-36deg) !important; }
+.fury-about .fa-cta-inner { position: relative !important; z-index: 1 !important; }
+.fury-about .fa-cta .fa-eyebrow,
+.fury-about .fa-cta .fa-heading { color: #050505 !important; }
+.fury-about .fa-cta .fa-button { border-color: #050505 !important; background: #050505 !important; color: var(--fa-white) !important; }
+.fury-about .fa-cta .fa-button-outline { background: transparent !important; color: #050505 !important; }
+.fury-about .fa-cta .fa-button:hover,
+.fury-about .fa-cta .fa-button:focus-visible { border-color: var(--fa-white) !important; background: var(--fa-white) !important; color: #050505 !important; }
+
+@media (max-width: 900px) {
+  .fury-about .fa-split,
+  .fury-about .fa-model-head,
+  .fury-about .fa-programs-head,
+  .fury-about .fa-story-grid,
+  .fury-about .fa-advance-grid,
+  .fury-about .fa-leader-grid,
+  .fury-about .fa-access-grid { grid-template-columns: 1fr !important; gap: 38px !important; }
+  .fury-about .fa-steps { grid-template-columns: repeat(2,minmax(0,1fr)) !important; }
+  .fury-about .fa-step:nth-child(2) { border-right: 0 !important; }
+  .fury-about .fa-step:nth-child(-n+2) { border-bottom: 1px solid var(--fa-border) !important; }
+  .fury-about .fa-card { grid-column: span 3 !important; }
+  .fury-about .fa-card:nth-child(4) { grid-column: span 3 !important; }
+  .fury-about .fa-program-grid { grid-template-columns: 1fr !important; }
+  .fury-about .fa-portrait { max-width: 540px !important; }
+}
+
+@media (max-width: 640px) {
+  .fury-about .fa-wrap { width: min(100% - 32px, 1140px) !important; }
+  .fury-about .fa-hero { min-height: 0 !important; padding: 78px 0 68px !important; }
+  .fury-about .fa-hero::after { width: 350px !important; height: 85px !important; }
+  .fury-about .fa-title { font-size: clamp(42px,14vw,64px) !important; letter-spacing: -.045em !important; }
+  .fury-about .fa-heading { font-size: clamp(31px,10vw,44px) !important; }
+  .fury-about .fa-who,
+  .fury-about .fa-purpose,
+  .fury-about .fa-model,
+  .fury-about .fa-difference,
+  .fury-about .fa-programs,
+  .fury-about .fa-story,
+  .fury-about .fa-milestones,
+  .fury-about .fa-advance,
+  .fury-about .fa-details,
+  .fury-about .fa-leadership,
+  .fury-about .fa-access,
+  .fury-about .fa-cta { padding: 68px 0 !important; }
+  .fury-about .fa-why { padding: 62px 0 !important; }
+  .fury-about .fa-why blockquote { padding-left: 20px !important; border-left-width: 6px !important; }
+  .fury-about .fa-purpose-grid,
+  .fury-about .fa-steps,
+  .fury-about .fa-difference-grid,
+  .fury-about .fa-program-links,
+  .fury-about .fa-stats,
+  .fury-about .fa-detail-grid,
+  .fury-about .fa-advance-list { grid-template-columns: 1fr !important; }
+  .fury-about .fa-purpose-card,
+  .fury-about .fa-card,
+  .fury-about .fa-card:nth-child(4),
+  .fury-about .fa-stat:last-child { grid-column: auto !important; }
+  .fury-about .fa-purpose-card,
+  .fury-about .fa-card,
+  .fury-about .fa-program-card,
+  .fury-about .fa-stat,
+  .fury-about .fa-detail { padding: 26px 22px !important; }
+  .fury-about .fa-step { border-right: 0 !important; border-bottom: 1px solid var(--fa-border) !important; }
+  .fury-about .fa-step:last-child { border-bottom: 0 !important; }
+  .fury-about .fa-button-row { flex-direction: column !important; }
+  .fury-about .fa-button { width: 100% !important; }
+}
+</style>
+
+<main class="fury-about">
+  <header class="fa-hero">
+    <div class="fa-wrap fa-hero-inner">
+      <span class="fa-eyebrow">About Fayetteville Fury</span>
+      <h1 class="fa-title">A club built around <span class="fa-title-accent">the player.</span></h1>
+      <div class="fa-copy"><p>Fayetteville Fury is a youth soccer club focused on player development and tournament competition for boys and girls through high school.</p></div>
+    </div>
+  </header>
+
+  <section class="fa-who" aria-labelledby="fa-who-title">
+    <div class="fa-wrap fa-split">
+      <div>
+        <span class="fa-eyebrow">Who We Are</span>
+        <h2 class="fa-heading" id="fa-who-title">Development with <span class="fa-heading-accent">direction.</span></h2>
+        <div class="fa-identity-line" aria-hidden="true"></div>
+      </div>
+      <div class="fa-copy">
+        <p>Fury puts individual growth at the center of the game. Our current identity is built on player development, purposeful tournament competition, and preparing players for whatever comes next.</p>
+        <p>We serve young players through high school in a supportive club community where training has a purpose, competition provides feedback, and progress matters.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="fa-why" aria-label="Why Fayetteville Fury exists">
+    <div class="fa-wrap">
+      <blockquote>Fayetteville Fury exists because every young player deserves the opportunity to grow, be challenged, and discover how far their passion for soccer can take them.</blockquote>
+    </div>
+  </section>
+
+  <section class="fa-purpose" aria-label="Mission and vision">
+    <div class="fa-wrap fa-purpose-grid">
+      <article class="fa-purpose-card">
+        <span class="fa-eyebrow">Our Mission</span>
+        <h2 class="fa-card-title">Purpose in every step.</h2>
+        <p>To develop youth soccer players through purposeful training, challenging tournament competition, and a supportive club community. Fayetteville Fury puts individual growth at the center of the game, helping players build technical ability, soccer intelligence, confidence, and character while preparing them for their next challenge on and off the field.</p>
+      </article>
+      <article class="fa-purpose-card">
+        <span class="fa-eyebrow">Our Vision</span>
+        <h2 class="fa-card-title">Progress defines success.</h2>
+        <p>To build a soccer community where boys and girls can grow from developing players into confident competitors and leaders. We aspire to make Fayetteville Fury a model for youth development, where progress defines success, competition inspires growth, and a lifelong love of the game connects players, families, and our community.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="fa-model" aria-labelledby="fa-model-title">
+    <div class="fa-wrap">
+      <div class="fa-model-head">
+        <div><span class="fa-eyebrow">The Fury Model</span><h2 class="fa-heading" id="fa-model-title">A cycle built for <span class="fa-heading-accent">growth.</span></h2></div>
+        <div class="fa-copy"><p>Each stage supports the next. Coaches and players train with intention, test progress in meaningful competition, and use what they learn to keep moving forward.</p></div>
+      </div>
+      <div class="fa-steps">
+        <article class="fa-step" data-step="01"><h3 class="fa-step-title">Train</h3><p>Build skills and habits through purposeful work.</p></article>
+        <article class="fa-step" data-step="02"><h3 class="fa-step-title">Develop</h3><p>Turn instruction and repetition into individual growth.</p></article>
+        <article class="fa-step" data-step="03"><h3 class="fa-step-title">Compete</h3><p>Use selected tournaments to test development.</p></article>
+        <article class="fa-step" data-step="04"><h3 class="fa-step-title">Advance</h3><p>Prepare for the next opportunity, whatever it may be.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="fa-difference" aria-labelledby="fa-difference-title">
+    <div class="fa-wrap">
+      <div class="fa-difference-head"><span class="fa-eyebrow">What Makes Fury Different</span><h2 class="fa-heading" id="fa-difference-title">The player is the <span class="fa-heading-accent">priority.</span></h2></div>
+      <div class="fa-difference-grid">
+        <article class="fa-card"><span class="fa-card-number">01</span><h3 class="fa-card-title">Player-First Development</h3><p>We focus on the individual player rather than treating the team scoreline as the only measure of success. Where appropriate, smaller player-to-coach ratios give coaches more time to help individual players develop.</p></article>
+        <article class="fa-card"><span class="fa-card-number">02</span><h3 class="fa-card-title">Purposeful Competition</h3><p>Players do not need to travel every weekend simply for the sake of competition. Our rhythm is train, develop, compete, improve—using tournaments to test focused work.</p></article>
+        <article class="fa-card"><span class="fa-card-number">03</span><h3 class="fa-card-title">Success Is More Than the Score</h3><p>A win matters, but it does not tell the whole story. We measure physical, technical, tactical, mental, and personal growth. Competition is feedback.</p></article>
+        <article class="fa-card"><span class="fa-card-number">04</span><h3 class="fa-card-title">Accessible Development</h3><p>We work to provide meaningful development while keeping costs accessible. Financial assistance may be available to qualifying families based on financial need and available scholarship funding.</p></article>
+        <article class="fa-card"><span class="fa-card-number">05</span><h3 class="fa-card-title">Preparing Players for What Comes Next</h3><p>That next step may be high school, college, a national team or professional opportunity, another level of competition, or simply continued growth as a player and person.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="fa-programs" aria-labelledby="fa-programs-title">
+    <div class="fa-wrap">
+      <div class="fa-programs-head">
+        <div><span class="fa-eyebrow">Our Programs</span><h2 class="fa-heading" id="fa-programs-title">A place to <span class="fa-heading-accent">progress.</span></h2></div>
+        <div class="fa-copy"><p>Fury NXT is our current travel and tournament youth program and an important part of the club's player-development model.</p></div>
+      </div>
+      <div class="fa-program-grid">
+        <article class="fa-program-card"><span class="fa-age">8U · 10U · 12U · 14U</span><p>These age groups currently play during both fall and spring, with a winter break.</p></article>
+        <article class="fa-program-card"><span class="fa-age">16U · 18U · 19U Boys</span><p>These boys' teams currently play in the fall.</p></article>
+        <article class="fa-program-card"><span class="fa-age">Girls Programming</span><p>Fury is actively working toward fielding 16U, 18U, and 19U girls teams and expanding girls programming across the other age groups.</p></article>
+      </div>
+      <nav class="fa-program-links" aria-label="Explore Fury programs">
+        <a class="fa-program-link" href="/nxt"><strong>Fury NXT</strong><span>Explore Fury NXT →</span></a>
+        <a class="fa-program-link" href="/player-development"><strong>Player Development</strong><span>Explore player development →</span></a>
+        <a class="fa-program-link" href="/tournaments"><strong>Tournament Competition</strong><span>Explore tournaments →</span></a>
+      </nav>
+    </div>
+  </section>
+
+  <section class="fa-story" aria-labelledby="fa-story-title">
+    <div class="fa-wrap fa-story-grid">
+      <div><span class="fa-eyebrow">Our Story</span><h2 class="fa-heading" id="fa-story-title">Roots that shape our <span class="fa-heading-accent">future.</span></h2><p class="fa-story-kicker">From adult competition<br>to building the next generation</p></div>
+      <div class="fa-history">
+        <article class="fa-history-item"><h3 class="fa-card-title">Adult &amp; Professional Roots</h3><p>Fury's story includes men's and women's adult soccer and championship competition. That history remains part of how Fayetteville's soccer community remembers the club.</p></article>
+        <article class="fa-history-item"><h3 class="fa-card-title">Today's Youth Focus</h3><p>The organization has evolved toward a youth-focused identity. Experience from the club's past now brings perspective to the work of developing young players.</p></article>
+        <article class="fa-history-item"><h3 class="fa-card-title">Future Possibilities</h3><p>Long term, Fury hopes the growth of its youth players can help the organization eventually return to adult competition, both indoor and outdoor. That is a future aspiration—not a current program.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="fa-milestones" aria-labelledby="fa-milestones-title">
+    <div class="fa-wrap">
+      <span class="fa-eyebrow">Recent Milestones</span>
+      <h2 class="fa-heading" id="fa-milestones-title">Moments in the Fury story.</h2>
+      <div class="fa-stats">
+        <article class="fa-stat"><span class="fa-stat-number">2023</span><p class="fa-stat-label">NISL Men's Champions</p></article>
+        <article class="fa-stat"><span class="fa-stat-number">2023</span><p class="fa-stat-label">NISL Women's Champions</p></article>
+        <article class="fa-stat"><span class="fa-stat-number">2025–2026</span><p class="fa-stat-label">First Fury High School Graduating Class</p></article>
+        <article class="fa-stat"><span class="fa-stat-number">2025–2026</span><p class="fa-stat-label">High school teams reached the playoffs in all of their tournaments and won three of five</p></article>
+        <article class="fa-stat"><span class="fa-stat-number">2026–2027</span><p class="fa-stat-label">10U KOSA Tournament Finalist — the team's first finalist placement</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="fa-advance" aria-labelledby="fa-advance-title">
+    <div class="fa-wrap fa-advance-grid">
+      <div><span class="fa-eyebrow">Advance</span><h2 class="fa-heading" id="fa-advance-title">Prepare for whatever comes <span class="fa-heading-accent">next.</span></h2><span class="fa-advance-tag">The Fury Pathway</span></div>
+      <div class="fa-advance-copy">
+        <p>Fury players have gone on to national team opportunities, college soccer, and professional soccer opportunities in Germany, Canada, and Australia. These paths show what preparation can make possible; they are not a promise that every player will reach the same destination.</p>
+        <p>The 2025–2026 season marks Fury's first high school graduating class. Fury is no longer only developing young players—the club is now seeing players reach the point where preparation for the next stage becomes a central responsibility.</p>
+        <p>From freshman through senior year, Fury helps high school players understand college recruitment, build player profiles, use platforms such as FieldLevel, create recruiting video, use Trace resources, market themselves, contact college coaches, and present themselves to higher levels of competition. The goal is to provide these resources at the lowest practical cost possible.</p>
+        <ul class="fa-advance-list"><li>High school soccer</li><li>College soccer</li><li>National team opportunities</li><li>Professional opportunities</li><li>Another level of competition</li><li>Growth as a player and person</li></ul>
+        <p class="fa-advance-quote">Fury prepares the player for the next opportunity. The destination may be different for every player.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="fa-details" aria-label="Affiliation and training location">
+    <div class="fa-wrap fa-detail-grid">
+      <article class="fa-detail"><span class="fa-eyebrow">Connected to the Game</span><h2 class="fa-card-title">US Club Soccer</h2><p>Fayetteville Fury is a US Club Soccer affiliate/member club, connecting our organization to a national soccer structure while supporting our player-development focus.</p></article>
+      <article class="fa-detail"><span class="fa-eyebrow">Primary Training Location</span><h2 class="fa-card-title">Jordan Soccer Complex</h2><p><strong>Field 8</strong></p></article>
+    </div>
+  </section>
+
+  <section class="fa-leadership" aria-labelledby="fa-leadership-title">
+    <div class="fa-wrap fa-leader-grid">
+      <div class="fa-portrait"><img src="PHIL_IMAGE_URL" alt="Phil Lin, owner and CEO of Fayetteville Fury"></div>
+      <div class="fa-leader-copy"><span class="fa-eyebrow">Leadership</span><h2 class="fa-name" id="fa-leadership-title">Phil Lin</h2><p class="fa-role">Owner &amp; CEO</p><p>Phil Lin is the owner and CEO of Fayetteville Fury, guiding the organization as it builds a youth soccer environment centered on purposeful development, meaningful competition, and opportunity.</p></div>
+    </div>
+  </section>
+
+  <section class="fa-access" aria-labelledby="fa-access-title">
+    <div class="fa-wrap fa-access-grid">
+      <div><span class="fa-eyebrow">Nonprofit &amp; Community Access</span><h2 class="fa-heading" id="fa-access-title">Built to give players <span class="fa-heading-accent">a chance.</span></h2></div>
+      <div class="fa-access-copy">
+        <p>Fayetteville Fury is a nonprofit youth soccer organization. We believe soccer should be accessible to young players who want the opportunity to develop.</p>
+        <p>Financial assistance may be available to qualifying families based on financial need and available scholarship funding.</p>
+        <div class="fa-button-row"><a class="fa-button" href="SCHOLARSHIP_FORM_URL" target="_blank" rel="noopener noreferrer">Financial Assistance Form</a></div>
+        <div class="fa-support-note"><strong>Community Support</strong><span>Fury's nonprofit operation is supported by Catering by Design, a company owned by Phil Lin. Support from the organization's ownership and affiliated business interests helps sustain the nonprofit mission and its commitment to accessible development.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fa-cta" aria-labelledby="fa-cta-title">
+    <div class="fa-wrap fa-cta-inner">
+      <span class="fa-eyebrow">Take the Next Step</span>
+      <h2 class="fa-heading" id="fa-cta-title">Ready for the next challenge?</h2>
+      <div class="fa-button-row">
+        <a class="fa-button" href="/nxt">Explore Fury NXT</a>
+        <a class="fa-button fa-button-outline" href="/player-development">Player Development</a>
+        <a class="fa-button fa-button-outline" href="/tournaments">Explore Tournaments</a>
+      </div>
+    </div>
+  </section>
+</main>
