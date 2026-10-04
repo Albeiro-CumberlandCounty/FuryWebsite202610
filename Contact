@@ -1,0 +1,278 @@
+<style>
+/* Fayetteville Fury — Contact page */
+.fury-contact,
+.fury-contact * { box-sizing: border-box; }
+
+.fury-contact {
+    --fc-orange: #f15a24;
+    --fc-orange-bright: #ff6b2c;
+    --fc-ink: #070707;
+    --fc-panel: #121212;
+    --fc-line: #343434;
+    --fc-white: #fff;
+    --fc-muted: #bcbcbc;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    width: 100%;
+    padding: clamp(54px, 8vw, 92px) 0;
+    background:
+        radial-gradient(circle at 92% 8%, rgba(241, 90, 36, .22), transparent 30%),
+        linear-gradient(135deg, #050505 0%, #0c0c0c 62%, #160904 100%);
+    color: var(--fc-white) !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.fury-contact::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    opacity: .28;
+    background-image: repeating-linear-gradient(120deg, transparent 0 42px, rgba(255,255,255,.035) 42px 43px);
+    pointer-events: none;
+}
+
+.fc-wrap {
+    width: min(1080px, calc(100% - 36px));
+    margin: 0 auto;
+}
+
+.fc-layout {
+    display: grid;
+    grid-template-columns: minmax(0, .8fr) minmax(440px, 1.2fr);
+    gap: clamp(34px, 6vw, 78px);
+    align-items: center;
+}
+
+.fc-kicker {
+    display: inline-flex;
+    gap: 9px;
+    align-items: center;
+    margin: 0 0 15px !important;
+    color: var(--fc-orange-bright) !important;
+    font-size: 13px !important;
+    font-weight: 900 !important;
+    letter-spacing: 2.2px !important;
+    text-transform: uppercase !important;
+}
+
+.fc-kicker::before { content: ""; width: 30px; height: 3px; background: currentColor; }
+
+.fury-contact h1 {
+    max-width: 520px;
+    margin: 0 0 20px !important;
+    color: var(--fc-white) !important;
+    font: 900 clamp(42px, 6vw, 68px)/.98 Arial, Helvetica, sans-serif !important;
+    letter-spacing: -2.2px !important;
+    text-transform: uppercase !important;
+}
+
+.fury-contact h1 span { color: var(--fc-orange) !important; }
+
+.fc-intro {
+    max-width: 480px;
+    margin: 0 0 28px !important;
+    color: #dedede !important;
+    font-size: 18px !important;
+    line-height: 1.65 !important;
+}
+
+.fc-email {
+    display: inline-flex !important;
+    gap: 11px;
+    align-items: center;
+    color: var(--fc-white) !important;
+    font-size: 15px !important;
+    font-weight: 800 !important;
+    text-decoration: none !important;
+}
+
+.fc-email:hover { color: var(--fc-orange-bright) !important; }
+.fc-email svg { width: 21px; color: var(--fc-orange); }
+
+.fc-card {
+    padding: clamp(25px, 4vw, 42px);
+    border: 1px solid var(--fc-line);
+    border-top: 4px solid var(--fc-orange);
+    border-radius: 3px 3px 18px 18px;
+    background: rgba(18, 18, 18, .94);
+    box-shadow: 0 24px 70px rgba(0, 0, 0, .42);
+}
+
+.fc-card h2 {
+    margin: 0 0 7px !important;
+    color: var(--fc-white) !important;
+    font: 900 clamp(25px, 3vw, 32px)/1.1 Arial, Helvetica, sans-serif !important;
+    text-transform: uppercase !important;
+}
+
+.fc-card-copy { margin: 0 0 25px !important; color: var(--fc-muted) !important; font-size: 14px !important; }
+
+.fc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.fc-field { display: flex; flex-direction: column; gap: 7px; }
+.fc-field-full { grid-column: 1 / -1; }
+
+.fury-contact label {
+    color: #f4f4f4 !important;
+    font-size: 12px !important;
+    font-weight: 900 !important;
+    letter-spacing: .7px !important;
+    text-transform: uppercase !important;
+}
+
+.fury-contact input,
+.fury-contact select,
+.fury-contact textarea {
+    width: 100% !important;
+    min-height: 50px !important;
+    margin: 0 !important;
+    padding: 13px 15px !important;
+    border: 1px solid #464646 !important;
+    border-radius: 7px !important;
+    outline: none !important;
+    background: #090909 !important;
+    color: var(--fc-white) !important;
+    font: 16px/1.35 Arial, Helvetica, sans-serif !important;
+    box-shadow: none !important;
+    transition: border-color .18s ease, box-shadow .18s ease, background .18s ease;
+}
+
+.fury-contact select { color-scheme: dark; cursor: pointer; }
+.fury-contact textarea { min-height: 132px !important; resize: vertical; }
+.fury-contact input::placeholder,
+.fury-contact textarea::placeholder { color: #7e7e7e !important; opacity: 1; }
+
+.fury-contact input:focus,
+.fury-contact select:focus,
+.fury-contact textarea:focus {
+    border-color: var(--fc-orange) !important;
+    background: #0d0d0d !important;
+    box-shadow: 0 0 0 3px rgba(241, 90, 36, .18) !important;
+}
+
+.fc-honeypot { position: absolute !important; left: -9999px !important; }
+
+.fc-submit {
+    display: inline-flex !important;
+    width: 100% !important;
+    min-height: 54px !important;
+    margin-top: 22px !important;
+    padding: 14px 22px !important;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 2px solid var(--fc-orange) !important;
+    border-radius: 7px !important;
+    background: var(--fc-orange) !important;
+    color: #090909 !important;
+    cursor: pointer;
+    font: 900 14px/1 Arial, Helvetica, sans-serif !important;
+    letter-spacing: .8px !important;
+    text-transform: uppercase !important;
+    transition: transform .18s ease, background .18s ease, border-color .18s ease;
+}
+
+.fc-submit:hover,
+.fc-submit:focus-visible {
+    border-color: var(--fc-white) !important;
+    background: var(--fc-white) !important;
+    transform: translateY(-2px);
+}
+
+.fc-submit:focus-visible { outline: 3px solid var(--fc-orange) !important; outline-offset: 3px !important; }
+.fc-submit svg { width: 18px; transition: transform .18s ease; }
+.fc-submit:hover svg { transform: translateX(3px); }
+
+.fc-note { margin: 13px 0 0 !important; color: #939393 !important; font-size: 12px !important; line-height: 1.45 !important; text-align: center; }
+
+@media (max-width: 820px) {
+    .fc-layout { grid-template-columns: 1fr; }
+    .fc-copy { text-align: center; }
+    .fc-kicker, .fc-email { justify-content: center; }
+    .fury-contact h1, .fc-intro { margin-left: auto !important; margin-right: auto !important; }
+}
+
+@media (max-width: 540px) {
+    .fury-contact { padding: 45px 0; }
+    .fc-wrap { width: min(100% - 24px, 1080px); }
+    .fc-grid { grid-template-columns: 1fr; gap: 15px; }
+    .fc-field-full { grid-column: auto; }
+    .fc-card { padding: 24px 18px; border-radius: 3px 3px 13px 13px; }
+    .fury-contact h1 { font-size: 42px !important; letter-spacing: -1.5px !important; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fury-contact *, .fury-contact *::before, .fury-contact *::after { transition: none !important; }
+}
+</style>
+
+<section class="fury-contact" aria-labelledby="contact-title">
+    <div class="fc-wrap">
+        <div class="fc-layout">
+            <div class="fc-copy">
+                <p class="fc-kicker">Let&rsquo;s connect</p>
+                <h1 id="contact-title">Talk to the <span>Fury.</span></h1>
+                <p class="fc-intro">Have a question about tickets, teams, partnerships, or anything Fury? Send us a note and our team will get back to you soon.</p>
+                <a class="fc-email" href="mailto:info@fayettevillefury.com">
+                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="m4 6 8 7 8-7"/></svg>
+                    info@fayettevillefury.com
+                </a>
+            </div>
+
+            <div class="fc-card">
+                <h2>Send us a message</h2>
+                <p class="fc-card-copy">All fields marked with an asterisk are required.</p>
+
+                <form action="https://formsubmit.co/info@fayettevillefury.com" method="POST">
+                    <input type="hidden" name="_subject" value="New message from the Fayetteville Fury website">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <label class="fc-honeypot" for="fc-company">Company website</label>
+                    <input class="fc-honeypot" id="fc-company" type="text" name="_honey" tabindex="-1" autocomplete="off">
+
+                    <div class="fc-grid">
+                        <div class="fc-field">
+                            <label for="fc-first-name">First name *</label>
+                            <input id="fc-first-name" name="First name" type="text" autocomplete="given-name" placeholder="First name" required>
+                        </div>
+                        <div class="fc-field">
+                            <label for="fc-last-name">Last name *</label>
+                            <input id="fc-last-name" name="Last name" type="text" autocomplete="family-name" placeholder="Last name" required>
+                        </div>
+                        <div class="fc-field">
+                            <label for="fc-email">Email *</label>
+                            <input id="fc-email" name="Email" type="email" autocomplete="email" placeholder="you@example.com" required>
+                        </div>
+                        <div class="fc-field">
+                            <label for="fc-phone">Phone</label>
+                            <input id="fc-phone" name="Phone" type="tel" autocomplete="tel" placeholder="(910) 555-0123">
+                        </div>
+                        <div class="fc-field fc-field-full">
+                            <label for="fc-topic">What can we help with? *</label>
+                            <select id="fc-topic" name="Topic" required>
+                                <option value="" selected disabled>Choose a topic</option>
+                                <option>General question</option>
+                                <option>Tickets &amp; game day</option>
+                                <option>Youth programs</option>
+                                <option>Partnerships</option>
+                                <option>Media inquiry</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="fc-field fc-field-full">
+                            <label for="fc-message">Message *</label>
+                            <textarea id="fc-message" name="Message" placeholder="How can we help?" required></textarea>
+                        </div>
+                    </div>
+
+                    <button class="fc-submit" type="submit">
+                        Send message
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </button>
+                    <p class="fc-note">Your message will be delivered to info@fayettevillefury.com.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
