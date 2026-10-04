@@ -1,0 +1,6 @@
+<!-- SoccerShift Resources submenu: retain the existing Resources parent item. -->
+<ul aria-label="Resources submenu">
+  <li><a href="https://sportsbase.com/playercontact_onboarding/1742225433183x760466384722329600">Player Registration</a></li>
+  <li><a href="/scholarshipformurl">Financial Assistance</a></li>
+  <li><a href="/code-of-conduct">Code of Conduct</a></li>
+</ul>
