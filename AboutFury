@@ -420,7 +420,7 @@
 
   <section class="fa-leadership" aria-labelledby="fa-leadership-title">
     <div class="fa-wrap fa-leader-grid">
-      <div class="fa-portrait"><img src="PHIL_IMAGE_URL" alt="Phil Lin, owner and CEO of Fayetteville Fury"></div>
+      <div class="fa-portrait"><img src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-045d205f-4671-47bc-a983-ab4b3beca4a4/1791088259-full.png" alt="Phil Lin, owner and CEO of Fayetteville Fury"></div>
       <div class="fa-leader-copy"><span class="fa-eyebrow">Leadership</span><h2 class="fa-name" id="fa-leadership-title">Phil Lin</h2><p class="fa-role">Owner &amp; CEO</p><p>Phil Lin is the owner and CEO of Fayetteville Fury, guiding the organization as it builds a youth soccer environment centered on purposeful development, meaningful competition, and opportunity.</p></div>
     </div>
   </section>
