@@ -210,6 +210,158 @@
   font-size: 19px !important;
 }
 
+/* COACHING CREDENTIALS */
+.fury-coaching-staff .fcs-credentials {
+  margin: 0 !important;
+  padding: 104px 0 !important;
+  background: var(--fcs-black) !important;
+}
+
+.fury-coaching-staff .fcs-credentials-header {
+  display: grid !important;
+  grid-template-columns: minmax(0, .9fr) minmax(320px, .7fr) !important;
+  gap: clamp(44px, 8vw, 104px) !important;
+  align-items: end !important;
+  margin: 0 0 48px !important;
+}
+
+.fury-coaching-staff .fcs-credentials-copy {
+  margin: 0 !important;
+  padding: 0 !important;
+  color: var(--fcs-muted) !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  line-height: 1.7 !important;
+}
+
+.fury-coaching-staff .fcs-credentials-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  margin: 0 !important;
+  border-top: 1px solid var(--fcs-border) !important;
+  border-bottom: 1px solid var(--fcs-border) !important;
+  border-left: 1px solid var(--fcs-border) !important;
+  background: var(--fcs-dark) !important;
+}
+
+.fury-coaching-staff .fcs-credential {
+  position: relative !important;
+  min-width: 0 !important;
+  min-height: 330px !important;
+  margin: 0 !important;
+  padding: 34px 27px 38px !important;
+  overflow: hidden !important;
+  border-right: 1px solid var(--fcs-border) !important;
+  background: var(--fcs-dark) !important;
+  transition: background-color .2s ease, border-color .2s ease !important;
+}
+
+.fury-coaching-staff .fcs-credential::after {
+  content: "" !important;
+  position: absolute !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  height: 4px !important;
+  background: var(--fcs-orange) !important;
+  transform: scaleX(0) !important;
+  transform-origin: left center !important;
+  transition: transform .2s ease !important;
+}
+
+.fury-coaching-staff .fcs-credential:hover,
+.fury-coaching-staff .fcs-credential:focus-within {
+  background: #18110e !important;
+}
+
+.fury-coaching-staff .fcs-credential:hover::after,
+.fury-coaching-staff .fcs-credential:focus-within::after {
+  transform: scaleX(1) !important;
+}
+
+.fury-coaching-staff .fcs-credential-icon {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 66px !important;
+  height: 66px !important;
+  margin: 0 0 29px !important;
+  border: 2px solid var(--fcs-orange) !important;
+  color: var(--fcs-orange-bright) !important;
+}
+
+.fury-coaching-staff .fcs-credential-icon-svg {
+  display: block !important;
+  width: 34px !important;
+  height: 34px !important;
+  fill: none !important;
+  stroke: currentColor !important;
+  stroke-width: 1.8 !important;
+  stroke-linecap: square !important;
+  stroke-linejoin: miter !important;
+}
+
+.fury-coaching-staff .fcs-credential-title {
+  display: block !important;
+  margin: 0 0 15px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  color: var(--fcs-orange-bright) !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 19px !important;
+  font-weight: 900 !important;
+  line-height: 1.15 !important;
+  letter-spacing: -.01em !important;
+  text-transform: uppercase !important;
+}
+
+.fury-coaching-staff .fcs-credential-copy {
+  margin: 0 !important;
+  padding: 0 !important;
+  color: var(--fcs-muted) !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  line-height: 1.65 !important;
+}
+
+.fury-coaching-staff .fcs-coach-cta {
+  margin: 54px 0 0 !important;
+  padding: 45px 40px 48px !important;
+  border: 1px solid var(--fcs-border) !important;
+  border-left: 7px solid var(--fcs-orange) !important;
+  background: var(--fcs-dark) !important;
+  text-align: center !important;
+}
+
+.fury-coaching-staff .fcs-coach-cta-title {
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  color: var(--fcs-white) !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: clamp(32px, 4vw, 50px) !important;
+  font-weight: 900 !important;
+  line-height: 1 !important;
+  letter-spacing: -.035em !important;
+  text-transform: uppercase !important;
+}
+
+.fury-coaching-staff .fcs-coach-cta-copy {
+  max-width: 740px !important;
+  margin: 20px auto 28px !important;
+  padding: 0 !important;
+  color: var(--fcs-muted) !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 17px !important;
+  font-weight: 400 !important;
+  line-height: 1.65 !important;
+}
+
 /* STAFF */
 .fury-coaching-staff .fcs-team {
   margin: 0 !important;
@@ -434,6 +586,7 @@
   }
 
   .fury-coaching-staff .fcs-intro-grid,
+  .fury-coaching-staff .fcs-credentials-header,
   .fury-coaching-staff .fcs-team-header,
   .fury-coaching-staff .fcs-philosophy-header {
     grid-template-columns: 1fr !important;
@@ -442,6 +595,19 @@
 
   .fury-coaching-staff .fcs-team-header .fcs-copy {
     justify-self: start !important;
+  }
+
+  .fury-coaching-staff .fcs-credentials-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .fury-coaching-staff .fcs-credential {
+    border-bottom: 1px solid var(--fcs-border) !important;
+  }
+
+  .fury-coaching-staff .fcs-credential:nth-child(3),
+  .fury-coaching-staff .fcs-credential:nth-child(4) {
+    border-bottom: 0 !important;
   }
 
   .fury-coaching-staff .fcs-grid {
@@ -482,6 +648,7 @@
   }
 
   .fury-coaching-staff .fcs-intro,
+  .fury-coaching-staff .fcs-credentials,
   .fury-coaching-staff .fcs-team,
   .fury-coaching-staff .fcs-philosophy,
   .fury-coaching-staff .fcs-cta {
@@ -492,6 +659,24 @@
   .fury-coaching-staff .fcs-grid {
     grid-template-columns: 1fr !important;
     gap: 20px !important;
+  }
+
+  .fury-coaching-staff .fcs-credentials-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .fury-coaching-staff .fcs-credential,
+  .fury-coaching-staff .fcs-credential:nth-child(3) {
+    min-height: 0 !important;
+    border-bottom: 1px solid var(--fcs-border) !important;
+  }
+
+  .fury-coaching-staff .fcs-credential:nth-child(4) {
+    border-bottom: 0 !important;
+  }
+
+  .fury-coaching-staff .fcs-coach-cta {
+    padding: 38px 22px 40px !important;
   }
 
   .fury-coaching-staff .fcs-card {
@@ -512,7 +697,9 @@
 
 @media (prefers-reduced-motion: reduce) {
   .fury-coaching-staff .fcs-button,
-  .fury-coaching-staff .fcs-card-image {
+  .fury-coaching-staff .fcs-card-image,
+  .fury-coaching-staff .fcs-credential,
+  .fury-coaching-staff .fcs-credential::after {
     transition: none !important;
   }
 }
@@ -544,6 +731,77 @@
       <p class="fcs-intro-copy">
         Fury is committed to creating a positive, player-first environment. Our staff helps players build technical ability, understand the game, grow in confidence and prepare for the next appropriate challenge in their soccer journey.
       </p>
+    </div>
+  </section>
+
+  <section class="fcs-credentials" aria-labelledby="fcs-credentials-title">
+    <div class="fcs-wrap">
+      <header class="fcs-credentials-header">
+        <div>
+          <span class="fcs-eyebrow">Coaching with Confidence</span>
+          <h2 class="fcs-heading" id="fcs-credentials-title">
+            Coaches You<br>
+            <span class="fcs-heading-accent">Can Trust.</span>
+          </h2>
+        </div>
+        <p class="fcs-credentials-copy">
+          Our coaches are committed to creating a safe, professional and player-first environment. Every Fury coach meets our coaching and safety standards so players and families can focus on development, competition and enjoying the game.
+        </p>
+      </header>
+
+      <div class="fcs-credentials-grid">
+        <article class="fcs-credential">
+          <span class="fcs-credential-icon" aria-hidden="true">
+            <svg class="fcs-credential-icon-svg" viewBox="0 0 40 40" focusable="false">
+              <circle cx="20" cy="17" r="10"></circle>
+              <path d="M15 17l3.5 3.5L25.5 13"></path>
+              <path d="M14 25l-2 10 8-4 8 4-2-10"></path>
+            </svg>
+          </span>
+          <h3 class="fcs-credential-title">U.S. Soccer Certified</h3>
+          <p class="fcs-credential-copy">Coaches with formal soccer education and certification focused on player development and the game.</p>
+        </article>
+
+        <article class="fcs-credential">
+          <span class="fcs-credential-icon" aria-hidden="true">
+            <svg class="fcs-credential-icon-svg" viewBox="0 0 40 40" focusable="false">
+              <path d="M20 4l13 5v9c0 8.2-5.1 14.2-13 18-7.9-3.8-13-9.8-13-18V9l13-5z"></path>
+              <path d="M13.5 19.5l4.2 4.2 9-9"></path>
+            </svg>
+          </span>
+          <h3 class="fcs-credential-title">Background Checked</h3>
+          <p class="fcs-credential-copy">Coaches are background checked as part of our commitment to providing a safe environment for players.</p>
+        </article>
+
+        <article class="fcs-credential">
+          <span class="fcs-credential-icon" aria-hidden="true">
+            <svg class="fcs-credential-icon-svg" viewBox="0 0 40 40" focusable="false">
+              <path d="M20 4l13 5v9c0 8.2-5.1 14.2-13 18-7.9-3.8-13-9.8-13-18V9l13-5z"></path>
+              <path d="M13 19h14M20 12v14"></path>
+            </svg>
+          </span>
+          <h3 class="fcs-credential-title">Insured</h3>
+          <p class="fcs-credential-copy">Fury operates with appropriate insurance coverage supporting our coaching and soccer activities.</p>
+        </article>
+
+        <article class="fcs-credential">
+          <span class="fcs-credential-icon" aria-hidden="true">
+            <svg class="fcs-credential-icon-svg" viewBox="0 0 40 40" focusable="false">
+              <path d="M20 35S7 28.5 7 16.5C7 10 14.5 7 20 13c5.5-6 13-3 13 3.5C33 28.5 20 35 20 35z"></path>
+              <path d="M14 19h4l2-4 3 8 2-4h3"></path>
+            </svg>
+          </span>
+          <h3 class="fcs-credential-title">SafeSport Certified</h3>
+          <p class="fcs-credential-copy">Coaches complete SafeSport training as part of our commitment to athlete safety and responsible coaching.</p>
+        </article>
+      </div>
+
+      <aside class="fcs-coach-cta" aria-labelledby="fcs-coach-cta-title">
+        <span class="fcs-eyebrow">Want to Coach with Fury?</span>
+        <h3 class="fcs-coach-cta-title" id="fcs-coach-cta-title">Join the Fury Staff.</h3>
+        <p class="fcs-coach-cta-copy">We're always interested in coaches who believe in developing players, building confidence and creating a positive environment for athletes and families.</p>
+        <a class="fcs-button" href="mailto:info@fayettevillefury.com?subject=Fayetteville%20Fury%20Coaching%20Interest">Join Our Coaching Staff</a>
+      </aside>
     </div>
   </section>
 
@@ -605,9 +863,8 @@
             <img class="fcs-card-image" src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-a2e41713-318e-4392-8cc5-21f3c1be26eb/1790801714-full.png" alt="Ann Marie Chao, Fayetteville Fury Director and 14U coach" loading="lazy">
           </div>
           <div class="fcs-card-info">
-            <h3 class="fcs-card-name">Coach Ann Marie</h3>
-            <p class="fcs-card-role">14U Coach</p>
-            <p class="fcs-card-role">Nxt Director</p>			
+            <h3 class="fcs-card-name">Ann Marie Chao</h3>
+            <p class="fcs-card-role">Director · 14U Coach</p>
           </div>
         </article>
 
@@ -616,8 +873,8 @@
             <img class="fcs-card-image" src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-2b528d21-f1ce-4666-b8a5-f60f14138613/1791083979-full.png" alt="Miguel Sanchez, Fayetteville Fury 16U coach" loading="lazy">
           </div>
           <div class="fcs-card-info">
-            <h3 class="fcs-card-name">Coach Miguel</h3>
-            <p class="fcs-card-role">16U, 18U &amp; 19U Coach</p>
+            <h3 class="fcs-card-name">Miguel Sanchez</h3>
+            <p class="fcs-card-role">16U Coach</p>
           </div>
         </article>
 
@@ -626,9 +883,8 @@
             <img class="fcs-card-image" src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-03773bf5-1e64-424c-9845-d546d81f40cf/1790801716-full.png" alt="Al Florez, Fayetteville Fury coach for 18U and 19U" loading="lazy">
           </div>
           <div class="fcs-card-info">
-            <h3 class="fcs-card-name">Coach Al</h3>
-            <p class="fcs-card-role">16U, 18U &amp; 19U Coach</p>
-            <p class="fcs-card-role">Club Senior Advisor</p>				
+            <h3 class="fcs-card-name">Al Florez</h3>
+            <p class="fcs-card-role">18U &amp; 19U Coach</p>
           </div>
         </article>
 
