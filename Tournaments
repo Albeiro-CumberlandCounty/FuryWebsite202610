@@ -33,6 +33,9 @@
 .fury-tournaments h1,
 .fury-tournaments h2,
 .fury-tournaments h3,
+.fury-tournaments h4,
+.fury-tournaments h5,
+.fury-tournaments h6,
 .fury-tournaments p,
 .fury-tournaments ul {
   margin-top: 0 !important;
@@ -40,7 +43,22 @@
 
 .fury-tournaments h1,
 .fury-tournaments h2,
-.fury-tournaments h3 {
+.fury-tournaments h3,
+.fury-tournaments h4,
+.fury-tournaments h5,
+.fury-tournaments h6 {
+  color: var(--ft-white) !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-weight: 900 !important;
+  line-height: 1.02 !important;
+  letter-spacing: -0.035em !important;
+  text-transform: uppercase !important;
+}
+
+/* SoccerShift may normalize heading elements to h4/h5.
+   Keep the visual treatment tied to the Fury classes, not the HTML tag. */
+.fury-tournaments .ft-title,
+.fury-tournaments .ft-heading {
   color: var(--ft-white) !important;
   font-family: Arial, Helvetica, sans-serif !important;
   font-weight: 900 !important;
