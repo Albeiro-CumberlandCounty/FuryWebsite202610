@@ -167,7 +167,7 @@
   z-index: -2 !important;
   background:
     linear-gradient(90deg, rgba(0,0,0,.94) 0%, rgba(0,0,0,.7) 48%, rgba(0,0,0,.24) 100%),
-    url("https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-9d59acd8-30c2-4df4-b013-60b794d91640/1790802955-full.png") center 35% / cover no-repeat !important;
+    url("https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-ebbe2934-9682-40f1-b92c-c2ac6c4bac76/1791077727-full.jpg?utm_source=chatgpt.com") center 35% / cover no-repeat !important;
 }
 
 .fury-tournaments .ft-hero::after {
@@ -460,7 +460,7 @@
   .fury-tournaments .ft-hero::before {
     background:
       linear-gradient(0deg, rgba(0,0,0,.96) 0%, rgba(0,0,0,.55) 75%, rgba(0,0,0,.25) 100%),
-      url("https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-9d59acd8-30c2-4df4-b013-60b794d91640/1790802955-full.png") center / cover no-repeat !important;
+      url("https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-ebbe2934-9682-40f1-b92c-c2ac6c4bac76/1791077727-full.jpg?utm_source=chatgpt.com") center / cover no-repeat !important;
   }
 
   .fury-tournaments .ft-why,
@@ -614,7 +614,7 @@
   <section class="ft-experience" aria-labelledby="ft-experience-title">
     <div class="ft-experience-image">
       <img
-        src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-f381cae9-5025-4a44-b3d3-4a1edeb71692/1791068282-full.png"
+        src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-6ff9402e-428e-4fd9-b512-336aad6b0ddf/1791077727-full.jpg?utm_source=chatgpt.com"
         alt="Fayetteville Fury youth soccer players competing together at a tournament"
         loading="lazy">
     </div>
