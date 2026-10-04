@@ -1,0 +1,679 @@
+<style>
+/* =========================================================
+   FAYETTEVILLE FURY NXT — TOURNAMENTS
+   All rules are isolated from the SoccerShift theme.
+   ========================================================= */
+
+.fury-tournaments,
+.fury-tournaments *,
+.fury-tournaments *::before,
+.fury-tournaments *::after {
+  box-sizing: border-box !important;
+}
+
+.fury-tournaments {
+  --ft-orange: #ff5a1f;
+  --ft-black: #080808;
+  --ft-dark: #111111;
+  --ft-card: #181818;
+  --ft-white: #ffffff;
+  --ft-muted: #d0d0d0;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  background: var(--ft-black) !important;
+  color: var(--ft-white) !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 17px !important;
+  line-height: 1.6 !important;
+}
+
+.fury-tournaments p,
+.fury-tournaments ul {
+  margin-top: 0 !important;
+}
+
+.fury-tournaments .ft-title,
+.fury-tournaments .ft-heading,
+.fury-tournaments .ft-card-title {
+  display: block !important;
+  margin-top: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  color: var(--ft-white) !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-weight: 900 !important;
+  line-height: 1.02 !important;
+  letter-spacing: -0.035em !important;
+  text-shadow: none !important;
+  text-transform: uppercase !important;
+}
+
+.fury-tournaments p,
+.fury-tournaments li {
+  color: var(--ft-muted) !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.fury-tournaments img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.fury-tournaments .ft-wrap {
+  width: min(1120px, calc(100% - 48px)) !important;
+  margin: 0 auto !important;
+}
+
+.fury-tournaments .ft-eyebrow {
+  display: block !important;
+  margin: 0 0 13px !important;
+  color: var(--ft-orange) !important;
+  font-size: 13px !important;
+  line-height: 1.3 !important;
+  font-weight: 900 !important;
+  letter-spacing: 2.4px !important;
+  text-transform: uppercase !important;
+}
+
+.fury-tournaments .ft-title {
+  margin: 0 0 22px !important;
+  font-size: clamp(38px, 6vw, 72px) !important;
+}
+
+.fury-tournaments .ft-title span,
+.fury-tournaments .ft-heading span {
+  color: var(--ft-orange) !important;
+}
+
+.fury-tournaments .ft-heading {
+  margin: 0 0 20px !important;
+  font-size: clamp(31px, 4.5vw, 52px) !important;
+}
+
+.fury-tournaments .ft-copy {
+  max-width: 760px !important;
+  margin-bottom: 0 !important;
+  font-size: 18px !important;
+  line-height: 1.7 !important;
+}
+
+.fury-tournaments .ft-button-row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+  margin-top: 30px !important;
+}
+
+.fury-tournaments .ft-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 54px !important;
+  padding: 16px 27px !important;
+  background: var(--ft-orange) !important;
+  color: var(--ft-black) !important;
+  border: 2px solid var(--ft-orange) !important;
+  border-radius: 0 !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1 !important;
+  font-weight: 900 !important;
+  letter-spacing: 1.1px !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+  transition: background-color .2s ease, border-color .2s ease, color .2s ease, transform .2s ease !important;
+}
+
+.fury-tournaments .ft-button-outline {
+  background: transparent !important;
+  color: var(--ft-white) !important;
+}
+
+.fury-tournaments .ft-button:hover,
+.fury-tournaments .ft-button:focus-visible {
+  background: var(--ft-white) !important;
+  color: var(--ft-black) !important;
+  border-color: var(--ft-white) !important;
+  text-decoration: none !important;
+  transform: translateY(-2px) !important;
+}
+
+.fury-tournaments .ft-button:focus-visible {
+  outline: 3px solid var(--ft-orange) !important;
+  outline-offset: 4px !important;
+}
+
+/* HERO */
+.fury-tournaments .ft-hero {
+  position: relative !important;
+  isolation: isolate !important;
+  min-height: min(760px, 82vh) !important;
+  display: flex !important;
+  align-items: flex-end !important;
+  padding: 100px 0 78px !important;
+  background: #0a0a0a !important;
+}
+
+.fury-tournaments .ft-hero::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: -2 !important;
+  background:
+    linear-gradient(90deg, rgba(0,0,0,.94) 0%, rgba(0,0,0,.7) 48%, rgba(0,0,0,.24) 100%),
+    url("https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-9d59acd8-30c2-4df4-b013-60b794d91640/1790802955-full.png") center 35% / cover no-repeat !important;
+}
+
+.fury-tournaments .ft-hero::after {
+  content: "" !important;
+  position: absolute !important;
+  right: -90px !important;
+  bottom: -64px !important;
+  z-index: -1 !important;
+  width: 410px !important;
+  height: 120px !important;
+  background: var(--ft-orange) !important;
+  transform: skewX(-36deg) !important;
+  opacity: .92 !important;
+}
+
+.fury-tournaments .ft-hero-content {
+  max-width: 830px !important;
+}
+
+.fury-tournaments .ft-hero .ft-title {
+  font-size: clamp(50px, 8vw, 94px) !important;
+}
+
+.fury-tournaments .ft-hero .ft-copy {
+  max-width: 700px !important;
+  color: var(--ft-white) !important;
+  font-size: clamp(18px, 2.2vw, 23px) !important;
+}
+
+/* WHY */
+.fury-tournaments .ft-why {
+  padding: 92px 0 !important;
+  background: var(--ft-dark) !important;
+}
+
+.fury-tournaments .ft-why-grid {
+  display: grid !important;
+  grid-template-columns: .8fr 1.2fr !important;
+  gap: clamp(45px, 8vw, 110px) !important;
+  align-items: start !important;
+}
+
+.fury-tournaments .ft-pressure-list {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 12px !important;
+  margin: 30px 0 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+.fury-tournaments .ft-pressure-list li {
+  padding: 18px 18px 18px 38px !important;
+  border-left: 3px solid var(--ft-orange) !important;
+  background: #1b1b1b !important;
+  color: var(--ft-white) !important;
+  font-size: 15px !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  position: relative !important;
+}
+
+.fury-tournaments .ft-pressure-list li::before {
+  content: "+" !important;
+  position: absolute !important;
+  left: 16px !important;
+  color: var(--ft-orange) !important;
+}
+
+/* MEANINGFUL COMPETITION */
+.fury-tournaments .ft-meaningful {
+  padding: 90px 0 !important;
+  background: var(--ft-black) !important;
+}
+
+.fury-tournaments .ft-section-intro {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 70px !important;
+  align-items: end !important;
+  margin-bottom: 48px !important;
+}
+
+.fury-tournaments .ft-section-intro .ft-copy {
+  font-size: 17px !important;
+}
+
+.fury-tournaments .ft-card-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 2px !important;
+  background: #353535 !important;
+}
+
+.fury-tournaments .ft-card {
+  min-height: 245px !important;
+  padding: 34px 28px !important;
+  background: var(--ft-card) !important;
+  border-top: 5px solid transparent !important;
+  transition: border-color .2s ease, background-color .2s ease !important;
+}
+
+.fury-tournaments .ft-card:hover {
+  border-top-color: var(--ft-orange) !important;
+  background: #202020 !important;
+}
+
+.fury-tournaments .ft-card-number {
+  display: block !important;
+  margin-bottom: 32px !important;
+  color: var(--ft-orange) !important;
+  font-size: 13px !important;
+  font-weight: 900 !important;
+  letter-spacing: 2px !important;
+}
+
+.fury-tournaments .ft-card-title {
+  margin-bottom: 13px !important;
+  font-size: 21px !important;
+  letter-spacing: 0 !important;
+}
+
+.fury-tournaments .ft-card p {
+  margin-bottom: 0 !important;
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+}
+
+/* EXPERIENCE */
+.fury-tournaments .ft-experience {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  background: var(--ft-dark) !important;
+}
+
+.fury-tournaments .ft-experience-image {
+  min-height: 650px !important;
+  overflow: hidden !important;
+}
+
+.fury-tournaments .ft-experience-image img {
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+.fury-tournaments .ft-experience-content {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  padding: clamp(55px, 8vw, 110px) !important;
+}
+
+.fury-tournaments .ft-experience-list {
+  margin: 28px 0 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+.fury-tournaments .ft-experience-list li {
+  padding: 13px 0 13px 28px !important;
+  border-bottom: 1px solid #393939 !important;
+  color: var(--ft-white) !important;
+  position: relative !important;
+}
+
+.fury-tournaments .ft-experience-list li::before {
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 24px !important;
+  width: 11px !important;
+  height: 3px !important;
+  background: var(--ft-orange) !important;
+}
+
+/* DEVELOPMENT MESSAGE */
+.fury-tournaments .ft-development {
+  padding: 104px 0 !important;
+  background:
+    linear-gradient(120deg, rgba(255,90,31,.13), transparent 40%),
+    var(--ft-black) !important;
+}
+
+.fury-tournaments .ft-development-inner {
+  display: grid !important;
+  grid-template-columns: .9fr 1.1fr !important;
+  gap: 80px !important;
+  align-items: center !important;
+}
+
+.fury-tournaments .ft-statement {
+  padding-left: 28px !important;
+  border-left: 6px solid var(--ft-orange) !important;
+}
+
+.fury-tournaments .ft-statement strong {
+  display: block !important;
+  margin-bottom: 18px !important;
+  color: var(--ft-white) !important;
+  font-size: clamp(22px, 3vw, 31px) !important;
+  line-height: 1.2 !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+}
+
+.fury-tournaments .ft-statement p {
+  margin-bottom: 0 !important;
+  font-size: 18px !important;
+}
+
+/* WHO IT IS FOR */
+.fury-tournaments .ft-for {
+  padding: 90px 0 !important;
+  background: var(--ft-orange) !important;
+}
+
+.fury-tournaments .ft-for .ft-eyebrow,
+.fury-tournaments .ft-for .ft-heading,
+.fury-tournaments .ft-for p {
+  color: var(--ft-black) !important;
+}
+
+.fury-tournaments .ft-for-grid {
+  display: grid !important;
+  grid-template-columns: .85fr 1.15fr !important;
+  gap: 80px !important;
+}
+
+.fury-tournaments .ft-audience-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 10px !important;
+}
+
+.fury-tournaments .ft-audience {
+  min-height: 88px !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 18px 22px !important;
+  background: var(--ft-black) !important;
+  color: var(--ft-white) !important;
+  font-size: 15px !important;
+  line-height: 1.3 !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+}
+
+/* FINAL CTA */
+.fury-tournaments .ft-cta {
+  padding: 100px 0 !important;
+  background: var(--ft-black) !important;
+  text-align: center !important;
+}
+
+.fury-tournaments .ft-cta .ft-copy {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+.fury-tournaments .ft-cta .ft-button-row {
+  justify-content: center !important;
+}
+
+@media (max-width: 900px) {
+  .fury-tournaments .ft-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .fury-tournaments .ft-experience-content {
+    padding: 60px 42px !important;
+  }
+
+  .fury-tournaments .ft-development-inner,
+  .fury-tournaments .ft-for-grid {
+    gap: 45px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .fury-tournaments .ft-wrap {
+    width: min(100% - 32px, 1120px) !important;
+  }
+
+  .fury-tournaments .ft-hero {
+    min-height: 610px !important;
+    padding: 78px 0 58px !important;
+  }
+
+  .fury-tournaments .ft-hero::before {
+    background:
+      linear-gradient(0deg, rgba(0,0,0,.96) 0%, rgba(0,0,0,.55) 75%, rgba(0,0,0,.25) 100%),
+      url("https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-9d59acd8-30c2-4df4-b013-60b794d91640/1790802955-full.png") center / cover no-repeat !important;
+  }
+
+  .fury-tournaments .ft-why,
+  .fury-tournaments .ft-meaningful,
+  .fury-tournaments .ft-development,
+  .fury-tournaments .ft-for,
+  .fury-tournaments .ft-cta {
+    padding: 66px 0 !important;
+  }
+
+  .fury-tournaments .ft-why-grid,
+  .fury-tournaments .ft-section-intro,
+  .fury-tournaments .ft-experience,
+  .fury-tournaments .ft-development-inner,
+  .fury-tournaments .ft-for-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .fury-tournaments .ft-why-grid,
+  .fury-tournaments .ft-section-intro,
+  .fury-tournaments .ft-development-inner,
+  .fury-tournaments .ft-for-grid {
+    gap: 32px !important;
+  }
+
+  .fury-tournaments .ft-section-intro {
+    margin-bottom: 34px !important;
+  }
+
+  .fury-tournaments .ft-experience-image {
+    min-height: 0 !important;
+    aspect-ratio: 16 / 10 !important;
+  }
+
+  .fury-tournaments .ft-experience-content {
+    padding: 56px 16px 66px !important;
+  }
+
+  .fury-tournaments .ft-experience-content > * {
+    width: min(100%, 560px) !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+
+  .fury-tournaments .ft-button {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .fury-tournaments .ft-pressure-list,
+  .fury-tournaments .ft-card-grid,
+  .fury-tournaments .ft-audience-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .fury-tournaments .ft-card {
+    min-height: 0 !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fury-tournaments .ft-button,
+  .fury-tournaments .ft-card {
+    transition: none !important;
+  }
+
+  .fury-tournaments .ft-button:hover {
+    transform: none !important;
+  }
+}
+</style>
+
+<main class="fury-tournaments">
+  <section class="ft-hero" aria-labelledby="ft-page-title">
+    <div class="ft-wrap">
+      <div class="ft-hero-content">
+        <span class="ft-eyebrow">Fayetteville Fury NXT Tournaments</span>
+        <div class="ft-title" id="ft-page-title" role="heading" aria-level="1">Compete With <span>Purpose.</span></div>
+        <p class="ft-copy">
+          Competition should challenge the player, not simply produce a result. Fury uses tournament competition as an extension of player development—giving players a place to test their skills, decisions and confidence when the game gets real.
+        </p>
+        <div class="ft-button-row">
+          <a class="ft-button" href="/nxt">Explore Fury NXT</a>
+          <a class="ft-button ft-button-outline" href="/player-development">Player Development</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ft-why" aria-labelledby="ft-why-title">
+    <div class="ft-wrap ft-why-grid">
+      <div>
+        <span class="ft-eyebrow">Why We Compete</span>
+        <div class="ft-heading" id="ft-why-title" role="heading" aria-level="2">Training Builds The Tools.</div>
+      </div>
+      <div>
+        <p class="ft-copy">
+          Competition gives players the opportunity to use those tools when the game is moving, the opponent has a plan and the next moment cannot be scripted. These are the moments that turn instruction into understanding.
+        </p>
+        <ul class="ft-pressure-list">
+          <li>Pressure increases</li>
+          <li>Opponents adapt</li>
+          <li>Decisions matter</li>
+          <li>The game changes</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="ft-meaningful" aria-labelledby="ft-meaningful-title">
+    <div class="ft-wrap">
+      <div class="ft-section-intro">
+        <div>
+          <span class="ft-eyebrow">Meaningful Competition</span>
+          <div class="ft-heading" id="ft-meaningful-title" role="heading" aria-level="2">Every Match Is A <span>Challenge.</span></div>
+        </div>
+        <p class="ft-copy">
+          The right competition asks more of a player. Quality opponents and different styles of play create new problems, reward brave decisions and reveal the next opportunity to grow.
+        </p>
+      </div>
+
+      <div class="ft-card-grid">
+        <article class="ft-card">
+          <span class="ft-card-number">01</span>
+          <div class="ft-card-title" role="heading" aria-level="3">Decision-Making</div>
+          <p>Recognize the moment, process options and choose a solution under pressure.</p>
+        </article>
+        <article class="ft-card">
+          <span class="ft-card-number">02</span>
+          <div class="ft-card-title" role="heading" aria-level="3">Adaptability</div>
+          <p>Respond to different opponents, game plans, spaces and styles of play.</p>
+        </article>
+        <article class="ft-card">
+          <span class="ft-card-number">03</span>
+          <div class="ft-card-title" role="heading" aria-level="3">Resilience</div>
+          <p>Meet adversity, learn from difficult moments and stay engaged in the game.</p>
+        </article>
+        <article class="ft-card">
+          <span class="ft-card-number">04</span>
+          <div class="ft-card-title" role="heading" aria-level="3">Confidence</div>
+          <p>Trust the work, take responsibility and develop competitive maturity.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="ft-experience" aria-labelledby="ft-experience-title">
+    <div class="ft-experience-image">
+      <img
+        src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-f381cae9-5025-4a44-b3d3-4a1edeb71692/1791068282-full.png"
+        alt="Fayetteville Fury youth soccer players competing together at a tournament"
+        loading="lazy">
+    </div>
+    <div class="ft-experience-content">
+      <span class="ft-eyebrow">The Tournament Experience</span>
+      <div class="ft-heading" id="ft-experience-title" role="heading" aria-level="2">Learn From Every <span>Match.</span></div>
+      <p class="ft-copy">
+        A tournament is more than a schedule of games. It is a connected experience that challenges players and teams to prepare, respond and improve over time.
+      </p>
+      <ul class="ft-experience-list">
+        <li>Prepare with focus and take responsibility</li>
+        <li>Face multiple opponents and new problems</li>
+        <li>Make team adjustments between matches</li>
+        <li>Learn from each performance</li>
+        <li>Apply those lessons to future training</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="ft-development" aria-labelledby="ft-development-title">
+    <div class="ft-wrap ft-development-inner">
+      <div>
+        <span class="ft-eyebrow">Development Through Competition</span>
+        <div class="ft-heading" id="ft-development-title" role="heading" aria-level="2">The Result Is Not The <span>Finish Line.</span></div>
+      </div>
+      <div class="ft-statement">
+        <strong>The objective is not simply to win a game.</strong>
+        <p>
+          The objective is to give players experiences that help them understand what they need to improve next. Fury takes those lessons back into training—turning each challenge into a clearer purpose and the next performance into another chance to progress.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="ft-for" aria-labelledby="ft-for-title">
+    <div class="ft-wrap ft-for-grid">
+      <div>
+        <span class="ft-eyebrow">Who Is It For?</span>
+        <div class="ft-heading" id="ft-for-title" role="heading" aria-level="2">Players Ready To Be <span>Challenged.</span></div>
+        <p class="ft-copy">For players and families who want development and competition to work together.</p>
+      </div>
+      <div class="ft-audience-grid" aria-label="Players and teams served">
+        <div class="ft-audience">Fury NXT Players</div>
+        <div class="ft-audience">Youth Players</div>
+        <div class="ft-audience">High School Players</div>
+        <div class="ft-audience">Competitive Teams</div>
+        <div class="ft-audience">Players Seeking Meaningful Competition</div>
+        <div class="ft-audience">Development-Focused Families</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ft-cta" aria-labelledby="ft-cta-title">
+    <div class="ft-wrap">
+      <span class="ft-eyebrow">Take The Next Step</span>
+      <div class="ft-heading" id="ft-cta-title" role="heading" aria-level="2">Ready To <span>Compete?</span></div>
+      <p class="ft-copy">Discover a player-first environment where purposeful training meets meaningful tournament competition.</p>
+      <div class="ft-button-row">
+        <a class="ft-button" href="/nxt">Explore Fury NXT</a>
+        <a class="ft-button ft-button-outline" href="/player-development">Player Development</a>
+        <a class="ft-button ft-button-outline" href="/register">Join Fury</a>
+      </div>
+    </div>
+  </section>
+</main>
