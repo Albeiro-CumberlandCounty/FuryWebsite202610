@@ -1,0 +1,254 @@
+<style>
+/* Fayetteville Fury Code of Conduct — all presentation is page-scoped. */
+.fury-conduct,
+.fury-conduct *,
+.fury-conduct *::before,
+.fury-conduct *::after { box-sizing: border-box !important; }
+
+.fury-conduct {
+  --fc-orange: #ff5a1f;
+  --fc-black: #050505;
+  --fc-dark: #101010;
+  --fc-card: #181818;
+  --fc-white: #ffffff;
+  --fc-muted: #d2d2d2;
+  --fc-border: #3b3b3b;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  background: var(--fc-black) !important;
+  color: var(--fc-white) !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 17px !important;
+  line-height: 1.7 !important;
+}
+
+.fury-conduct .fc-wrap { width: min(1120px, calc(100% - 48px)) !important; margin: 0 auto !important; }
+.fury-conduct .fc-reading { max-width: 820px !important; }
+.fury-conduct .fc-eyebrow { display: block !important; margin: 0 0 14px !important; color: var(--fc-orange) !important; font-size: 13px !important; line-height: 1.3 !important; font-weight: 900 !important; letter-spacing: 2.6px !important; text-transform: uppercase !important; }
+.fury-conduct .fc-title,
+.fury-conduct .fc-heading,
+.fury-conduct .fc-section-title,
+.fury-conduct .fc-subheading,
+.fury-conduct .fc-ack-title { margin: 0 !important; padding: 0 !important; border: 0 !important; background: transparent !important; color: var(--fc-white) !important; font-family: Arial, Helvetica, sans-serif !important; font-weight: 900 !important; text-shadow: none !important; text-transform: uppercase !important; }
+.fury-conduct .fc-title { max-width: 900px !important; font-size: clamp(48px, 8vw, 96px) !important; line-height: .95 !important; letter-spacing: -.045em !important; }
+.fury-conduct .fc-title span { color: var(--fc-orange) !important; }
+.fury-conduct .fc-heading { font-size: clamp(34px, 5vw, 58px) !important; line-height: 1 !important; letter-spacing: -.035em !important; }
+.fury-conduct .fc-section-title { font-size: clamp(27px, 3.5vw, 40px) !important; line-height: 1.08 !important; letter-spacing: -.025em !important; }
+.fury-conduct .fc-subheading { margin-top: 30px !important; font-size: 20px !important; line-height: 1.25 !important; letter-spacing: .01em !important; }
+.fury-conduct .fc-ack-title { font-size: clamp(28px, 4vw, 44px) !important; line-height: 1.05 !important; }
+.fury-conduct .fc-accent { width: 78px !important; height: 6px !important; margin: 25px 0 !important; background: var(--fc-orange) !important; transform: skewX(-30deg) !important; }
+.fury-conduct .fc-revision { display: inline-block !important; margin-top: 28px !important; padding: 8px 13px !important; border: 1px solid var(--fc-orange) !important; color: var(--fc-white) !important; font-size: 13px !important; font-weight: 900 !important; letter-spacing: 1.5px !important; text-transform: uppercase !important; }
+.fury-conduct .fc-hero-copy { max-width: 720px !important; margin: 0 !important; color: var(--fc-white) !important; font-size: clamp(18px, 2vw, 22px) !important; font-weight: 700 !important; line-height: 1.5 !important; }
+.fury-conduct .fc-policy p,
+.fury-conduct .fc-commitment p,
+.fury-conduct .fc-acknowledgment p { margin: 18px 0 0 !important; color: var(--fc-muted) !important; font-family: Arial, Helvetica, sans-serif !important; font-size: 17px !important; line-height: 1.75 !important; }
+.fury-conduct .fc-policy ul { margin: 20px 0 0 !important; padding: 0 0 0 24px !important; color: var(--fc-muted) !important; }
+.fury-conduct .fc-policy li { margin: 9px 0 !important; padding-left: 5px !important; color: var(--fc-muted) !important; font-family: Arial, Helvetica, sans-serif !important; line-height: 1.65 !important; }
+.fury-conduct .fc-policy li::marker { color: var(--fc-orange) !important; }
+.fury-conduct .fc-policy strong { color: var(--fc-white) !important; }
+.fury-conduct a { color: var(--fc-white) !important; font-family: Arial, Helvetica, sans-serif !important; }
+.fury-conduct a:focus-visible { outline: 3px solid var(--fc-orange) !important; outline-offset: 4px !important; }
+
+.fury-conduct .fc-hero { position: relative !important; isolation: isolate !important; min-height: 620px !important; display: flex !important; align-items: center !important; padding: 100px 0 86px !important; border-top: 6px solid var(--fc-orange) !important; background: radial-gradient(circle at 82% 28%, rgba(255,90,31,.2), transparent 31%), linear-gradient(125deg, #050505 0%, #101010 65%, #1b110e 100%) !important; }
+.fury-conduct .fc-hero::before { content: "FURY" !important; position: absolute !important; top: 50% !important; right: -35px !important; z-index: -1 !important; color: transparent !important; font-size: clamp(150px, 27vw, 390px) !important; font-weight: 900 !important; line-height: .75 !important; letter-spacing: -.08em !important; -webkit-text-stroke: 2px rgba(255,255,255,.07) !important; transform: translateY(-50%) !important; white-space: nowrap !important; }
+.fury-conduct .fc-commitment { padding: 90px 0 !important; background: var(--fc-dark) !important; }
+.fury-conduct .fc-callout { margin: 38px 0 0 !important; padding: 28px 30px !important; border-left: 7px solid var(--fc-orange) !important; background: #212121 !important; color: var(--fc-white) !important; font-size: clamp(23px, 3.2vw, 38px) !important; font-weight: 900 !important; line-height: 1.15 !important; letter-spacing: -.02em !important; text-transform: uppercase !important; }
+.fury-conduct .fc-callout span { display: block !important; margin-top: 8px !important; color: var(--fc-orange) !important; }
+
+.fury-conduct .fc-toc { padding: 82px 0 !important; border-top: 1px solid var(--fc-border) !important; border-bottom: 1px solid var(--fc-border) !important; background: var(--fc-black) !important; }
+.fury-conduct .fc-toc-list { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 10px 28px !important; margin: 34px 0 0 !important; padding: 0 !important; list-style: none !important; counter-reset: fc-toc !important; }
+.fury-conduct .fc-toc-list li { margin: 0 !important; counter-increment: fc-toc !important; }
+.fury-conduct .fc-toc-list a { display: grid !important; grid-template-columns: 34px 1fr !important; gap: 10px !important; min-height: 54px !important; align-items: center !important; padding: 10px 12px !important; border-bottom: 1px solid var(--fc-border) !important; color: var(--fc-white) !important; font-size: 15px !important; font-weight: 800 !important; line-height: 1.35 !important; text-decoration: none !important; }
+.fury-conduct .fc-toc-list a::before { content: counter(fc-toc, decimal-leading-zero) !important; color: var(--fc-orange) !important; font-size: 12px !important; font-weight: 900 !important; letter-spacing: 1px !important; }
+.fury-conduct .fc-toc-list a:hover { border-color: var(--fc-orange) !important; background: var(--fc-card) !important; }
+
+.fury-conduct .fc-policy { padding: 80px 0 !important; background: var(--fc-dark) !important; }
+.fury-conduct .fc-section { scroll-margin-top: 30px !important; padding: 62px 0 !important; border-top: 1px solid var(--fc-border) !important; }
+.fury-conduct .fc-section:first-child { border-top: 0 !important; padding-top: 0 !important; }
+.fury-conduct .fc-section-number { display: block !important; margin-bottom: 12px !important; color: var(--fc-orange) !important; font-size: 14px !important; font-weight: 900 !important; letter-spacing: 2px !important; text-transform: uppercase !important; }
+.fury-conduct .fc-feature { margin-right: -30px !important; margin-left: -30px !important; padding: 45px 30px !important; border: 1px solid #4a2b20 !important; border-left: 7px solid var(--fc-orange) !important; background: linear-gradient(120deg, #1b1513, var(--fc-card)) !important; }
+.fury-conduct .fc-emphasis { margin: 30px 0 0 !important; padding: 22px 24px !important; border-left: 5px solid var(--fc-orange) !important; background: #222 !important; color: var(--fc-white) !important; font-size: clamp(20px, 2.8vw, 29px) !important; font-weight: 900 !important; line-height: 1.2 !important; text-transform: uppercase !important; }
+.fury-conduct .fc-emphasis span { display: block !important; margin-top: 6px !important; color: var(--fc-orange) !important; }
+.fury-conduct .fc-response { margin-top: 28px !important; padding: 24px !important; border: 1px solid var(--fc-border) !important; background: var(--fc-card) !important; }
+.fury-conduct .fc-response .fc-subheading { margin-top: 0 !important; color: var(--fc-orange) !important; }
+
+.fury-conduct .fc-acknowledgment { padding: 78px 0 !important; border-top: 7px solid var(--fc-orange) !important; background: #181818 !important; }
+.fury-conduct .fc-signoff { margin-top: 35px !important; color: var(--fc-white) !important; font-size: clamp(25px, 4vw, 43px) !important; font-weight: 900 !important; line-height: 1.05 !important; text-transform: uppercase !important; }
+.fury-conduct .fc-signoff span { display: block !important; color: var(--fc-orange) !important; }
+.fury-conduct .fc-cta { padding: 72px 0 !important; background: var(--fc-black) !important; text-align: center !important; }
+.fury-conduct .fc-button-row { display: flex !important; flex-wrap: wrap !important; justify-content: center !important; gap: 12px !important; margin-top: 28px !important; }
+.fury-conduct .fc-button { display: inline-flex !important; align-items: center !important; justify-content: center !important; min-height: 54px !important; padding: 16px 26px !important; border: 2px solid var(--fc-orange) !important; background: var(--fc-orange) !important; color: var(--fc-black) !important; font-size: 14px !important; font-weight: 900 !important; line-height: 1 !important; letter-spacing: 1px !important; text-align: center !important; text-decoration: none !important; text-transform: uppercase !important; transition: background-color .2s, border-color .2s, color .2s, transform .2s !important; }
+.fury-conduct .fc-button-outline { background: transparent !important; color: var(--fc-white) !important; }
+.fury-conduct .fc-button:hover,
+.fury-conduct .fc-button:focus-visible { border-color: var(--fc-white) !important; background: var(--fc-white) !important; color: var(--fc-black) !important; transform: translateY(-2px) !important; }
+
+@media (max-width: 720px) {
+  .fury-conduct .fc-wrap { width: min(100% - 30px, 1120px) !important; }
+  .fury-conduct .fc-hero { min-height: 560px !important; padding: 72px 0 65px !important; }
+  .fury-conduct .fc-commitment,
+  .fury-conduct .fc-toc,
+  .fury-conduct .fc-policy { padding-top: 62px !important; padding-bottom: 62px !important; }
+  .fury-conduct .fc-toc-list { grid-template-columns: 1fr !important; gap: 0 !important; }
+  .fury-conduct .fc-section { padding: 48px 0 !important; }
+  .fury-conduct .fc-feature { margin-right: 0 !important; margin-left: 0 !important; padding: 30px 20px !important; }
+  .fury-conduct .fc-button-row { flex-direction: column !important; }
+  .fury-conduct .fc-button { width: 100% !important; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fury-conduct .fc-button { transition: none !important; }
+  .fury-conduct .fc-button:hover,
+  .fury-conduct .fc-button:focus-visible { transform: none !important; }
+}
+</style>
+
+<main class="fury-conduct" id="main-content">
+  <header class="fc-hero" aria-labelledby="fc-page-title">
+    <div class="fc-wrap">
+      <span class="fc-eyebrow">Code of Conduct</span>
+      <h1 class="fc-title" id="fc-page-title">One Team.<br>One Standard.<br><span>One Fury.</span></h1>
+      <div class="fc-accent" aria-hidden="true"></div>
+      <p class="fc-hero-copy">Youth Player, Parent, Coach &amp; Club Standards</p>
+      <span class="fc-revision">Revised 2026</span>
+    </div>
+  </header>
+
+  <section class="fc-commitment" aria-labelledby="fc-commitment-title">
+    <div class="fc-wrap fc-reading">
+      <span class="fc-eyebrow">Our Foundation</span>
+      <h2 class="fc-heading" id="fc-commitment-title">Our Commitment</h2>
+      <p>Fayetteville Fury is committed to creating an environment where players can develop as athletes and as people.</p>
+      <p>Our club believes that soccer development extends beyond technical ability, tactics, competition, wins, and losses. We have an opportunity and a responsibility to teach teamwork, accountability, resilience, leadership, sportsmanship, respect, and confidence.</p>
+      <p>Every player develops at a different pace. As players grow and teams become more competitive, differences in experience, ability, confidence, physical development, and understanding of the game will naturally become more noticeable. Those differences should never become a reason to criticize, isolate, embarrass, intimidate, or diminish another player.</p>
+      <div class="fc-callout">We are one team.<span>We believe we can compete at a higher level when we lift each other up.</span></div>
+      <p>This Code of Conduct establishes the expectations for players, coaches, parents, staff, volunteers, and others representing Fayetteville Fury.</p>
+    </div>
+  </section>
+
+  <nav class="fc-toc" aria-labelledby="fc-toc-title">
+    <div class="fc-wrap">
+      <span class="fc-eyebrow">Quick Navigation</span>
+      <h2 class="fc-heading" id="fc-toc-title">Policy Sections</h2>
+      <ol class="fc-toc-list">
+        <li><a href="#respect-for-all">Respect for All</a></li><li><a href="#player-development-team-culture">Player Development and Team Culture</a></li>
+        <li><a href="#sportsmanship">Sportsmanship</a></li><li><a href="#anti-bullying">Anti-Bullying and Player-to-Player Conduct Policy</a></li>
+        <li><a href="#bullying-vs-conflict">Distinguishing Bullying from Normal Conflict</a></li><li><a href="#progressive-response">Progressive Response to Bullying or Repeated Inappropriate Conduct</a></li>
+        <li><a href="#serious-incidents">Serious Incidents and Club Discretion</a></li><li><a href="#confidentiality">Confidentiality and Protection of Players</a></li>
+        <li><a href="#reporting-a-concern">Reporting a Concern</a></li><li><a href="#retaliation">Retaliation</a></li>
+        <li><a href="#expectations-coaches">Expectations for Coaches</a></li><li><a href="#expectations-parents">Expectations for Parents and Guardians</a></li>
+        <li><a href="#expectations-players">Expectations for Players</a></li><li><a href="#safety-player-welfare">Safety and Player Welfare</a></li>
+        <li><a href="#integrity-accountability">Integrity and Accountability</a></li><li><a href="#continuous-growth">Continuous Growth and Coaching Development</a></li>
+        <li><a href="#mid-season-reminder">Mid-Season Culture Reminder</a></li><li><a href="#shared-responsibility">Our Shared Responsibility</a></li>
+      </ol>
+    </div>
+  </nav>
+
+  <div class="fc-policy"><div class="fc-wrap fc-reading">
+    <section class="fc-section" id="respect-for-all" aria-labelledby="fc-section-1"><span class="fc-section-number">Section 01</span><h2 class="fc-section-title" id="fc-section-1">Respect for All</h2>
+      <p>Respect is the foundation of the Fayetteville Fury experience.</p><p>Every player, coach, parent, official, opponent, volunteer, and staff member deserves to be treated with dignity and respect.</p><p>Fayetteville Fury is committed to an environment free from discrimination, harassment, bullying, intimidation, and retaliation.</p><p>Club members are expected to:</p>
+      <ul><li>Treat others with dignity and respect.</li><li>Respect differences in background, culture, identity, ability, experience, and development.</li><li>Communicate appropriately, even during disagreements.</li><li>Avoid language or behavior intended to embarrass, demean, intimidate, or belittle another person.</li><li>Demonstrate empathy when teammates are struggling.</li><li>Address disagreements constructively rather than through personal attacks.</li><li>Report serious or recurring concerns to a coach or club representative.</li></ul>
+      <p>Competition should challenge us to become better. It should never become an excuse to tear someone else down.</p>
+    </section>
+
+    <section class="fc-section" id="player-development-team-culture" aria-labelledby="fc-section-2"><span class="fc-section-number">Section 02</span><h2 class="fc-section-title" id="fc-section-2">Player Development and Team Culture</h2>
+      <p>Fayetteville Fury believes that development is a team effort.</p><p>Every player enters our program at a different point in their soccer journey. Players will progress at different rates technically, tactically, physically, socially, and emotionally.</p><p>Players should be challenged to improve while also learning how to help the people around them improve.</p><div class="fc-emphasis">Compete hard. Develop together. Support one another.</div><p>Players are expected to:</p>
+      <ul><li>Encourage teammates during practices and games.</li><li>Communicate constructively.</li><li>Celebrate teammates' successes.</li><li>Help teammates recover from mistakes.</li><li>Accept coaching and constructive feedback.</li><li>Understand that mistakes are part of development.</li><li>Avoid blaming teammates for goals, losses, missed opportunities, or mistakes.</li><li>Never ridicule another player's ability or development level.</li><li>Recognize that leadership includes helping teammates improve.</li><li>Understand that being a good teammate is part of being a good soccer player.</li></ul>
+      <p>A player who is more advanced has an opportunity to lead. A player who is still developing deserves the opportunity to learn. Both players make the team stronger.</p>
+    </section>
+
+    <section class="fc-section" id="sportsmanship" aria-labelledby="fc-section-3"><span class="fc-section-number">Section 03</span><h2 class="fc-section-title" id="fc-section-3">Sportsmanship</h2>
+      <p>Fayetteville Fury expects sportsmanship at practices, games, tournaments, team events, and anywhere our members represent the club.</p><p>Players, coaches, and families should demonstrate respect toward teammates, opponents, officials, coaches, spectators, and tournament personnel.</p><p>Winning is a goal of competition, but it should never come at the expense of integrity, respect, or player development.</p><p>We win together, and we face challenges together. When a teammate struggles, we uplift them. When a teammate succeeds, we celebrate them. Negative criticism, ridicule, humiliation, and belittling have no place within Fayetteville Fury.</p>
+    </section>
+
+    <section class="fc-section fc-feature" id="anti-bullying" aria-labelledby="fc-section-4"><span class="fc-section-number">Section 04</span><h2 class="fc-section-title" id="fc-section-4">Anti-Bullying and Player-to-Player Conduct Policy</h2>
+      <p>Fayetteville Fury is committed to providing a safe, positive, and supportive environment for every player.</p><p>Bullying, harassment, intimidation, deliberate exclusion, repeated belittling, threats, or other conduct intended to demean or negatively target another player is inconsistent with the values of Fayetteville Fury.</p><p>This expectation applies to conduct during practices, games and tournaments, on the sidelines or team bench, during team travel or club events, in locker rooms or team gathering areas, and through text messages, group chats, social media, gaming platforms, or other electronic communication when the conduct involves Fury players or materially affects the team environment.</p>
+      <h3 class="fc-subheading">What May Constitute Bullying</h3><p>Examples may include:</p><ul><li>Repeatedly insulting or making fun of another player.</li><li>Consistently criticizing a teammate's ability in a demeaning manner.</li><li>Intentionally embarrassing another player.</li><li>Threatening or intimidating another player.</li><li>Encouraging teammates to exclude or target another player.</li><li>Repeatedly blaming or attacking one particular teammate.</li><li>Spreading rumors or harmful statements about another player.</li><li>Targeting another player through digital communication.</li><li>Repeated unwanted physical behavior intended to intimidate or harm.</li><li>Retaliating against a player for reporting a concern.</li></ul><p>These examples are not exhaustive.</p>
+    </section>
+
+    <section class="fc-section" id="bullying-vs-conflict" aria-labelledby="fc-section-5"><span class="fc-section-number">Section 05</span><h2 class="fc-section-title" id="fc-section-5">Distinguishing Bullying from Normal Conflict</h2>
+      <p>Not every disagreement between children constitutes bullying.</p><p>Youth sports involve competition, emotion, frustration, mistakes, disagreements, and developing communication skills. Children are also learning how to handle those situations appropriately.</p><p>An isolated disagreement, frustrated comment, competitive interaction, or instance of poor sportsmanship does not automatically constitute bullying.</p><p>When evaluating a concern, coaches and club leadership may consider:</p><ul><li>The age of the players.</li><li>The nature of the conduct.</li><li>Whether the behavior is repeated.</li><li>Whether a particular player is consistently being targeted.</li><li>The severity of the behavior.</li><li>The circumstances surrounding the incident.</li><li>The effect on the player or team.</li><li>Whether previous coaching or intervention has occurred.</li><li>Whether the behavior appears intentional.</li><li>Whether there are safety concerns.</li></ul>
+      <div class="fc-emphasis">Our goal is not to label children.<span>Our goal is to identify inappropriate behavior, teach better behavior, provide an opportunity for correction, and protect the well-being of every player.</span></div>
+    </section>
+
+    <section class="fc-section" id="progressive-response" aria-labelledby="fc-section-6"><span class="fc-section-number">Section 06</span><h2 class="fc-section-title" id="fc-section-6">Progressive Response to Bullying or Repeated Inappropriate Conduct</h2>
+      <p>Fayetteville Fury believes discipline within a youth-development environment should first provide an opportunity for education and behavioral correction. For most situations involving bullying or repeated inappropriate teammate conduct, the following progressive process will apply.</p>
+      <div class="fc-response"><h3 class="fc-subheading">First Incident: Team Reminder and Parent Communication</h3><p>When concerning behavior is first identified, the coach will address expectations with the team. Whenever reasonably appropriate, this conversation will be conducted as a general team discussion without publicly identifying, embarrassing, or intimidating the player whose behavior prompted the conversation. The coach will reinforce respect, positive communication, sportsmanship, teamwork, encouragement, appropriate ways to address frustration, and the responsibility players have to support one another. The coach will also privately communicate with the parent or guardian of the player whose behavior caused concern so the family is aware and can reinforce expectations at home. The emphasis at this stage is education and correction.</p></div>
+      <div class="fc-response"><h3 class="fc-subheading">Second Incident: Player and Parent Conference and One-Game Suspension</h3><p>If the concerning behavior continues following the initial intervention, the player and their parent or guardian will participate in a private conversation with the coach and/or an appropriate member of Fury leadership. The specific behavior, its impact, and clear expectations for improvement will be discussed. The player will be suspended from participation in the next scheduled game. The purpose of the suspension is not simply punishment. It is intended to demonstrate the seriousness of the behavior while providing the player and family an opportunity to correct it.</p></div>
+      <div class="fc-response"><h3 class="fc-subheading">Third Incident: Removal from the Roster</h3><p>If the behavior continues following the previous interventions, the player may be removed from the team's roster for the remainder of the season. The decision will be made by appropriate Fayetteville Fury leadership after reviewing the circumstances and previous interventions. The player's parent or guardian will be notified directly of the decision.</p></div>
+    </section>
+
+    <section class="fc-section" id="serious-incidents" aria-labelledby="fc-section-7"><span class="fc-section-number">Section 07</span><h2 class="fc-section-title" id="fc-section-7">Serious Incidents and Club Discretion</h2>
+      <p>The progressive process is designed for situations where education and correction are appropriate. However, not every situation should require three separate incidents before meaningful action can be taken.</p><p>Fayetteville Fury reserves the right to move directly to a higher level of intervention or discipline when conduct is severe or presents a significant concern for the safety or well-being of another player.</p><p>Examples may include:</p><ul><li>Physical violence.</li><li>Credible threats of violence.</li><li>Severe intimidation.</li><li>Discriminatory harassment.</li><li>Sexual harassment or misconduct.</li><li>Serious cyberbullying.</li><li>Retaliation against someone who reports a concern.</li><li>Conduct creating an immediate safety concern.</li><li>Other serious misconduct as determined by club leadership.</li></ul><p>Depending upon the circumstances, disciplinary action may include immediate suspension or removal from the program.</p>
+    </section>
+
+    <section class="fc-section" id="confidentiality" aria-labelledby="fc-section-8"><span class="fc-section-number">Section 08</span><h2 class="fc-section-title" id="fc-section-8">Confidentiality and Protection of Players</h2>
+      <p>Player discipline will be handled as privately as reasonably possible.</p><p>Coaches should not publicly identify a player as a bully, announce disciplinary action to the team, or discuss confidential disciplinary matters with unrelated parents or players.</p><p>Parents will be informed about matters directly involving their child. However, families should understand that Fayetteville Fury may not be able to disclose disciplinary actions or private information concerning another child.</p><p>The purpose of confidentiality is to protect all children involved while allowing the club to address concerns appropriately.</p>
+    </section>
+
+    <section class="fc-section fc-feature" id="reporting-a-concern" aria-labelledby="fc-section-9"><span class="fc-section-number">Section 09</span><h2 class="fc-section-title" id="fc-section-9">Reporting a Concern</h2>
+      <p>Players and parents are encouraged to report concerns before situations escalate.</p><p>Concerns may initially be brought to the player's coach. When a concern involves the coach, cannot reasonably be addressed by the coach, involves serious misconduct, or remains unresolved, it may be elevated to the Coaching Director or appropriate Fury leadership.</p><p>Reports should include as much information as reasonably possible, including:</p><ul><li>What occurred.</li><li>When and where it occurred.</li><li>Who was involved.</li><li>Whether the behavior has happened previously.</li><li>Whether coaches or staff witnessed the incident.</li><li>Any relevant messages, screenshots, or other information.</li></ul><p>Reports will be reviewed as promptly and fairly as reasonably possible.</p>
+    </section>
+
+    <section class="fc-section" id="retaliation" aria-labelledby="fc-section-10"><span class="fc-section-number">Section 10</span><h2 class="fc-section-title" id="fc-section-10">Retaliation</h2>
+      <p>Retaliation against a player or family for raising a good-faith concern is prohibited.</p><p>Players should never be afraid to tell a coach, parent, or trusted adult when something is making them uncomfortable or negatively affecting their experience.</p><p>Reporting a concern should not result in reduced respect from coaches, targeting by teammates, intimidation, ridicule, social retaliation, or punishment for making a good-faith report.</p><p>Knowingly making a false accusation for the purpose of harming another player may also be addressed under the Code of Conduct.</p>
+    </section>
+
+    <section class="fc-section fc-feature" id="expectations-coaches" aria-labelledby="fc-section-11"><span class="fc-section-number">Section 11</span><h2 class="fc-section-title" id="fc-section-11">Expectations for Coaches</h2>
+      <p>Coaches have a significant influence on team culture. Every Fayetteville Fury coach is expected to model the behavior we expect from our players.</p><p>Coaches should:</p><ul><li>Create a positive developmental environment.</li><li>Establish expectations for player conduct early in the season.</li><li>Reinforce those expectations throughout the season.</li><li>Correct inappropriate behavior when it occurs.</li><li>Encourage positive communication between teammates.</li><li>Avoid publicly humiliating players.</li><li>Provide constructive feedback.</li><li>Recognize differences in player development.</li><li>Communicate concerns with parents appropriately.</li><li>Escalate serious or recurring concerns to club leadership.</li><li>Protect player confidentiality.</li><li>Participate in coaching education and development opportunities provided by the club.</li></ul><p>Coaches should also recognize that team culture changes throughout a season. As players become more comfortable with one another and differences in ability become more apparent, coaches should intentionally reinforce teamwork, respect, encouragement, and appropriate competition.</p>
+    </section>
+
+    <section class="fc-section fc-feature" id="expectations-parents" aria-labelledby="fc-section-12"><span class="fc-section-number">Section 12</span><h2 class="fc-section-title" id="fc-section-12">Expectations for Parents and Guardians</h2>
+      <p>Parents and guardians are essential partners in player development. We ask Fury families to reinforce the same values at home that coaches are teaching on the field.</p><p>Parents and guardians are expected to:</p><ul><li>Encourage their child without criticizing other players.</li><li>Speak respectfully about teammates, coaches, officials, and opposing teams.</li><li>Avoid comparing children in ways that demean another player.</li><li>Allow coaches to coach during games and practices.</li><li>Address concerns through appropriate club channels.</li><li>Reinforce sportsmanship and accountability.</li><li>Encourage their child to communicate positively with teammates.</li><li>Help their child understand that mistakes are part of development.</li><li>Avoid contributing to rumors or conflict among families.</li><li>Respect the privacy of other children and families.</li><li>Model appropriate behavior from the sidelines.</li></ul><div class="fc-emphasis">Children hear how adults talk.<span>The culture we create as adults often becomes the culture our children reproduce.</span></div>
+    </section>
+
+    <section class="fc-section fc-feature" id="expectations-players" aria-labelledby="fc-section-13"><span class="fc-section-number">Section 13</span><h2 class="fc-section-title" id="fc-section-13">Expectations for Players</h2>
+      <p>Every Fury player represents themselves, their family, their teammates, and the club.</p><p>Players are expected to:</p><ul><li>Give their best effort.</li><li>Attend practices and games prepared to participate.</li><li>Listen to their coaches.</li><li>Respect teammates.</li><li>Respect opponents.</li><li>Respect officials.</li><li>Communicate positively.</li><li>Accept responsibility for their actions.</li><li>Encourage teammates.</li><li>Avoid blaming others for mistakes.</li><li>Never intentionally embarrass or belittle another player.</li><li>Report serious concerns to a trusted adult.</li><li>Learn from mistakes.</li><li>Celebrate team success.</li><li>Represent Fayetteville Fury with pride.</li></ul><p>Talent may determine what a player can do today.</p><p>Character helps determine the player and teammate they become tomorrow.</p>
+    </section>
+
+    <section class="fc-section fc-feature" id="safety-player-welfare" aria-labelledby="fc-section-14"><span class="fc-section-number">Section 14</span><h2 class="fc-section-title" id="fc-section-14">Safety and Player Welfare</h2>
+      <p>The physical and emotional well-being of our players is a priority.</p><p>Players should have an environment where they can learn, compete, make mistakes, ask questions, and grow without fear of humiliation, harassment, or intimidation.</p><p>Fayetteville Fury will continue working to provide appropriate safeguards for youth participants and expects adults within the organization to place player welfare ahead of competitive results.</p>
+    </section>
+
+    <section class="fc-section" id="integrity-accountability" aria-labelledby="fc-section-15"><span class="fc-section-number">Section 15</span><h2 class="fc-section-title" id="fc-section-15">Integrity and Accountability</h2>
+      <p>Everyone associated with Fayetteville Fury is responsible for protecting the culture of the club.</p><p>Mistakes will happen. Players will make mistakes. Coaches will make mistakes. Parents will make mistakes. Club leadership will make mistakes.</p><p>Accountability means acknowledging those moments, learning from them, taking appropriate corrective action, and continuing to improve.</p><p>Fayetteville Fury welcomes constructive feedback and will use concerns raised by our families as opportunities to evaluate our programs, coaching practices, policies, and organizational culture.</p>
+    </section>
+
+    <section class="fc-section" id="continuous-growth" aria-labelledby="fc-section-16"><span class="fc-section-number">Section 16</span><h2 class="fc-section-title" id="fc-section-16">Continuous Growth and Coaching Development</h2>
+      <p>Fayetteville Fury recognizes that player development requires continuous development from our coaches and leadership as well.</p><p>The club will continue working to provide coaches with education and guidance concerning:</p><ul><li>Age-appropriate communication.</li><li>Positive coaching techniques.</li><li>Player development.</li><li>Conflict resolution.</li><li>Team culture.</li><li>Bullying prevention and intervention.</li><li>Parent communication.</li><li>Sportsmanship.</li><li>Leadership.</li><li>Player welfare.</li></ul><p>Policies and expectations may also be reviewed throughout the season when experiences demonstrate opportunities for improvement.</p><div class="fc-emphasis">We expect our players to learn.<span>We should expect the same from ourselves.</span></div>
+    </section>
+
+    <section class="fc-section" id="mid-season-reminder" aria-labelledby="fc-section-17"><span class="fc-section-number">Section 17</span><h2 class="fc-section-title" id="fc-section-17">Mid-Season Culture Reminder</h2>
+      <p>Fayetteville Fury recognizes that team dynamics evolve throughout a season.</p><p>At the beginning of the season, players and families are getting to know one another. By the middle of the season, relationships have developed, personalities have become more apparent, and differences in player development may be easier to recognize.</p><p>For that reason, Fury may provide players and families with a mid-season reminder regarding:</p><ul><li>The Anti-Bullying Policy.</li><li>Sportsmanship expectations.</li><li>Positive teammate communication.</li><li>Parent sideline behavior.</li><li>Appropriate methods for raising concerns.</li><li>The club's commitment to player development.</li></ul><p>This reminder is not intended to suggest that a particular team or player has done something wrong. It is an opportunity to reset, reinforce our values, and remind ourselves of the environment we collectively want for our children.</p>
+    </section>
+
+    <section class="fc-section" id="shared-responsibility" aria-labelledby="fc-section-18"><span class="fc-section-number">Section 18</span><h2 class="fc-section-title" id="fc-section-18">Our Shared Responsibility</h2>
+      <p>A positive youth soccer environment cannot be created by coaches alone. It requires players, parents, coaches, staff, and club leadership working together.</p><p>Development is a team effort.</p><p>Coaches teach. Players compete and learn. Parents encourage. Leadership provides support and accountability. And all of us contribute to the culture our children experience.</p><p>We will challenge our players. We will hold them accountable. We will teach them to compete. We will celebrate excellence. We will help them learn from failure.</p><p>And through all of it, we will remind them that the person standing beside them wearing the Fury badge is their teammate.</p><div class="fc-callout">We are one team.<span>We compete at a higher level when we lift each other up.</span></div>
+    </section>
+  </div></div>
+
+  <section class="fc-acknowledgment" aria-labelledby="fc-ack-title"><div class="fc-wrap fc-reading">
+    <span class="fc-eyebrow">Acknowledgment</span><h2 class="fc-ack-title" id="fc-ack-title">Acknowledgment of Code of Conduct</h2>
+    <p>By participating in Fayetteville Fury programs, players and their parents or guardians acknowledge the expectations established within this Code of Conduct and agree to support the standards of behavior, sportsmanship, respect, safety, and accountability established by Fayetteville Fury.</p><p>The purpose of this Code is not simply to establish rules or consequences.</p><p>Its purpose is to create the type of environment in which young players can develop, compete, build confidence, form relationships, learn from adversity, and grow their love for the game.</p>
+    <div class="fc-signoff">Fayetteville Fury<span>One Team. One Standard. One Fury.</span></div>
+  </div></section>
+
+  <section class="fc-cta" aria-labelledby="fc-cta-title"><div class="fc-wrap"><span class="fc-eyebrow">Explore Fayetteville Fury</span><h2 class="fc-heading" id="fc-cta-title">Keep Moving Forward.</h2><div class="fc-button-row"><a class="fc-button" href="/player-development">Player Development</a><a class="fc-button fc-button-outline" href="/nxt">Fury NXT</a><a class="fc-button fc-button-outline" href="mailto:info@fayettevillefury.com">Contact Fury</a></div></div></section>
+</main>
+
+<script>
+(function () {
+  var title = "Fayetteville Fury Code of Conduct | Player, Parent & Coach Standards";
+  var summary = "Review the Fayetteville Fury Code of Conduct, including player, parent, coach and club standards for respect, sportsmanship, player development, safety and accountability.";
+  var canonicalUrl = "https://www.fayettevillefury.com/code-of-conduct";
+  document.title = title;
+  var description = document.querySelector('meta[name="description"]');
+  if (!description) { description = document.createElement("meta"); description.name = "description"; document.head.appendChild(description); }
+  description.content = summary;
+  var canonical = document.querySelector('link[rel="canonical"]');
+  if (!canonical) { canonical = document.createElement("link"); canonical.rel = "canonical"; document.head.appendChild(canonical); }
+  canonical.href = canonicalUrl;
+}());
+</script>
