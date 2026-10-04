@@ -232,7 +232,7 @@
 
 .fury-coaching-staff .fcs-grid {
   display: grid !important;
-  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
   gap: 24px !important;
 }
 
@@ -562,21 +562,71 @@
       <div class="fcs-grid">
         <article class="fcs-card">
           <div class="fcs-card-photo">
-            <img class="fcs-card-image" src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-a2e41713-318e-4392-8cc5-21f3c1be26eb/1790801714-full.png" alt="Ann Marie Chao, Fayetteville Fury Director" loading="lazy">
+            <img class="fcs-card-image" src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-1124f17b-39c3-4fb6-8ab0-736fd16d5395/1790801712-full.png" alt="Coach Juan, Fayetteville Fury 8U coach" loading="lazy">
           </div>
           <div class="fcs-card-info">
-            <h3 class="fcs-card-name">Ann Marie Chao</h3>
-            <p class="fcs-card-role">Director</p>
+            <h3 class="fcs-card-name">Coach Juan</h3>
+            <p class="fcs-card-role">8U Coach</p>
           </div>
         </article>
 
         <article class="fcs-card">
           <div class="fcs-card-photo">
-            <img class="fcs-card-image" src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-03773bf5-1e64-424c-9845-d546d81f40cf/1790801716-full.png" alt="Al Florez, Fayetteville Fury Senior Club Advisor" loading="lazy">
+            <img class="fcs-card-image" src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-e6e20e31-f332-4c4f-a45f-594235c25920/1790801709-full.png" alt="Coach Edwin, Fayetteville Fury 10U coach" loading="lazy">
+          </div>
+          <div class="fcs-card-info">
+            <h3 class="fcs-card-name">Coach Edwin</h3>
+            <p class="fcs-card-role">10U Coach</p>
+          </div>
+        </article>
+
+        <article class="fcs-card">
+          <div class="fcs-card-photo">
+            <img class="fcs-card-image" src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-4a98f20d-aa39-4d8e-bad0-e76c3ce8ef61/1790801714-full.png" alt="Coach Kelvin, Fayetteville Fury head coach for 12U" loading="lazy">
+          </div>
+          <div class="fcs-card-info">
+            <h3 class="fcs-card-name">Coach Kelvin</h3>
+            <p class="fcs-card-role">Head Coach · 12U</p>
+          </div>
+        </article>
+
+        <article class="fcs-card">
+          <div class="fcs-card-photo">
+            <img class="fcs-card-image" src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-64d175de-bb49-467d-a34b-dda5169c7847/1790801711-full.png" alt="Coach Talavera, Fayetteville Fury assistant coach for 12U" loading="lazy">
+          </div>
+          <div class="fcs-card-info">
+            <h3 class="fcs-card-name">Coach T</h3>
+            <p class="fcs-card-role">Assistant Coach · 12U</p>
+          </div>
+        </article>
+
+        <article class="fcs-card">
+          <div class="fcs-card-photo">
+            <img class="fcs-card-image" src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-a2e41713-318e-4392-8cc5-21f3c1be26eb/1790801714-full.png" alt="Ann Marie Chao, Fayetteville Fury Director and 14U coach" loading="lazy">
+          </div>
+          <div class="fcs-card-info">
+            <h3 class="fcs-card-name">Ann Marie Chao</h3>
+            <p class="fcs-card-role">Director · 14U Coach</p>
+          </div>
+        </article>
+
+        <article class="fcs-card">
+          <div class="fcs-card-photo">
+            <img class="fcs-card-image" src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-2b528d21-f1ce-4666-b8a5-f60f14138613/1791083979-full.png" alt="Miguel Sanchez, Fayetteville Fury 16U coach" loading="lazy">
+          </div>
+          <div class="fcs-card-info">
+            <h3 class="fcs-card-name">Miguel Sanchez</h3>
+            <p class="fcs-card-role">16U Coach</p>
+          </div>
+        </article>
+
+        <article class="fcs-card">
+          <div class="fcs-card-photo">
+            <img class="fcs-card-image" src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-03773bf5-1e64-424c-9845-d546d81f40cf/1790801716-full.png" alt="Al Florez, Fayetteville Fury coach for 18U and 19U" loading="lazy">
           </div>
           <div class="fcs-card-info">
             <h3 class="fcs-card-name">Al Florez</h3>
-            <p class="fcs-card-role">Senior Club Advisor</p>
+            <p class="fcs-card-role">18U &amp; 19U Coach</p>
           </div>
         </article>
 
@@ -587,46 +637,6 @@
           <div class="fcs-card-info">
             <h3 class="fcs-card-name">Kristen Rosser</h3>
             <p class="fcs-card-role">Parent Liaison</p>
-          </div>
-        </article>
-
-        <article class="fcs-card">
-          <div class="fcs-card-photo">
-            <img class="fcs-card-image" src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-4a98f20d-aa39-4d8e-bad0-e76c3ce8ef61/1790801714-full.png" alt="Coach Kelvin, Fayetteville Fury coach" loading="lazy">
-          </div>
-          <div class="fcs-card-info">
-            <h3 class="fcs-card-name">Coach Kelvin</h3>
-            <p class="fcs-card-role">Coach</p>
-          </div>
-        </article>
-
-        <article class="fcs-card">
-          <div class="fcs-card-photo">
-            <img class="fcs-card-image" src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-1124f17b-39c3-4fb6-8ab0-736fd16d5395/1790801712-full.png" alt="Coach Juan, Fayetteville Fury coach" loading="lazy">
-          </div>
-          <div class="fcs-card-info">
-            <h3 class="fcs-card-name">Coach Juan</h3>
-            <p class="fcs-card-role">Coach</p>
-          </div>
-        </article>
-
-        <article class="fcs-card">
-          <div class="fcs-card-photo">
-            <img class="fcs-card-image" src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-64d175de-bb49-467d-a34b-dda5169c7847/1790801711-full.png" alt="Coach Talavera, Fayetteville Fury coach" loading="lazy">
-          </div>
-          <div class="fcs-card-info">
-            <h3 class="fcs-card-name">Coach T</h3>
-            <p class="fcs-card-role">Coach</p>
-          </div>
-        </article>
-
-        <article class="fcs-card">
-          <div class="fcs-card-photo">
-            <img class="fcs-card-image" src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-e6e20e31-f332-4c4f-a45f-594235c25920/1790801709-full.png" alt="Coach Edwin, Fayetteville Fury coach" loading="lazy">
-          </div>
-          <div class="fcs-card-info">
-            <h3 class="fcs-card-name">Coach Edwin</h3>
-            <p class="fcs-card-role">Coach</p>
           </div>
         </article>
       </div>

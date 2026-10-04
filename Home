@@ -1478,6 +1478,36 @@
 
             </article>
 
+
+            <!-- =================================================
+                 MIGUEL SANCHEZ
+                 ================================================= -->
+
+            <article class="fury-person">
+
+                <div class="fury-person-photo">
+
+                    <img
+                        src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-2b528d21-f1ce-4666-b8a5-f60f14138613/1791083979-full.png"
+                        alt="Miguel Sanchez, Fayetteville Fury coach"
+                        loading="lazy">
+
+                </div>
+
+                <div class="fury-person-info">
+
+                    <h3>
+                        Miguel Sanchez
+                    </h3>
+
+                    <p class="fury-person-role">
+                        Coach
+                    </p>
+
+                </div>
+
+            </article>
+
         </div>
 
 
