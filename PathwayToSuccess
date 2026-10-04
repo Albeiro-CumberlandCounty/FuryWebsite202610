@@ -1,0 +1,216 @@
+<style>
+/* Fayetteville Fury — Pathway to Success. Every rule is page-scoped. */
+.fury-pathway,
+.fury-pathway *,
+.fury-pathway *::before,
+.fury-pathway *::after { box-sizing: border-box !important; }
+
+.fury-pathway {
+  --fp-orange: #ff5a1f;
+  --fp-black: #080808;
+  --fp-dark: #111111;
+  --fp-card: #181818;
+  --fp-white: #ffffff;
+  --fp-muted: #c9c9c9;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  background: var(--fp-black) !important;
+  color: var(--fp-white) !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 17px !important;
+  line-height: 1.65 !important;
+}
+
+.fury-pathway .fp-wrap { width: min(1140px, calc(100% - 48px)) !important; margin: 0 auto !important; }
+.fury-pathway .fp-eyebrow { display: block !important; margin: 0 0 14px !important; color: var(--fp-orange) !important; font-size: 13px !important; line-height: 1.3 !important; font-weight: 900 !important; letter-spacing: 2.6px !important; text-transform: uppercase !important; }
+.fury-pathway .fp-title,
+.fury-pathway .fp-heading,
+.fury-pathway .fp-card-title { margin: 0 !important; padding: 0 !important; border: 0 !important; background: transparent !important; color: var(--fp-white) !important; font-family: Arial, Helvetica, sans-serif !important; font-weight: 900 !important; line-height: .98 !important; letter-spacing: -.035em !important; text-transform: uppercase !important; text-shadow: none !important; }
+.fury-pathway .fp-title { font-size: clamp(48px, 8vw, 96px) !important; }
+.fury-pathway .fp-heading { font-size: clamp(32px, 5vw, 56px) !important; }
+.fury-pathway .fp-card-title { font-size: 23px !important; letter-spacing: -.015em !important; }
+.fury-pathway .fp-accent { color: var(--fp-orange) !important; }
+.fury-pathway .fp-copy { max-width: 780px !important; margin: 20px 0 0 !important; color: var(--fp-muted) !important; font-size: 18px !important; line-height: 1.7 !important; }
+.fury-pathway .fp-button-row { display: flex !important; flex-wrap: wrap !important; gap: 12px !important; margin-top: 30px !important; }
+.fury-pathway .fp-button { display: inline-flex !important; align-items: center !important; justify-content: center !important; min-height: 54px !important; padding: 16px 27px !important; border: 2px solid var(--fp-orange) !important; border-radius: 0 !important; background: var(--fp-orange) !important; color: var(--fp-black) !important; font-family: Arial, Helvetica, sans-serif !important; font-size: 14px !important; line-height: 1 !important; font-weight: 900 !important; letter-spacing: 1.1px !important; text-align: center !important; text-decoration: none !important; text-transform: uppercase !important; transition: background-color .2s ease, border-color .2s ease, color .2s ease, transform .2s ease !important; }
+.fury-pathway .fp-button-outline { background: transparent !important; color: var(--fp-white) !important; }
+.fury-pathway .fp-button:hover,
+.fury-pathway .fp-button:focus-visible { border-color: var(--fp-white) !important; background: var(--fp-white) !important; color: var(--fp-black) !important; text-decoration: none !important; transform: translateY(-2px) !important; }
+.fury-pathway .fp-button:focus-visible { outline: 3px solid var(--fp-orange) !important; outline-offset: 4px !important; }
+
+.fury-pathway .fp-hero { position: relative !important; isolation: isolate !important; min-height: min(740px, 85vh) !important; display: flex !important; align-items: center !important; padding: 100px 0 84px !important; border-left: 7px solid var(--fp-orange) !important; background: radial-gradient(circle at 80% 38%, #303030 0, #161616 24%, transparent 49%), linear-gradient(120deg, #080808 20%, #151515 100%) !important; }
+.fury-pathway .fp-hero::before { content: "" !important; position: absolute !important; inset: 0 !important; z-index: -1 !important; opacity: .3 !important; background: repeating-linear-gradient(120deg, transparent 0 95px, rgba(255,90,31,.18) 96px 98px, transparent 99px 190px) !important; }
+.fury-pathway .fp-hero::after { content: "" !important; position: absolute !important; right: -90px !important; bottom: 38px !important; z-index: -1 !important; width: 46vw !important; height: 105px !important; background: var(--fp-orange) !important; transform: skewX(-34deg) !important; opacity: .92 !important; }
+.fury-pathway .fp-hero-content { max-width: 890px !important; }
+.fury-pathway .fp-hero .fp-copy { max-width: 760px !important; color: var(--fp-white) !important; font-size: clamp(18px, 2vw, 22px) !important; }
+
+.fury-pathway .fp-path { padding: 96px 0 !important; background: var(--fp-dark) !important; }
+.fury-pathway .fp-path-grid { position: relative !important; display: grid !important; grid-template-columns: repeat(4, 1fr) !important; gap: 18px !important; margin-top: 50px !important; }
+.fury-pathway .fp-path-grid::before { content: "" !important; position: absolute !important; top: 30px !important; right: 3% !important; left: 3% !important; height: 3px !important; background: var(--fp-orange) !important; }
+.fury-pathway .fp-stage { position: relative !important; z-index: 1 !important; padding: 0 20px 26px !important; border-bottom: 3px solid #333 !important; }
+.fury-pathway .fp-stage-number { display: grid !important; width: 62px !important; height: 62px !important; margin: 0 0 27px !important; place-items: center !important; border: 3px solid var(--fp-orange) !important; border-radius: 50% !important; background: var(--fp-black) !important; color: var(--fp-white) !important; font-size: 17px !important; font-weight: 900 !important; }
+.fury-pathway .fp-stage p { margin: 13px 0 0 !important; color: var(--fp-muted) !important; font-size: 15px !important; line-height: 1.65 !important; }
+
+.fury-pathway .fp-school { padding: 100px 0 !important; background: var(--fp-black) !important; }
+.fury-pathway .fp-school-intro { display: grid !important; grid-template-columns: .85fr 1.15fr !important; gap: clamp(35px, 8vw, 105px) !important; align-items: end !important; }
+.fury-pathway .fp-years { display: grid !important; grid-template-columns: repeat(4, 1fr) !important; margin-top: 55px !important; border: 1px solid #333 !important; }
+.fury-pathway .fp-year { position: relative !important; min-height: 290px !important; padding: 32px 25px !important; border-right: 1px solid #333 !important; background: linear-gradient(180deg, #1a1a1a, #111) !important; }
+.fury-pathway .fp-year:last-child { border-right: 0 !important; }
+.fury-pathway .fp-year::before { content: "" !important; position: absolute !important; top: 0 !important; left: 0 !important; width: 58px !important; height: 5px !important; background: var(--fp-orange) !important; }
+.fury-pathway .fp-year-label { color: var(--fp-orange) !important; font-size: 12px !important; font-weight: 900 !important; letter-spacing: 2px !important; text-transform: uppercase !important; }
+.fury-pathway .fp-year p { margin: 18px 0 0 !important; color: var(--fp-muted) !important; }
+
+.fury-pathway .fp-resources { padding: 100px 0 !important; background: var(--fp-orange) !important; color: var(--fp-black) !important; }
+.fury-pathway .fp-resources .fp-eyebrow,
+.fury-pathway .fp-resources .fp-heading { color: var(--fp-black) !important; }
+.fury-pathway .fp-resource-layout { display: grid !important; grid-template-columns: .85fr 1.15fr !important; gap: clamp(45px, 8vw, 110px) !important; }
+.fury-pathway .fp-resource-lead { margin: 24px 0 0 !important; color: #171717 !important; font-size: 18px !important; }
+.fury-pathway .fp-resource-list { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 10px !important; margin: 0 !important; padding: 0 !important; list-style: none !important; }
+.fury-pathway .fp-resource-list li { padding: 16px 18px !important; border-left: 4px solid var(--fp-black) !important; background: rgba(255,255,255,.18) !important; color: var(--fp-black) !important; font-weight: 800 !important; line-height: 1.35 !important; }
+.fury-pathway .fp-resource-statement { margin: 62px 0 0 !important; padding-top: 36px !important; border-top: 3px solid rgba(0,0,0,.32) !important; color: var(--fp-black) !important; font-size: clamp(27px, 4vw, 48px) !important; line-height: 1.02 !important; font-weight: 900 !important; letter-spacing: -.03em !important; text-transform: uppercase !important; }
+.fury-pathway .fp-resource-note { margin: 24px 0 0 !important; color: #171717 !important; font-weight: 700 !important; }
+
+.fury-pathway .fp-destinations { padding: 100px 0 !important; background: var(--fp-dark) !important; }
+.fury-pathway .fp-destination-grid { display: grid !important; grid-template-columns: repeat(3, 1fr) !important; gap: 16px !important; margin-top: 48px !important; }
+.fury-pathway .fp-destination { min-height: 220px !important; padding: 30px !important; border: 1px solid #303030 !important; border-top: 5px solid var(--fp-orange) !important; background: var(--fp-card) !important; }
+.fury-pathway .fp-destination p { margin: 16px 0 0 !important; color: var(--fp-muted) !important; }
+
+.fury-pathway .fp-proof { padding: 95px 0 !important; background: var(--fp-black) !important; }
+.fury-pathway .fp-proof-layout { display: grid !important; grid-template-columns: .72fr 1.28fr !important; gap: clamp(45px, 8vw, 110px) !important; }
+.fury-pathway .fp-proof-list { margin: 0 !important; padding: 0 !important; list-style: none !important; }
+.fury-pathway .fp-proof-list li { position: relative !important; padding: 19px 20px 19px 52px !important; border-bottom: 1px solid #333 !important; color: var(--fp-white) !important; }
+.fury-pathway .fp-proof-list li::before { content: "→" !important; position: absolute !important; left: 14px !important; color: var(--fp-orange) !important; font-weight: 900 !important; }
+
+.fury-pathway .fp-seminars { position: relative !important; padding: 100px 0 !important; background: #f2f2f2 !important; color: var(--fp-black) !important; }
+.fury-pathway .fp-seminars .fp-heading { color: var(--fp-black) !important; }
+.fury-pathway .fp-seminars .fp-eyebrow { color: #8a2805 !important; }
+.fury-pathway .fp-seminar-layout { display: grid !important; grid-template-columns: 1.05fr .95fr !important; gap: clamp(45px, 8vw, 100px) !important; }
+.fury-pathway .fp-seminar-copy { margin: 22px 0 0 !important; color: #333 !important; font-size: 18px !important; }
+.fury-pathway .fp-seminar-topics { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 11px 22px !important; margin: 0 !important; padding: 28px !important; border-left: 6px solid var(--fp-orange) !important; background: var(--fp-white) !important; list-style: none !important; box-shadow: 0 18px 45px rgba(0,0,0,.1) !important; }
+.fury-pathway .fp-seminar-topics li { color: #222 !important; font-size: 15px !important; font-weight: 800 !important; }
+.fury-pathway .fp-seminar-topics li::before { content: "+" !important; margin-right: 8px !important; color: var(--fp-orange) !important; }
+.fury-pathway .fp-schedule { margin: 30px 0 0 !important; padding: 22px 25px !important; border-left: 5px solid var(--fp-orange) !important; background: #191919 !important; color: var(--fp-white) !important; font-weight: 800 !important; }
+
+.fury-pathway .fp-core { padding: 105px 0 !important; background: linear-gradient(120deg, #111 0%, #222 100%) !important; text-align: center !important; }
+.fury-pathway .fp-core-statement { max-width: 1000px !important; margin: 0 auto !important; color: var(--fp-white) !important; font-size: clamp(34px, 6vw, 68px) !important; line-height: 1 !important; font-weight: 900 !important; letter-spacing: -.04em !important; text-transform: uppercase !important; }
+.fury-pathway .fp-core .fp-copy { margin-right: auto !important; margin-left: auto !important; }
+.fury-pathway .fp-final { padding: 92px 0 !important; border-top: 7px solid var(--fp-orange) !important; background: var(--fp-black) !important; text-align: center !important; }
+.fury-pathway .fp-final .fp-copy { margin-right: auto !important; margin-left: auto !important; }
+.fury-pathway .fp-final .fp-button-row { justify-content: center !important; }
+
+@media (max-width: 900px) {
+  .fury-pathway .fp-path-grid,
+  .fury-pathway .fp-years { grid-template-columns: repeat(2, 1fr) !important; }
+  .fury-pathway .fp-path-grid::before { display: none !important; }
+  .fury-pathway .fp-year:nth-child(2) { border-right: 0 !important; }
+  .fury-pathway .fp-year:nth-child(-n+2) { border-bottom: 1px solid #333 !important; }
+  .fury-pathway .fp-destination-grid { grid-template-columns: repeat(2, 1fr) !important; }
+}
+
+@media (max-width: 720px) {
+  .fury-pathway .fp-wrap { width: min(100% - 30px, 1140px) !important; }
+  .fury-pathway .fp-hero { min-height: 650px !important; padding: 76px 0 68px !important; }
+  .fury-pathway .fp-school-intro,
+  .fury-pathway .fp-resource-layout,
+  .fury-pathway .fp-proof-layout,
+  .fury-pathway .fp-seminar-layout { grid-template-columns: 1fr !important; }
+  .fury-pathway .fp-path-grid,
+  .fury-pathway .fp-years,
+  .fury-pathway .fp-destination-grid,
+  .fury-pathway .fp-resource-list,
+  .fury-pathway .fp-seminar-topics { grid-template-columns: 1fr !important; }
+  .fury-pathway .fp-year { min-height: 0 !important; border-right: 0 !important; border-bottom: 1px solid #333 !important; }
+  .fury-pathway .fp-stage { padding-left: 0 !important; }
+  .fury-pathway .fp-path,
+  .fury-pathway .fp-school,
+  .fury-pathway .fp-resources,
+  .fury-pathway .fp-destinations,
+  .fury-pathway .fp-proof,
+  .fury-pathway .fp-seminars,
+  .fury-pathway .fp-core,
+  .fury-pathway .fp-final { padding: 72px 0 !important; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fury-pathway .fp-button { transition: none !important; }
+  .fury-pathway .fp-button:hover { transform: none !important; }
+}
+</style>
+
+<main class="fury-pathway">
+  <section class="fp-hero" aria-labelledby="fp-page-title">
+    <div class="fp-wrap"><div class="fp-hero-content">
+      <span class="fp-eyebrow">Pathway to Success</span>
+      <h1 class="fp-title" id="fp-page-title">Prepare For<br><span class="fp-accent">What Comes Next.</span></h1>
+      <p class="fp-copy">At Fayetteville Fury, development is not only about becoming a better player today. It is about preparing players to recognize, pursue and take advantage of the opportunities that may come next.</p>
+      <div class="fp-button-row"><a class="fp-button" href="/player-development">Player Development</a><a class="fp-button fp-button-outline" href="/nxt">Explore Fury NXT</a></div>
+    </div></div>
+  </section>
+
+  <section class="fp-path" aria-labelledby="fp-path-title"><div class="fp-wrap">
+    <span class="fp-eyebrow">The Fury Pathway</span>
+    <h2 class="fp-heading" id="fp-path-title">Progress With <span class="fp-accent">Purpose.</span></h2>
+    <div class="fp-path-grid">
+      <article class="fp-stage"><span class="fp-stage-number">01</span><h3 class="fp-card-title">Develop</h3><p>Build the technical ability, soccer intelligence, confidence and character needed to grow as a player.</p></article>
+      <article class="fp-stage"><span class="fp-stage-number">02</span><h3 class="fp-card-title">Compete</h3><p>Use meaningful tournament competition to test what players have developed in training.</p></article>
+      <article class="fp-stage"><span class="fp-stage-number">03</span><h3 class="fp-card-title">Prepare</h3><p>Help players understand what their next opportunity may require and begin preparing for it.</p></article>
+      <article class="fp-stage"><span class="fp-stage-number">04</span><h3 class="fp-card-title">Advance</h3><p>Give players the tools, resources and guidance to pursue the next level that is right for them.</p></article>
+    </div>
+  </div></section>
+
+  <section class="fp-school" aria-labelledby="fp-school-title"><div class="fp-wrap">
+    <div class="fp-school-intro"><div><span class="fp-eyebrow">High School Pathway</span><h2 class="fp-heading" id="fp-school-title">From Freshman <span class="fp-accent">To Senior.</span></h2></div><p class="fp-copy">Fury helps high school players begin thinking about their future early instead of waiting until senior year. This is flexible guidance—not a rigid four-year program—and it grows with each player's goals and readiness.</p></div>
+    <div class="fp-years">
+      <article class="fp-year"><span class="fp-year-label">Year 01</span><h3 class="fp-card-title">Freshman</h3><p>Begin understanding what college recruitment looks like and what players can do to continue developing.</p></article>
+      <article class="fp-year"><span class="fp-year-label">Year 02</span><h3 class="fp-card-title">Sophomore</h3><p>Continue building the player profile, soccer development and awareness of potential opportunities.</p></article>
+      <article class="fp-year"><span class="fp-year-label">Year 03</span><h3 class="fp-card-title">Junior</h3><p>Begin taking recruiting more seriously by building video and player profiles, identifying schools and learning how to communicate with college coaches.</p></article>
+      <article class="fp-year"><span class="fp-year-label">Year 04</span><h3 class="fp-card-title">Senior</h3><p>Learn to present yourself, communicate with coaches and navigate the final stages of the recruiting process.</p></article>
+    </div>
+  </div></section>
+
+  <section class="fp-resources" aria-labelledby="fp-resources-title"><div class="fp-wrap">
+    <div class="fp-resource-layout"><div><span class="fp-eyebrow">Resources We Help Players Use</span><h2 class="fp-heading" id="fp-resources-title">Build Your Opportunity.</h2><p class="fp-resource-lead">Fury helps players learn how to make themselves visible and prepare for higher levels of competition.</p></div>
+      <ul class="fp-resource-list"><li>Player profiles</li><li>FieldLevel</li><li>Trace</li><li>Recruiting video</li><li>Create and manage a recruiting tape</li><li>Contact college coaches</li><li>Present yourself to coaches</li><li>Market yourself as a player</li><li>Prepare for higher competition</li></ul>
+    </div>
+    <div class="fp-resource-statement">We Don't Just Tell Players To Get Recruited.<br>We Teach Them How To Prepare Themselves.</div>
+    <p class="fp-resource-note">Fury provides or helps players access useful resources while keeping the cost as low as practical. No platform or resource can guarantee recruitment.</p>
+  </div></section>
+
+  <section class="fp-destinations" aria-labelledby="fp-destinations-title"><div class="fp-wrap">
+    <span class="fp-eyebrow">Where Can Fury Players Go?</span><h2 class="fp-heading" id="fp-destinations-title">The Next Level Looks Different <span class="fp-accent">For Every Player.</span></h2>
+    <div class="fp-destination-grid">
+      <article class="fp-destination"><h3 class="fp-card-title">High School</h3><p>Continue developing through high school competition.</p></article>
+      <article class="fp-destination"><h3 class="fp-card-title">College</h3><p>Prepare to pursue college soccer opportunities.</p></article>
+      <article class="fp-destination"><h3 class="fp-card-title">National Team</h3><p>Some Fury players have gone on to receive national team opportunities.</p></article>
+      <article class="fp-destination"><h3 class="fp-card-title">Professional</h3><p>Fury players have gone on to pursue professional opportunities, including opportunities in Germany, Canada and Australia.</p></article>
+      <article class="fp-destination"><h3 class="fp-card-title">Another Level</h3><p>For some players, the next opportunity is simply a higher level of competition.</p></article>
+      <article class="fp-destination"><h3 class="fp-card-title">The Game</h3><p>For others, the goal is continuing to grow and maintaining a lifelong connection to soccer.</p></article>
+    </div>
+  </div></section>
+
+  <section class="fp-proof" aria-labelledby="fp-proof-title"><div class="fp-wrap fp-proof-layout">
+    <div><span class="fp-eyebrow">Real Fury Progression</span><h2 class="fp-heading" id="fp-proof-title">The Pathway Is Already <span class="fp-accent">In Motion.</span></h2></div>
+    <ul class="fp-proof-list"><li>Fury has had players called into national team opportunities.</li><li>Fury players have gone on to play professionally in Germany, Canada and Australia.</li><li>Fury players have gone on to play college soccer.</li><li>The 2025–2026 season included Fayetteville Fury's first high school graduating class.</li></ul>
+  </div></section>
+
+  <section class="fp-seminars" aria-labelledby="fp-seminars-title"><div class="fp-wrap">
+    <div class="fp-seminar-layout"><div><span class="fp-eyebrow">Guidance For Players And Families</span><h2 class="fp-heading" id="fp-seminars-title">Pathway To Success Seminars</h2><p class="fp-seminar-copy">Preparing for the next level takes more than playing the game. From time to time, Fayetteville Fury schedules Pathway to Success seminars to help players and families better understand the opportunities and steps involved in preparing for what comes next.</p></div>
+      <ul class="fp-seminar-topics"><li>College recruitment</li><li>Player profiles</li><li>Recruiting video</li><li>Trace</li><li>FieldLevel</li><li>Communicating with college coaches</li><li>Presenting yourself to coaches</li><li>Transitioning from high school soccer</li><li>Understanding the recruiting process</li></ul>
+    </div>
+    <p class="fp-schedule">Seminars are scheduled periodically, typically around the beginning of the spring season. Watch the Fury website and club communications for upcoming dates.</p>
+    <div class="fp-button-row"><a class="fp-button" href="mailto:info@fayettevillefury.com">Contact Fury</a></div>
+  </div></section>
+
+  <section class="fp-core" aria-labelledby="fp-core-title"><div class="fp-wrap">
+    <h2 class="fp-core-statement" id="fp-core-title">The Destination May Be Different For Every Player.<br><span class="fp-accent">The Preparation Is What We Control.</span></h2>
+    <p class="fp-copy">Fayetteville Fury is here to help players understand what comes next, develop the tools to pursue it and become confident enough to take the next step.</p>
+  </div></section>
+
+  <section class="fp-final" aria-labelledby="fp-final-title"><div class="fp-wrap">
+    <span class="fp-eyebrow">Take The Next Step</span><h2 class="fp-heading" id="fp-final-title">Ready For <span class="fp-accent">What's Next?</span></h2>
+    <p class="fp-copy">Start with development. Test it through competition. Build your opportunities. Then take the next step.</p>
+    <div class="fp-button-row"><a class="fp-button" href="/player-development">Player Development</a><a class="fp-button fp-button-outline" href="/nxt">Fury NXT</a><a class="fp-button fp-button-outline" href="mailto:info@fayettevillefury.com">Contact Fury</a></div>
+  </div></section>
+</main>
