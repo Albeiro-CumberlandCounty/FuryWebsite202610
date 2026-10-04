@@ -582,7 +582,7 @@
                     JOIN FURY
                 </a>
 
-                <a href="/nxt/assessments"
+                <a href="/assessments"
                    class="fury-nxt-btn fury-nxt-btn-outline">
                     ASSESSMENTS &amp; TRYOUTS
                 </a>
@@ -792,7 +792,7 @@
             </a>
 
 
-            <a href="/nxt/tournaments"
+            <a href="/tournaments"
                class="fury-nxt-card">
 
                 <div class="fury-nxt-card-number">
@@ -811,7 +811,7 @@
             </a>
 
 
-            <a href="/nxt/player-pathway"
+            <a href="/player-pathway"
                class="fury-nxt-card">
 
                 <div class="fury-nxt-card-number">
@@ -830,7 +830,7 @@
             </a>
 
 
-            <a href="/nxt/age-groups"
+            <a href="/age-groups"
                class="fury-nxt-card">
 
                 <div class="fury-nxt-card-number">
@@ -849,7 +849,7 @@
             </a>
 
 
-            <a href="/nxt/assessments"
+            <a href="/assessments"
                class="fury-nxt-card">
 
                 <div class="fury-nxt-card-number">
@@ -932,7 +932,7 @@
                     experiences as part of the development process.
                 </p>
 
-                <a href="/nxt/tournaments"
+                <a href="/tournaments"
                    class="fury-nxt-btn">
                     EXPLORE TOURNAMENTS
                 </a>
@@ -970,7 +970,7 @@
                     preparing for whatever comes next.
                 </p>
 
-                <a href="/nxt/player-pathway"
+                <a href="/player-pathway"
                    class="fury-nxt-btn">
                     EXPLORE THE PATHWAY
                 </a>
