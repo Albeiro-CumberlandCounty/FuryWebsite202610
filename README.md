@@ -9,3 +9,4 @@ Pages in HTML for the Fury Website
 
 - `CodeOfConduct` is the page content for `/code-of-conduct`.
 - `ResourcesMenu` is the Resources submenu markup for SoccerShift. It preserves Player Registration and Financial Assistance and adds Code of Conduct; it does not add a new top-level menu.
+- `Contact` is the page content for `/contact`; its form submits inquiries to `info@fayettevillefury.com` through FormSubmit.
