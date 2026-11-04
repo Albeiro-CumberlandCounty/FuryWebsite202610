@@ -253,6 +253,39 @@
   width:100%!important;max-width:100%!important;min-width:0!important;left:auto!important;right:auto!important
 }
 
+
+/* ID-backed type rules protect the approved scale from SoccerShift's heading defaults. */
+.fury-ar28 #ar28-page-title{
+  display:block!important;width:100%!important;max-width:780px!important;min-width:0!important;
+  font-family:Arial,Helvetica,sans-serif!important;font-size:clamp(43px,6.75vw,104px)!important;
+  font-weight:900!important;line-height:.92!important;letter-spacing:-.06em!important;
+  color:#fff!important;-webkit-text-fill-color:#fff!important;
+  white-space:normal!important;overflow-wrap:normal!important
+}
+.fury-ar28 #ar28-webinar-title{
+  font-family:Arial,Helvetica,sans-serif!important;font-size:clamp(30px,3vw,42px)!important;
+  font-weight:900!important;line-height:1.04!important;color:#fff!important;
+  -webkit-text-fill-color:#fff!important;white-space:normal!important
+}
+.fury-ar28 #ar28-story-title,
+.fury-ar28 #ar28-includes-title,
+.fury-ar28 #ar28-faq-title{
+  font-family:Arial,Helvetica,sans-serif!important;font-size:clamp(33px,4.8vw,62px)!important;
+  font-weight:900!important;line-height:1.02!important;color:#fff!important;
+  -webkit-text-fill-color:#fff!important;white-space:normal!important
+}
+.fury-ar28 #ar28-strip-title{
+  font-family:Arial,Helvetica,sans-serif!important;font-size:clamp(31px,4.5vw,55px)!important;
+  font-weight:900!important;line-height:1.02!important;color:#080808!important;
+  -webkit-text-fill-color:#080808!important;white-space:normal!important
+}
+@media(max-width:760px){
+  .fury-ar28 #ar28-page-title{font-size:clamp(41px,10.3vw,74px)!important}
+}
+@media(max-width:440px){
+  .fury-ar28 #ar28-page-title{font-size:clamp(36px,10.3vw,48px)!important}
+}
+
 </style>
 
 <section class="fury-ar28" aria-labelledby="ar28-page-title">
