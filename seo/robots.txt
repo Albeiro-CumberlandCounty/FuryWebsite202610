@@ -1,0 +1,6 @@
+# Proposed SoccerShift root-level robots.txt; do not duplicate or overwrite
+# a SoccerShift-generated file without checking its current rules.
+User-agent: *
+Allow: /
+
+Sitemap: https://www.fayettevillefury.com/sitemap.xml
