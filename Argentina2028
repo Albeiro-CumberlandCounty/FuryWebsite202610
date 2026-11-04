@@ -286,6 +286,23 @@
   .fury-ar28 #ar28-page-title{font-size:clamp(36px,10.3vw,48px)!important}
 }
 
+
+/* SoccerShift adds global H3 text-fill/color rules. The higher-specificity
+   page-local rule and inline fallback keep the six dark-card titles readable.
+   Preserve actual H3 headings for accessibility and page structure. */
+.fury-ar28 #ar28-includes-title ~ .ar28-list .ar28-feature > h3.ar28-feature-title{
+  display:block!important;
+  color:#fff!important;
+  -webkit-text-fill-color:#fff!important;
+  background:transparent!important;
+  background-image:none!important;
+  background-clip:border-box!important;
+  -webkit-background-clip:border-box!important;
+  text-shadow:none!important;
+  opacity:1!important;
+  filter:none!important;
+}
+
 </style>
 
 <section class="fury-ar28" aria-labelledby="ar28-page-title">
@@ -350,12 +367,12 @@
       <h2 class="ar28-section-title" id="ar28-includes-title">What's <span>included?</span></h2>
       <p class="ar28-section-intro">The trip information shared so far includes the following:</p>
       <div class="ar28-list">
-        <article class="ar28-feature"><span class="ar28-feature-no">01 / TRAVEL</span><h3>Flights included</h3></article>
-        <article class="ar28-feature"><span class="ar28-feature-no">02 / STAY</span><h3>Hotel accommodations</h3></article>
-        <article class="ar28-feature"><span class="ar28-feature-no">03 / TRAIN</span><h3>Training sessions</h3></article>
-        <article class="ar28-feature"><span class="ar28-feature-no">04 / COMPETE</span><h3>Friendly matches against Argentine clubs</h3></article>
-        <article class="ar28-feature"><span class="ar28-feature-no">05 / EXPERIENCE</span><h3>A professional soccer match</h3></article>
-        <article class="ar28-feature"><span class="ar28-feature-no">06 / CONNECT</span><h3>A shared club experience for players and families</h3></article>
+        <article class="ar28-feature"><span class="ar28-feature-no">01 / TRAVEL</span><h3 class="ar28-feature-title" style="color:#fff!important;-webkit-text-fill-color:#fff!important;background:transparent!important;background-image:none!important;background-clip:border-box!important;-webkit-background-clip:border-box!important;text-shadow:none!important;opacity:1!important;filter:none!important">Flights included</h3></article>
+        <article class="ar28-feature"><span class="ar28-feature-no">02 / STAY</span><h3 class="ar28-feature-title" style="color:#fff!important;-webkit-text-fill-color:#fff!important;background:transparent!important;background-image:none!important;background-clip:border-box!important;-webkit-background-clip:border-box!important;text-shadow:none!important;opacity:1!important;filter:none!important">Hotel accommodations</h3></article>
+        <article class="ar28-feature"><span class="ar28-feature-no">03 / TRAIN</span><h3 class="ar28-feature-title" style="color:#fff!important;-webkit-text-fill-color:#fff!important;background:transparent!important;background-image:none!important;background-clip:border-box!important;-webkit-background-clip:border-box!important;text-shadow:none!important;opacity:1!important;filter:none!important">Training sessions</h3></article>
+        <article class="ar28-feature"><span class="ar28-feature-no">04 / COMPETE</span><h3 class="ar28-feature-title" style="color:#fff!important;-webkit-text-fill-color:#fff!important;background:transparent!important;background-image:none!important;background-clip:border-box!important;-webkit-background-clip:border-box!important;text-shadow:none!important;opacity:1!important;filter:none!important">Friendly matches against Argentine clubs</h3></article>
+        <article class="ar28-feature"><span class="ar28-feature-no">05 / EXPERIENCE</span><h3 class="ar28-feature-title" style="color:#fff!important;-webkit-text-fill-color:#fff!important;background:transparent!important;background-image:none!important;background-clip:border-box!important;-webkit-background-clip:border-box!important;text-shadow:none!important;opacity:1!important;filter:none!important">A professional soccer match</h3></article>
+        <article class="ar28-feature"><span class="ar28-feature-no">06 / CONNECT</span><h3 class="ar28-feature-title" style="color:#fff!important;-webkit-text-fill-color:#fff!important;background:transparent!important;background-image:none!important;background-clip:border-box!important;-webkit-background-clip:border-box!important;text-shadow:none!important;opacity:1!important;filter:none!important">A shared club experience for players and families</h3></article>
       </div>
       <p class="ar28-includes-note">The final schedule, pricing, payment terms, and travel conditions have not been provided in these materials. Please attend the webinar for confirmed details before making travel arrangements.</p>
     </div>
