@@ -212,7 +212,7 @@
           </a>
           <a class="ar28-button ar28-button-outline" href="#ar28-details">Explore the trip</a>
         </div>
-        <p class="ar28-hero-note">Registration is for the free informational webinar, not a trip booking.</p>
+        <p class="ar28-hero-note">Registration is for the information webinar, not a trip booking.</p>
       </div>
       <aside class="ar28-webinar-card" aria-labelledby="ar28-webinar-title">
         <span class="ar28-card-kicker">You're invited · Live on Zoom</span>
@@ -254,7 +254,7 @@
       <h2 class="ar28-section-title" id="ar28-includes-title">What's <span>included?</span></h2>
       <p class="ar28-section-intro">The trip information shared so far includes the following:</p>
       <div class="ar28-list">
-        <article class="ar28-feature"><span class="ar28-feature-no">01 / TRAVEL</span><h3>Round-trip flights</h3></article>
+        <article class="ar28-feature"><span class="ar28-feature-no">01 / TRAVEL</span><h3>Flights included</h3></article>
         <article class="ar28-feature"><span class="ar28-feature-no">02 / STAY</span><h3>Hotel accommodations</h3></article>
         <article class="ar28-feature"><span class="ar28-feature-no">03 / TRAIN</span><h3>Training sessions</h3></article>
         <article class="ar28-feature"><span class="ar28-feature-no">04 / COMPETE</span><h3>Friendly matches against Argentine clubs</h3></article>
