@@ -905,6 +905,21 @@
   color:#080808!important;-webkit-text-fill-color:#080808!important
 }
 
+
+/* Keep the announcement headline readable when SoccerShift styles h2 elements. */
+.fury-ar28-promo #ar28p-heading{
+  display:block!important;font-family:Arial,Helvetica,sans-serif!important;
+  font-size:clamp(30px,4.6vw,56px)!important;font-weight:900!important;
+  line-height:1.02!important;letter-spacing:-.05em!important;
+  color:#fff!important;-webkit-text-fill-color:#fff!important;
+  background:none!important;background-image:none!important;
+  white-space:normal!important;overflow-wrap:normal!important
+}
+.fury-ar28-promo #ar28p-heading span{
+  color:#ff713b!important;-webkit-text-fill-color:#ff713b!important;
+  background:none!important;background-image:none!important
+}
+
 </style>
 
 
