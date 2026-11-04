@@ -13,8 +13,9 @@ Pages in HTML for the Fury Website
 
 ## Argentina 2028 campaign (review branch only)
 
-- `Argentina2028`: approved cinematic, fully scoped HTML/CSS fragment for a dedicated SoccerShift page, proposed URL `/argentina-2028`. Three CTA buttons open the [December 1, 2026, 7:00 PM Eastern Zoom webinar](https://us06web.zoom.us/webinar/register/WN_yKdBqIioQfqL6hirVjIMrw).
-- `Argentina2028HomePromo`: optional, independent responsive homepage announcement fragment. Paste only after the dedicated page exists.
+- `Argentina2028`: approved cinematic, fully scoped HTML/CSS fragment for a dedicated SoccerShift page, actual SoccerShift URL `/argentina2028`. Three CTA buttons open the [December 1, 2026, 7:00 PM Eastern Zoom webinar](https://us06web.zoom.us/webinar/register/WN_yKdBqIioQfqL6hirVjIMrw).
+- `Home`: now includes the Argentina webinar announcement below the hero, scoped under `.fury-ar28-promo`. Updating this HTML fragment in GitHub does not automatically update the SoccerShift homepage.
+- `Argentina2028HomePromo`: standalone copy of the announcement for reuse; it links to `/argentina2028`.
 - `seo/argentina-2028-head.html`: metadata and WebPage JSON-LD **for SoccerShift's head/SEO controls**, never the page body.
 - `seo/robots.txt` and `seo/sitemap.xml`: **reference templates**, not automatically deployed to the SoccerShift site root.
 - [SEO rollout and QA checklist](seo/SOCCERSHIFT_DEPLOYMENT.md).
