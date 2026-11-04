@@ -1,7 +1,7 @@
 <!--
-  OPTIONAL HOMEPAGE ANNOUNCEMENT, not yet pasted into SoccerShift.
+  OPTIONAL HOMEPAGE ANNOUNCEMENT, A copy of this banner is also embedded in the Home file on the review branch.
   This independent snippet can be placed under the Home hero or before the final CTA
-  after the new /argentina-2028 page has been created.
+  linking to the existing /argentina2028 SoccerShift page.
   All selectors are unique and scoped under .fury-ar28-promo.
 -->
 <style>
@@ -32,6 +32,49 @@
   .fury-ar28-promo .ar28p-actions{display:grid!important;grid-template-columns:1fr!important}
   .fury-ar28-promo .ar28p-btn{width:100%!important}
 }
+
+/* SoccerShift and Home heading rules may set black or transparent text fill. */
+.fury-ar28-promo{min-width:0!important;overflow-x:hidden!important}
+.fury-ar28-promo .ar28p-wrap{max-width:1160px!important;min-width:0!important}
+.fury-ar28-promo .ar28p-card>*{min-width:0!important}
+.fury-ar28-promo .ar28p-card h2{
+  color:#fff!important;-webkit-text-fill-color:#fff!important;
+  background:none!important;background-image:none!important;text-shadow:none!important
+}
+.fury-ar28-promo .ar28p-card h2 span{
+  color:#ff713b!important;-webkit-text-fill-color:#ff713b!important;
+  background:none!important;background-image:none!important
+}
+.fury-ar28-promo .ar28p-card p{
+  color:#ebebeb!important;-webkit-text-fill-color:#ebebeb!important
+}
+.fury-ar28-promo .ar28p-kicker{
+  color:#ff713b!important;-webkit-text-fill-color:#ff713b!important
+}
+.fury-ar28-promo .ar28p-btn{
+  color:#080808!important;-webkit-text-fill-color:#080808!important
+}
+.fury-ar28-promo .ar28p-btn-secondary{
+  color:#fff!important;-webkit-text-fill-color:#fff!important
+}
+.fury-ar28-promo .ar28p-btn:hover{
+  color:#080808!important;-webkit-text-fill-color:#080808!important
+}
+
+/* Keep the announcement headline readable when SoccerShift styles h2 elements. */
+.fury-ar28-promo #ar28p-heading{
+  display:block!important;font-family:Arial,Helvetica,sans-serif!important;
+  font-size:clamp(30px,4.6vw,56px)!important;font-weight:900!important;
+  line-height:1.02!important;letter-spacing:-.05em!important;
+  color:#fff!important;-webkit-text-fill-color:#fff!important;
+  background:none!important;background-image:none!important;
+  white-space:normal!important;overflow-wrap:normal!important
+}
+.fury-ar28-promo #ar28p-heading span{
+  color:#ff713b!important;-webkit-text-fill-color:#ff713b!important;
+  background:none!important;background-image:none!important
+}
+
 </style>
 <section class="fury-ar28-promo" aria-labelledby="ar28p-heading">
   <div class="ar28p-wrap">
@@ -42,7 +85,7 @@
         <p>The invitation is open to Fayetteville Fury players and families. Learn about the trip at our live webinar Tuesday, December 1, 2026, at 7:00 PM Eastern.</p>
       </div>
       <div class="ar28p-actions">
-        <a class="ar28p-btn" href="/argentina-2028">Explore the trip</a>
+        <a class="ar28p-btn" href="/argentina2028">Explore the trip</a>
         <a class="ar28p-btn ar28p-btn-secondary" href="https://us06web.zoom.us/webinar/register/WN_yKdBqIioQfqL6hirVjIMrw" target="_blank" rel="noopener noreferrer">Register for webinar</a>
       </div>
     </div>
