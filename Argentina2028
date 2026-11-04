@@ -1,0 +1,304 @@
+<!--
+  FAYETTEVILLE FURY | ARGENTINA 2028
+  Standalone SoccerShift page content. Paste the entire snippet (including this style)
+  into the Argentina 2028 custom HTML page, not into the global theme/head.
+  SEO title, canonical, OG tags and sitemap are managed separately in SoccerShift.
+  This links to WEBINAR registration, NOT to a trip booking/payment form.
+  Photography reuses two existing club-hosted site assets, not Argentina-trip imagery.
+-->
+<style>
+/* Every page rule is rooted under .fury-ar28 to avoid SoccerShift/theme collisions. */
+.fury-ar28,.fury-ar28 *,.fury-ar28 *::before,.fury-ar28 *::after{box-sizing:border-box!important}
+.fury-ar28{
+  --ar28-orange:#f15a24;--ar28-orange-bright:#ff713b;--ar28-ink:#090909;
+  --ar28-black:#050505;--ar28-panel:#151515;--ar28-border:#3b3b3b;
+  --ar28-white:#fff;--ar28-muted:#dbdbdb;
+  display:block!important;isolation:isolate;width:100%!important;max-width:100%!important;
+  margin:0!important;padding:0!important;overflow-x:clip!important;
+  background:var(--ar28-ink)!important;color:var(--ar28-white)!important;
+  font-family:Arial,Helvetica,sans-serif!important;font-size:17px!important;line-height:1.55!important
+}
+.fury-ar28 .ar28-wrap{width:min(1160px,calc(100% - 48px))!important;margin-inline:auto!important}
+.fury-ar28 h1,.fury-ar28 h2,.fury-ar28 h3{
+  margin:0!important;padding:0!important;background:none!important;border:0!important;
+  color:var(--ar28-white)!important;font-family:Arial,Helvetica,sans-serif!important;
+  font-weight:900!important;line-height:1.02!important;letter-spacing:-.04em!important;
+  text-transform:uppercase!important;text-shadow:none!important
+}
+.fury-ar28 p{margin:0!important;padding:0!important;color:inherit!important;font-family:inherit!important;line-height:1.65!important}
+.fury-ar28 a{font-family:inherit!important}
+.fury-ar28 img{display:block!important;max-width:100%!important}
+.fury-ar28 .ar28-eyebrow{
+  display:inline-flex!important;align-items:center!important;gap:10px!important;
+  color:var(--ar28-orange-bright)!important;font-size:12px!important;
+  font-weight:900!important;letter-spacing:.19em!important;text-transform:uppercase!important
+}
+.fury-ar28 .ar28-eyebrow::before{content:""!important;display:inline-block!important;width:27px!important;height:3px!important;background:currentColor!important}
+.fury-ar28 .ar28-button{
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;
+  min-height:56px!important;padding:15px 24px!important;gap:12px!important;
+  border:2px solid var(--ar28-orange)!important;border-radius:2px!important;
+  background:var(--ar28-orange)!important;color:#080808!important;
+  font-family:Arial,Helvetica,sans-serif!important;font-size:14px!important;
+  font-weight:900!important;letter-spacing:.045em!important;line-height:1.25!important;
+  text-align:center!important;text-decoration:none!important;text-transform:uppercase!important;
+  transition:background-color .2s ease,border-color .2s ease,color .2s ease,transform .2s ease!important
+}
+.fury-ar28 .ar28-button:hover{background:#fff!important;border-color:#fff!important;color:#080808!important;transform:translateY(-2px)!important}
+.fury-ar28 .ar28-button:focus-visible,.fury-ar28 a:focus-visible,.fury-ar28 summary:focus-visible{
+  outline:3px solid #fff!important;outline-offset:4px!important
+}
+.fury-ar28 .ar28-button-outline{background:rgba(0,0,0,.45)!important;color:#fff!important;border-color:#fff!important}
+.fury-ar28 .ar28-button-outline:hover{background:#fff!important;color:#080808!important}
+.fury-ar28 .ar28-button .ar28-arrow{font-size:22px!important;line-height:0!important;font-weight:700!important;transform:translateY(-1px)!important}
+
+/* Cinematic hero */
+.fury-ar28 .ar28-hero{position:relative!important;min-height:640px!important;background:#111!important;padding:76px 0 84px!important;overflow:hidden!important}
+.fury-ar28 .ar28-hero-photo{
+  position:absolute!important;inset:0!important;width:100%!important;height:100%!important;
+  object-fit:cover!important;object-position:center 40%!important;z-index:0!important;opacity:.78!important
+}
+.fury-ar28 .ar28-hero::before{
+  content:""!important;position:absolute!important;inset:0!important;z-index:1!important;
+  background:linear-gradient(90deg,rgba(0,0,0,.96) 0%,rgba(0,0,0,.82) 45%,rgba(0,0,0,.55) 100%)!important
+}
+.fury-ar28 .ar28-hero::after{
+  content:""!important;position:absolute!important;bottom:0!important;left:0!important;
+  width:100%!important;height:6px!important;background:var(--ar28-orange)!important;z-index:3!important
+}
+.fury-ar28 .ar28-hero-grid{position:relative!important;z-index:2!important;display:grid!important;grid-template-columns:minmax(0,1.15fr) minmax(285px,.66fr)!important;align-items:center!important;gap:clamp(30px,5vw,80px)!important}
+.fury-ar28 .ar28-brand{display:inline-flex!important;gap:10px!important;align-items:center!important;margin-bottom:38px!important}
+.fury-ar28 .ar28-brandmark{
+  display:grid!important;place-items:center!important;width:46px!important;height:52px!important;
+  color:#fff!important;background:var(--ar28-orange)!important;border:3px solid #fff!important;
+  clip-path:polygon(8% 0,92% 0,100% 65%,50% 100%,0 65%)!important;
+  font-weight:900!important;font-size:24px!important;letter-spacing:-.07em!important
+}
+.fury-ar28 .ar28-brandtext{font-size:12px!important;letter-spacing:.19em!important;line-height:1.45!important;font-weight:900!important;text-transform:uppercase!important}
+.fury-ar28 .ar28-brandtext strong{display:block!important;font-size:19px!important;letter-spacing:.065em!important}
+.fury-ar28 .ar28-hero h1{
+  max-width:780px!important;margin:17px 0 24px!important;
+  font-size:clamp(2.7rem,6.75vw,6.5rem)!important;line-height:.92!important;letter-spacing:-.06em!important
+}
+.fury-ar28 .ar28-hero h1 span{display:block!important;color:var(--ar28-orange-bright)!important}
+.fury-ar28 .ar28-lead{max-width:650px!important;color:#f3f3f3!important;font-size:clamp(17px,1.7vw,20px)!important;font-weight:600!important}
+.fury-ar28 .ar28-hero-actions{display:flex!important;flex-wrap:wrap!important;gap:12px!important;margin-top:33px!important}
+.fury-ar28 .ar28-hero-note{color:#dedede!important;font-size:13px!important;margin-top:15px!important}
+.fury-ar28 .ar28-webinar-card{
+  display:block!important;min-width:0!important;padding:29px 29px 32px!important;
+  border:1px solid rgba(255,255,255,.28)!important;border-top:7px solid var(--ar28-orange)!important;
+  background:rgba(6,6,6,.94)!important;box-shadow:0 24px 55px rgba(0,0,0,.32)!important
+}
+.fury-ar28 .ar28-card-kicker{display:block!important;color:var(--ar28-orange-bright)!important;font-size:12px!important;font-weight:900!important;letter-spacing:.19em!important;text-transform:uppercase!important}
+.fury-ar28 .ar28-webinar-card h2{font-size:clamp(30px,3vw,42px)!important;margin:14px 0!important}
+.fury-ar28 .ar28-card-time{display:block!important;font-size:23px!important;font-weight:900!important;letter-spacing:-.02em!important;line-height:1.25!important;color:#fff!important}
+.fury-ar28 .ar28-card-sub{margin-top:7px!important;color:#e5e5e5!important;font-size:15px!important}
+.fury-ar28 .ar28-webinar-card .ar28-button{width:100%!important;margin-top:25px!important}
+.fury-ar28 .ar28-card-foot{display:block!important;margin-top:14px!important;color:#d7d7d7!important;font-size:12px!important;line-height:1.6!important}
+
+/* Quick facts / trip information */
+.fury-ar28 .ar28-facts{background:var(--ar28-orange)!important;color:#080808!important}
+.fury-ar28 .ar28-facts-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important}
+.fury-ar28 .ar28-fact{padding:23px 22px 25px!important;min-width:0!important;border-right:1px solid rgba(0,0,0,.25)!important}
+.fury-ar28 .ar28-fact:first-child{padding-left:0!important}
+.fury-ar28 .ar28-fact:last-child{border-right:0!important}
+.fury-ar28 .ar28-fact-label{display:block!important;font-size:11px!important;font-weight:900!important;letter-spacing:.15em!important;text-transform:uppercase!important;color:#111!important}
+.fury-ar28 .ar28-fact-value{display:block!important;font-size:clamp(17px,2vw,24px)!important;font-weight:900!important;line-height:1.3!important;margin-top:7px!important;color:#080808!important}
+.fury-ar28 .ar28-section{padding:94px 0!important}
+.fury-ar28 .ar28-section-title{max-width:830px!important;font-size:clamp(33px,4.8vw,62px)!important;margin-top:16px!important}
+.fury-ar28 .ar28-section-title span{color:var(--ar28-orange-bright)!important}
+.fury-ar28 .ar28-section-intro{max-width:760px!important;color:#dedede!important;font-size:18px!important;margin-top:20px!important}
+.fury-ar28 .ar28-story{background:#101010!important}
+.fury-ar28 .ar28-story-grid{display:grid!important;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr)!important;gap:clamp(28px,5vw,70px)!important;align-items:center!important}
+.fury-ar28 .ar28-story-visual{position:relative!important;min-height:460px!important;overflow:hidden!important;border:1px solid #343434!important;background:#202020!important}
+.fury-ar28 .ar28-story-visual img{position:absolute!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important}
+.fury-ar28 .ar28-story-caption{position:absolute!important;left:0!important;right:0!important;bottom:0!important;z-index:1!important;padding:36px 20px 18px!important;background:linear-gradient(transparent,rgba(0,0,0,.92))!important;color:#fff!important;font-size:13px!important;font-weight:700!important}
+.fury-ar28 .ar28-story-copy{max-width:570px!important}
+.fury-ar28 .ar28-story-copy p+p{margin-top:19px!important}
+.fury-ar28 .ar28-list{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:16px!important;margin-top:40px!important}
+.fury-ar28 .ar28-feature{
+  min-width:0!important;min-height:156px!important;padding:24px!important;
+  border:1px solid var(--ar28-border)!important;border-top:4px solid var(--ar28-orange)!important;
+  background:var(--ar28-panel)!important
+}
+.fury-ar28 .ar28-feature-no{display:block!important;color:var(--ar28-orange-bright)!important;font-size:12px!important;font-weight:900!important;letter-spacing:.15em!important}
+.fury-ar28 .ar28-feature h3{font-size:21px!important;margin-top:15px!important;line-height:1.14!important}
+.fury-ar28 .ar28-includes-note{max-width:780px!important;margin-top:22px!important;color:#c9c9c9!important;font-size:14px!important}
+
+/* Webinar strip and accessible native FAQ */
+.fury-ar28 .ar28-webinar-strip{padding:65px 0!important;background:var(--ar28-orange)!important;color:#090909!important}
+.fury-ar28 .ar28-strip-grid{display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;align-items:center!important;gap:25px!important}
+.fury-ar28 .ar28-strip-kicker{display:block!important;color:#161616!important;font-weight:900!important;letter-spacing:.16em!important;text-transform:uppercase!important;font-size:12px!important}
+.fury-ar28 .ar28-webinar-strip h2{margin-top:10px!important;color:#080808!important;font-size:clamp(31px,4.5vw,55px)!important}
+.fury-ar28 .ar28-strip-copy{margin-top:10px!important;max-width:670px!important;color:#080808!important;font-size:17px!important;font-weight:600!important}
+.fury-ar28 .ar28-webinar-strip .ar28-button{background:#080808!important;border-color:#080808!important;color:#fff!important}
+.fury-ar28 .ar28-webinar-strip .ar28-button:hover{background:#fff!important;border-color:#fff!important;color:#080808!important}
+.fury-ar28 .ar28-webinar-strip .ar28-button:focus-visible{outline-color:#080808!important}
+.fury-ar28 .ar28-faq{background:#080808!important}
+.fury-ar28 .ar28-faq-list{max-width:820px!important;margin-top:32px!important}
+.fury-ar28 .ar28-faq details{display:block!important;border-top:1px solid #414141!important;padding:19px 0!important}
+.fury-ar28 .ar28-faq details:last-child{border-bottom:1px solid #414141!important}
+.fury-ar28 .ar28-faq summary{display:list-item!important;cursor:pointer!important;color:#fff!important;font-size:18px!important;font-weight:800!important;line-height:1.4!important}
+.fury-ar28 .ar28-faq details p{margin:12px 24px 4px 0!important;color:#dedede!important;font-size:16px!important}
+.fury-ar28 .ar28-endnote{margin-top:27px!important;color:#bfbfbf!important;font-size:13px!important}
+.fury-ar28 .ar28-endnote a{color:#fff!important;text-decoration:underline!important;text-underline-offset:3px!important}
+
+@media(max-width:1000px){
+ .fury-ar28 .ar28-hero-grid{grid-template-columns:minmax(0,1fr) minmax(270px,.65fr)!important;gap:28px!important}
+ .fury-ar28 .ar28-webinar-card{padding:24px!important}
+ .fury-ar28 .ar28-hero h1{font-size:clamp(2.7rem,6.3vw,5rem)!important}
+ .fury-ar28 .ar28-story-visual{min-height:390px!important}
+}
+@media(max-width:760px){
+ .fury-ar28 .ar28-wrap{width:min(620px,calc(100% - 36px))!important}
+ .fury-ar28 .ar28-hero{min-height:0!important;padding:41px 0 48px!important}
+ .fury-ar28 .ar28-hero-photo{object-position:center!important;opacity:.55!important}
+ .fury-ar28 .ar28-hero::before{background:linear-gradient(180deg,rgba(0,0,0,.63),rgba(0,0,0,.92) 75%,#050505)!important}
+ .fury-ar28 .ar28-hero-grid,.fury-ar28 .ar28-story-grid,.fury-ar28 .ar28-strip-grid{grid-template-columns:minmax(0,1fr)!important}
+ .fury-ar28 .ar28-brand{margin-bottom:24px!important}
+ .fury-ar28 .ar28-hero h1{font-size:clamp(2.55rem,10.3vw,4.65rem)!important;max-width:620px!important}
+ .fury-ar28 .ar28-hero-actions{margin-top:24px!important}
+ .fury-ar28 .ar28-webinar-card{margin-top:10px!important}
+ .fury-ar28 .ar28-facts-grid{grid-template-columns:1fr!important}
+ .fury-ar28 .ar28-fact{padding:17px 0!important;border-right:0!important;border-bottom:1px solid rgba(0,0,0,.3)!important}
+ .fury-ar28 .ar28-fact:last-child{border-bottom:0!important}
+ .fury-ar28 .ar28-section{padding:65px 0!important}
+ .fury-ar28 .ar28-story-visual{min-height:325px!important}
+ .fury-ar28 .ar28-list{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}
+ .fury-ar28 .ar28-feature{min-height:140px!important;padding:19px!important}
+ .fury-ar28 .ar28-webinar-strip{padding:46px 0!important}
+ .fury-ar28 .ar28-strip-grid{gap:22px!important}
+ .fury-ar28 .ar28-webinar-strip .ar28-button{justify-self:start!important}
+}
+@media(max-width:440px){
+ .fury-ar28{font-size:16px!important}
+ .fury-ar28 .ar28-wrap{width:calc(100% - 32px)!important}
+ .fury-ar28 .ar28-hero h1{font-size:clamp(2.25rem,10.6vw,3.1rem)!important;overflow-wrap:normal!important}
+ .fury-ar28 .ar28-hero-actions{display:grid!important;grid-template-columns:1fr!important}
+ .fury-ar28 .ar28-hero-actions .ar28-button{width:100%!important}
+ .fury-ar28 .ar28-webinar-card{padding:23px 20px!important}
+ .fury-ar28 .ar28-card-time{font-size:21px!important}
+ .fury-ar28 .ar28-section-intro{font-size:16px!important}
+ .fury-ar28 .ar28-feature h3{font-size:19px!important}
+ .fury-ar28 .ar28-list{grid-template-columns:1fr!important}
+ .fury-ar28 .ar28-feature{min-height:0!important}
+ .fury-ar28 .ar28-story-visual{min-height:250px!important}
+ .fury-ar28 .ar28-strip-grid .ar28-button{width:100%!important}
+}
+@media(prefers-reduced-motion:reduce){
+ .fury-ar28 .ar28-button{transition:none!important}
+ .fury-ar28 .ar28-button:hover{transform:none!important}
+}
+</style>
+
+<section class="fury-ar28" aria-labelledby="ar28-page-title">
+  <div class="ar28-hero">
+    <img class="ar28-hero-photo"
+      src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-ebbe2934-9682-40f1-b92c-c2ac6c4bac76/1791077727-full.jpg"
+      alt="Fayetteville Fury youth soccer players together at a tournament"
+      loading="eager" fetchpriority="high" decoding="async">
+    <div class="ar28-wrap ar28-hero-grid">
+      <div>
+        <div class="ar28-brand" aria-label="Fayetteville Fury">
+          <span class="ar28-brandmark" aria-hidden="true">F</span>
+          <span class="ar28-brandtext">Fayetteville <strong>Fury</strong></span>
+        </div>
+        <div class="ar28-eyebrow">Buenos Aires · June 2028</div>
+        <h1 id="ar28-page-title">Fury is going to <span>Argentina.</span></h1>
+        <p class="ar28-lead">A chance to train, compete, and experience soccer in Buenos Aires. The invitation is open to Fayetteville Fury players and families throughout the club.</p>
+        <div class="ar28-hero-actions">
+          <a class="ar28-button" href="https://us06web.zoom.us/webinar/register/WN_yKdBqIioQfqL6hirVjIMrw" target="_blank" rel="noopener noreferrer" aria-label="Register for the December 1 Argentina 2028 information webinar on Zoom (opens in a new tab)">
+            Register for the webinar <span class="ar28-arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="ar28-button ar28-button-outline" href="#ar28-details">Explore the trip</a>
+        </div>
+        <p class="ar28-hero-note">Registration is for the free informational webinar, not a trip booking.</p>
+      </div>
+      <aside class="ar28-webinar-card" aria-labelledby="ar28-webinar-title">
+        <span class="ar28-card-kicker">You're invited · Live on Zoom</span>
+        <h2 id="ar28-webinar-title">Argentina 2028 family webinar</h2>
+        <time class="ar28-card-time" datetime="2026-12-01T19:00:00-05:00">Tuesday, December 1<br>7:00 PM Eastern</time>
+        <p class="ar28-card-sub">Hear about the trip, what's planned, and how families can get involved.</p>
+        <a class="ar28-button" href="https://us06web.zoom.us/webinar/register/WN_yKdBqIioQfqL6hirVjIMrw" target="_blank" rel="noopener noreferrer">Save my webinar spot <span class="ar28-arrow" aria-hidden="true">→</span></a>
+        <span class="ar28-card-foot">Zoom registration opens in a new tab. Players and families are welcome.</span>
+      </aside>
+    </div>
+  </div>
+
+  <div class="ar28-facts" aria-label="Trip at a glance">
+    <div class="ar28-wrap ar28-facts-grid">
+      <div class="ar28-fact"><span class="ar28-fact-label">When</span><span class="ar28-fact-value">June 2028</span></div>
+      <div class="ar28-fact"><span class="ar28-fact-label">Where</span><span class="ar28-fact-value">Buenos Aires, Argentina</span></div>
+      <div class="ar28-fact"><span class="ar28-fact-label">Who</span><span class="ar28-fact-value">Fury players &amp; families</span></div>
+    </div>
+  </div>
+
+  <section class="ar28-section ar28-story" id="ar28-details" aria-labelledby="ar28-story-title">
+    <div class="ar28-wrap ar28-story-grid">
+      <div class="ar28-story-visual">
+        <img src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-f381cae9-5025-4a44-b3d3-4a1edeb71692/1791068282-full.png" alt="Fayetteville Fury players competing in tournament soccer" loading="lazy" decoding="async">
+        <span class="ar28-story-caption">The Fury experience starts with our players.</span>
+      </div>
+      <div class="ar28-story-copy">
+        <span class="ar28-eyebrow">An experience beyond the familiar</span>
+        <h2 class="ar28-section-title" id="ar28-story-title">New fields. <span>New perspectives.</span></h2>
+        <p class="ar28-section-intro">Our planned trip to Buenos Aires brings Fury players and families together around the game we love.</p>
+        <p class="ar28-section-intro">Training sessions, friendly matches with Argentine clubs, and a professional soccer match are part of the proposed experience. The information webinar is where families can hear the details and ask questions.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="ar28-section" aria-labelledby="ar28-includes-title">
+    <div class="ar28-wrap">
+      <span class="ar28-eyebrow">The trip at a glance</span>
+      <h2 class="ar28-section-title" id="ar28-includes-title">What's <span>included?</span></h2>
+      <p class="ar28-section-intro">The trip information shared so far includes the following:</p>
+      <div class="ar28-list">
+        <article class="ar28-feature"><span class="ar28-feature-no">01 / TRAVEL</span><h3>Round-trip flights</h3></article>
+        <article class="ar28-feature"><span class="ar28-feature-no">02 / STAY</span><h3>Hotel accommodations</h3></article>
+        <article class="ar28-feature"><span class="ar28-feature-no">03 / TRAIN</span><h3>Training sessions</h3></article>
+        <article class="ar28-feature"><span class="ar28-feature-no">04 / COMPETE</span><h3>Friendly matches against Argentine clubs</h3></article>
+        <article class="ar28-feature"><span class="ar28-feature-no">05 / EXPERIENCE</span><h3>A professional soccer match</h3></article>
+        <article class="ar28-feature"><span class="ar28-feature-no">06 / CONNECT</span><h3>A shared club experience for players and families</h3></article>
+      </div>
+      <p class="ar28-includes-note">The final schedule, pricing, payment terms, and travel conditions have not been provided in these materials. Please attend the webinar for confirmed details before making travel arrangements.</p>
+    </div>
+  </section>
+
+  <section class="ar28-webinar-strip" aria-labelledby="ar28-strip-title">
+    <div class="ar28-wrap ar28-strip-grid">
+      <div>
+        <span class="ar28-strip-kicker">Tuesday, December 1 · 7:00 PM Eastern</span>
+        <h2 id="ar28-strip-title">Let's talk Argentina.</h2>
+        <p class="ar28-strip-copy">Have questions about the trip? Join our family information webinar on Zoom to learn what is planned.</p>
+      </div>
+      <a class="ar28-button" href="https://us06web.zoom.us/webinar/register/WN_yKdBqIioQfqL6hirVjIMrw" target="_blank" rel="noopener noreferrer" aria-label="Register for the Argentina 2028 family webinar on Zoom (opens in a new tab)">Register on Zoom <span class="ar28-arrow" aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <section class="ar28-section ar28-faq" aria-labelledby="ar28-faq-title">
+    <div class="ar28-wrap">
+      <span class="ar28-eyebrow">For Fury families</span>
+      <h2 class="ar28-section-title" id="ar28-faq-title">Good to <span>know.</span></h2>
+      <div class="ar28-faq-list">
+        <details>
+          <summary>Who can join the trip?</summary>
+          <p>The invitation is open to the entire Fayetteville Fury club, including players and their families. The webinar will be an opportunity to learn more about participation.</p>
+        </details>
+        <details>
+          <summary>Does webinar registration book my place on the trip?</summary>
+          <p>No. The Zoom link is for the December 1 information webinar only. Trip registration and payment details will be discussed separately.</p>
+        </details>
+        <details>
+          <summary>Are flights part of the planned trip?</summary>
+          <p>Yes. The promotional information lists flights and hotel accommodations among the included items. Final booking details should be confirmed during the webinar.</p>
+        </details>
+        <details>
+          <summary>Where can I ask questions before the webinar?</summary>
+          <p>Contact Fayetteville Fury at <a href="mailto:info@fayettevillefury.com?subject=Argentina%202028%20Soccer%20Tour">info@fayettevillefury.com</a>.</p>
+        </details>
+      </div>
+      <p class="ar28-endnote">Fayetteville Fury · Buenos Aires, June 2028. Information shown is based on the promotional trip overview and may be updated by the organizers.</p>
+    </div>
+  </section>
+</section>
