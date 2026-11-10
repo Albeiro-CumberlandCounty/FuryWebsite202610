@@ -1,0 +1,559 @@
+<!--
+  FAYETTEVILLE FURY | FURY NXT SUPPLEMENTAL ASSESSMENTS
+  Standalone SoccerShift page: paste this entire file, including <style>,
+  into ONE new SoccerShift page's custom HTML/content editor.
+  No global styles, JavaScript, libraries, or separate image uploads required.
+  Event source: Fayetteville Fury email, November 10, 2026.
+  Assessment: Thursday November 19, 2026, 6:30-7:45 PM, Jordan Soccer Park Field 8.
+  Registration opens the exact SportsBase program URL from the email.
+  Existing club-hosted photographs are reused from the Nxt page.
+  Original tactical pitch SVG and campaign shapes are included inline.
+  SoccerShift PAGE SEO SETTINGS (not part of this body snippet):
+    Title: Fury NXT Soccer Assessments November 19 | Fayetteville, NC
+    Description: Join Fayetteville Fury NXT supplemental soccer assessments
+    November 19, 2026, 6:30-7:45 PM at Jordan Soccer Park Field 8.
+    Register online or walk up on assessment day.
+  The date is specific to 2026. Archive or update this page after the event.
+-->
+<style>
+/* All selectors, including breakpoints, are isolated within .fury-tryouts-26. */
+.fury-tryouts-26,
+.fury-tryouts-26 *,
+.fury-tryouts-26 *::before,
+.fury-tryouts-26 *::after {box-sizing:border-box!important}
+.fury-tryouts-26{
+  --tn26-orange:#f15a24;--tn26-light:#ff7847;
+  --tn26-black:#080808;--tn26-panel:#151515;
+  --tn26-line:#393939;--tn26-white:#fff;--tn26-muted:#e0e0e0;
+  display:block!important;isolation:isolate;
+  width:100%!important;max-width:100%!important;min-width:0!important;
+  margin:0!important;padding:0!important;overflow-x:hidden!important;
+  background:#080808!important;color:#fff!important;
+  font:normal 17px/1.6 Arial,Helvetica,sans-serif!important;
+}
+.fury-tryouts-26 .tn26-wrap{
+  display:block!important;position:relative!important;
+  width:calc(100% - 48px)!important;max-width:1160px!important;
+  min-width:0!important;margin:0 auto!important;padding:0!important
+}
+.fury-tryouts-26 h1,
+.fury-tryouts-26 h2,
+.fury-tryouts-26 h3{
+  display:block!important;margin:0!important;padding:0!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-weight:900!important;line-height:1.05!important;
+  letter-spacing:-.045em!important;text-transform:uppercase!important;
+  color:#fff!important;-webkit-text-fill-color:#fff!important;
+  background:none!important;background-image:none!important;
+  text-shadow:none!important;opacity:1!important
+}
+.fury-tryouts-26 p,
+.fury-tryouts-26 li{
+  margin:0!important;padding:0!important;
+  color:#e8e8e8!important;-webkit-text-fill-color:#e8e8e8!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:inherit!important;line-height:1.65!important
+}
+.fury-tryouts-26 a{font-family:Arial,Helvetica,sans-serif!important}
+.fury-tryouts-26 img{display:block!important;max-width:100%!important}
+.fury-tryouts-26 svg{display:block!important;max-width:100%!important}
+.fury-tryouts-26 .tn26-kicker{
+  display:inline-flex!important;align-items:center!important;gap:12px!important;
+  margin:0!important;color:var(--tn26-light)!important;
+  -webkit-text-fill-color:var(--tn26-light)!important;
+  font-size:12px!important;font-weight:900!important;letter-spacing:.17em!important;
+  line-height:1.5!important;text-transform:uppercase!important
+}
+.fury-tryouts-26 .tn26-kicker::before{
+  content:""!important;display:block!important;width:29px!important;
+  height:3px!important;flex:none!important;background:currentColor!important
+}
+.fury-tryouts-26 .tn26-btn{
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;
+  min-height:56px!important;min-width:0!important;gap:12px!important;
+  padding:14px 22px!important;border:2px solid var(--tn26-orange)!important;
+  border-radius:2px!important;background:var(--tn26-orange)!important;
+  color:#090909!important;-webkit-text-fill-color:#090909!important;
+  font:900 14px/1.25 Arial,Helvetica,sans-serif!important;
+  letter-spacing:.045em!important;text-decoration:none!important;
+  text-align:center!important;text-transform:uppercase!important;
+  transition:background-color .18s ease,color .18s ease,border-color .18s ease,transform .18s ease!important
+}
+.fury-tryouts-26 .tn26-btn:hover{
+  background:#fff!important;border-color:#fff!important;color:#090909!important;
+  -webkit-text-fill-color:#090909!important;transform:translateY(-2px)!important
+}
+.fury-tryouts-26 .tn26-btn-alt{
+  background:transparent!important;border-color:#fff!important;
+  color:#fff!important;-webkit-text-fill-color:#fff!important
+}
+.fury-tryouts-26 .tn26-btn-alt:hover{color:#090909!important;-webkit-text-fill-color:#090909!important}
+.fury-tryouts-26 a:focus-visible,
+.fury-tryouts-26 summary:focus-visible{
+  outline:3px solid #fff!important;outline-offset:4px!important
+}
+.fury-tryouts-26 .tn26-btn .tn26-arrow{font-size:21px!important;line-height:1!important;font-weight:900!important}
+.fury-tryouts-26 .tn26-section{padding:88px 0!important}
+.fury-tryouts-26 .tn26-section-heading{
+  max-width:850px!important;font-size:clamp(32px,4.8vw,60px)!important;margin-top:15px!important
+}
+.fury-tryouts-26 .tn26-section-heading span{
+  color:var(--tn26-light)!important;-webkit-text-fill-color:var(--tn26-light)!important
+}
+.fury-tryouts-26 .tn26-section-copy{
+  margin-top:20px!important;max-width:770px!important;font-size:18px!important
+}
+
+/* Hero: approved cinematic direction, photo left and content right. */
+.fury-tryouts-26 .tn26-hero{
+  position:relative!important;overflow:hidden!important;
+  background:radial-gradient(circle at 78% 30%,#271209 0%,#0a0a0a 55%,#080808 100%)!important;
+  border-top:5px solid var(--tn26-orange)!important
+}
+.fury-tryouts-26 .tn26-hero-grid{
+  display:grid!important;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)!important;
+  align-items:stretch!important;min-height:620px!important
+}
+.fury-tryouts-26 .tn26-hero-visual{
+  position:relative!important;min-height:610px!important;overflow:hidden!important;
+  background:#191919!important;border-right:1px solid rgba(255,255,255,.1)!important
+}
+.fury-tryouts-26 .tn26-hero-visual img{
+  position:absolute!important;inset:0!important;width:100%!important;height:100%!important;
+  max-width:none!important;object-fit:cover!important;object-position:center center!important;
+  opacity:.92!important
+}
+.fury-tryouts-26 .tn26-hero-visual::after{
+  content:""!important;position:absolute!important;inset:0!important;pointer-events:none!important;
+  background:linear-gradient(90deg,rgba(0,0,0,.08),rgba(0,0,0,.1) 50%,rgba(0,0,0,.85) 100%),
+   linear-gradient(0deg,rgba(0,0,0,.68),transparent 55%)!important
+}
+.fury-tryouts-26 .tn26-hero-graphic{
+  position:absolute!important;z-index:1!important;right:0!important;bottom:0!important;
+  width:min(70%,350px)!important;height:auto!important;opacity:.77!important
+}
+.fury-tryouts-26 .tn26-photo-label{
+  position:absolute!important;z-index:2!important;left:26px!important;bottom:22px!important;
+  display:block!important;padding-left:12px!important;border-left:4px solid var(--tn26-orange)!important;
+  color:#fff!important;-webkit-text-fill-color:#fff!important;
+  font-size:11px!important;font-weight:900!important;letter-spacing:.12em!important;text-transform:uppercase!important
+}
+.fury-tryouts-26 .tn26-hero-content{
+  display:flex!important;flex-direction:column!important;justify-content:center!important;
+  min-width:0!important;max-width:100%!important;padding:64px clamp(26px,5vw,76px) 72px!important;
+  position:relative!important;z-index:2!important
+}
+.fury-tryouts-26 .tn26-topline{
+  display:flex!important;gap:12px!important;align-items:center!important;flex-wrap:wrap!important;
+  color:#fff!important;-webkit-text-fill-color:#fff!important;
+  font-weight:900!important;font-size:12px!important;letter-spacing:.13em!important;text-transform:uppercase!important;
+  margin-bottom:26px!important
+}
+.fury-tryouts-26 .tn26-topline .tn26-nxt{
+  color:#090909!important;-webkit-text-fill-color:#090909!important;background:var(--tn26-orange)!important;
+  padding:5px 9px!important
+}
+.fury-tryouts-26 #tn26-title{
+  font-size:clamp(42px,5.1vw,78px)!important;line-height:.95!important;
+  max-width:700px!important;letter-spacing:-.055em!important
+}
+.fury-tryouts-26 #tn26-title span{
+  display:block!important;margin-top:6px!important;
+  color:var(--tn26-light)!important;-webkit-text-fill-color:var(--tn26-light)!important
+}
+.fury-tryouts-26 .tn26-hero-desc{
+  max-width:560px!important;font-size:18px!important;
+  margin-top:24px!important;color:#f3f3f3!important;-webkit-text-fill-color:#f3f3f3!important
+}
+.fury-tryouts-26 .tn26-actions{
+  display:flex!important;flex-wrap:wrap!important;gap:12px!important;margin-top:30px!important
+}
+.fury-tryouts-26 .tn26-hero-small{
+  font-size:13px!important;margin-top:16px!important;color:#dadada!important;
+  -webkit-text-fill-color:#dadada!important
+}
+.fury-tryouts-26 .tn26-date-flash{
+  display:flex!important;align-items:baseline!important;gap:11px!important;
+  margin:0 0 22px!important;line-height:1!important
+}
+.fury-tryouts-26 .tn26-date-flash strong{
+  color:var(--tn26-light)!important;-webkit-text-fill-color:var(--tn26-light)!important;
+  font-size:74px!important;font-weight:900!important;line-height:.9!important;letter-spacing:-.08em!important
+}
+.fury-tryouts-26 .tn26-date-flash span{
+  color:#fff!important;-webkit-text-fill-color:#fff!important;font-size:14px!important;
+  font-weight:900!important;letter-spacing:.18em!important;line-height:1.4!important;text-transform:uppercase!important
+}
+
+/* Event facts */
+.fury-tryouts-26 .tn26-event-bar{
+  background:var(--tn26-orange)!important;color:#090909!important
+}
+.fury-tryouts-26 .tn26-facts{
+  display:grid!important;grid-template-columns:1fr 1fr 1.15fr!important;min-width:0!important
+}
+.fury-tryouts-26 .tn26-fact{
+  min-width:0!important;padding:23px 25px!important;
+  border-right:1px solid rgba(0,0,0,.26)!important
+}
+.fury-tryouts-26 .tn26-fact:first-child{padding-left:0!important}
+.fury-tryouts-26 .tn26-fact:last-child{border-right:0!important}
+.fury-tryouts-26 .tn26-fact-label{
+  display:block!important;color:#111!important;-webkit-text-fill-color:#111!important;
+  font-size:11px!important;font-weight:900!important;letter-spacing:.16em!important;text-transform:uppercase!important
+}
+.fury-tryouts-26 .tn26-fact-value{
+  display:block!important;margin-top:6px!important;color:#090909!important;
+  -webkit-text-fill-color:#090909!important;font-size:clamp(17px,2vw,23px)!important;
+  font-weight:900!important;line-height:1.3!important
+}
+
+/* Why this program */
+.fury-tryouts-26 .tn26-intro{background:#111!important}
+.fury-tryouts-26 .tn26-intro-grid{
+  display:grid!important;grid-template-columns:minmax(0,1.03fr) minmax(0,.97fr)!important;
+  align-items:center!important;gap:clamp(30px,5vw,70px)!important
+}
+.fury-tryouts-26 .tn26-intro-photo{
+  position:relative!important;min-width:0!important;min-height:430px!important;
+  background:#252525!important;overflow:hidden!important;border:1px solid #3b3b3b!important
+}
+.fury-tryouts-26 .tn26-intro-photo img{
+  position:absolute!important;inset:0!important;width:100%!important;height:100%!important;
+  object-fit:cover!important;object-position:center!important
+}
+.fury-tryouts-26 .tn26-intro-photo::after{
+  content:""!important;position:absolute!important;inset:0!important;
+  background:linear-gradient(0deg,rgba(0,0,0,.7),transparent 56%)!important
+}
+.fury-tryouts-26 .tn26-intro-photo-label{
+  position:absolute!important;bottom:16px!important;left:22px!important;z-index:1!important;
+  font-size:12px!important;font-weight:800!important;letter-spacing:.13em!important;
+  color:#fff!important;-webkit-text-fill-color:#fff!important;text-transform:uppercase!important
+}
+.fury-tryouts-26 .tn26-intro-copy p{
+  max-width:620px!important;font-size:17px!important;margin-top:18px!important
+}
+.fury-tryouts-26 .tn26-pillars{
+  display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:16px!important;margin-top:42px!important
+}
+.fury-tryouts-26 .tn26-pillar{
+  padding:23px 22px!important;min-width:0!important;min-height:156px!important;
+  background:#1c1c1c!important;border-top:4px solid var(--tn26-orange)!important;
+  border-left:1px solid #333!important;border-right:1px solid #333!important;
+  border-bottom:1px solid #333!important
+}
+.fury-tryouts-26 .tn26-pillar-count{
+  display:block!important;color:var(--tn26-light)!important;
+  -webkit-text-fill-color:var(--tn26-light)!important;font-size:12px!important;
+  font-weight:900!important;letter-spacing:.14em!important
+}
+.fury-tryouts-26 .tn26-pillar h3{
+  font-size:20px!important;margin:12px 0 8px!important;
+  color:#fff!important;-webkit-text-fill-color:#fff!important
+}
+.fury-tryouts-26 .tn26-pillar p{font-size:15px!important;color:#ddd!important;-webkit-text-fill-color:#ddd!important}
+
+/* Five-tournament plan: original tactical/route graphic */
+.fury-tryouts-26 .tn26-season{
+  background:radial-gradient(ellipse at 76% 20%,rgba(241,90,36,.09),transparent 47%),#080808!important
+}
+.fury-tryouts-26 .tn26-season-art{
+  display:grid!important;grid-template-columns:minmax(0,1fr) 220px!important;
+  align-items:end!important;gap:22px!important
+}
+.fury-tryouts-26 .tn26-pitch{
+  display:block!important;width:210px!important;height:166px!important;max-width:100%!important;
+  color:var(--tn26-orange)!important
+}
+.fury-tryouts-26 .tn26-route{
+  display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;
+  gap:0!important;list-style:none!important;margin:38px 0 0!important;padding:0!important;
+  border-top:3px solid var(--tn26-orange)!important
+}
+.fury-tryouts-26 .tn26-route li{
+  position:relative!important;min-width:0!important;
+  padding:28px 17px 12px!important;border-left:1px solid #373737!important;
+  color:#fff!important;-webkit-text-fill-color:#fff!important
+}
+.fury-tryouts-26 .tn26-route li:last-child{border-right:1px solid #373737!important}
+.fury-tryouts-26 .tn26-route li::before{
+  content:""!important;position:absolute!important;top:-9px!important;left:13px!important;
+  width:15px!important;height:15px!important;border-radius:50%!important;
+  background:var(--tn26-orange)!important;border:3px solid #080808!important
+}
+.fury-tryouts-26 .tn26-route-num{
+  display:block!important;color:var(--tn26-light)!important;
+  -webkit-text-fill-color:var(--tn26-light)!important;
+  font-weight:900!important;font-size:12px!important;letter-spacing:.14em!important
+}
+.fury-tryouts-26 .tn26-route-city{
+  display:block!important;margin-top:14px!important;color:#fff!important;
+  -webkit-text-fill-color:#fff!important;font-size:clamp(17px,1.9vw,22px)!important;
+  font-weight:900!important;line-height:1.2!important;text-transform:uppercase!important;
+  overflow-wrap:anywhere!important
+}
+.fury-tryouts-26 .tn26-route-state{
+  display:block!important;margin-top:7px!important;color:#dadada!important;
+  -webkit-text-fill-color:#dadada!important;font-size:14px!important;font-weight:700!important
+}
+.fury-tryouts-26 .tn26-fine{
+  display:block!important;margin-top:23px!important;
+  color:#d6d6d6!important;-webkit-text-fill-color:#d6d6d6!important;
+  font-size:14px!important;line-height:1.65!important
+}
+
+/* Assessment callout and FAQs */
+.fury-tryouts-26 .tn26-cta{background:#f15a24!important;color:#080808!important;padding:57px 0!important}
+.fury-tryouts-26 .tn26-cta-grid{
+  display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;
+  align-items:center!important;gap:30px!important
+}
+.fury-tryouts-26 .tn26-cta-kicker{
+  color:#111!important;-webkit-text-fill-color:#111!important;
+  font-size:12px!important;font-weight:900!important;letter-spacing:.16em!important;
+  text-transform:uppercase!important
+}
+.fury-tryouts-26 #tn26-cta-title{
+  margin-top:9px!important;color:#080808!important;-webkit-text-fill-color:#080808!important;
+  font-size:clamp(29px,4vw,51px)!important
+}
+.fury-tryouts-26 .tn26-cta p{
+  max-width:680px!important;margin-top:11px!important;
+  color:#161616!important;-webkit-text-fill-color:#161616!important;font-weight:700!important
+}
+.fury-tryouts-26 .tn26-cta .tn26-btn{
+  background:#090909!important;border-color:#090909!important;color:#fff!important;
+  -webkit-text-fill-color:#fff!important;white-space:normal!important
+}
+.fury-tryouts-26 .tn26-cta .tn26-btn:hover{
+  background:#fff!important;border-color:#fff!important;color:#090909!important;
+  -webkit-text-fill-color:#090909!important
+}
+.fury-tryouts-26 .tn26-cta a:focus-visible{outline-color:#090909!important}
+.fury-tryouts-26 .tn26-faq{background:#111!important}
+.fury-tryouts-26 .tn26-faq-list{max-width:840px!important;margin-top:28px!important}
+.fury-tryouts-26 .tn26-faq-list details{
+  display:block!important;border-top:1px solid #464646!important;padding:18px 0!important
+}
+.fury-tryouts-26 .tn26-faq-list details:last-child{border-bottom:1px solid #464646!important}
+.fury-tryouts-26 .tn26-faq-list summary{
+  display:list-item!important;cursor:pointer!important;color:#fff!important;
+  -webkit-text-fill-color:#fff!important;font-size:18px!important;
+  font-weight:900!important;line-height:1.4!important
+}
+.fury-tryouts-26 .tn26-faq-list details p{
+  margin:12px 20px 0 0!important;color:#e4e4e4!important;
+  -webkit-text-fill-color:#e4e4e4!important;font-size:16px!important
+}
+.fury-tryouts-26 .tn26-faq-list details a,
+.fury-tryouts-26 .tn26-help a{
+  color:var(--tn26-light)!important;-webkit-text-fill-color:var(--tn26-light)!important;
+  text-decoration:underline!important;text-underline-offset:3px!important
+}
+.fury-tryouts-26 .tn26-help{
+  margin-top:25px!important;color:#d8d8d8!important;-webkit-text-fill-color:#d8d8d8!important;
+  font-size:14px!important
+}
+
+@media(max-width:960px){
+  .fury-tryouts-26 .tn26-hero-grid{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr)!important}
+  .fury-tryouts-26 .tn26-hero-visual{min-height:570px!important}
+  .fury-tryouts-26 .tn26-hero-content{padding:55px 30px 60px!important}
+  .fury-tryouts-26 #tn26-title{font-size:clamp(40px,5.7vw,66px)!important}
+  .fury-tryouts-26 .tn26-date-flash strong{font-size:60px!important}
+  .fury-tryouts-26 .tn26-facts{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+}
+@media(max-width:740px){
+  .fury-tryouts-26 .tn26-wrap{width:calc(100% - 36px)!important}
+  .fury-tryouts-26 .tn26-hero-grid{grid-template-columns:minmax(0,1fr)!important;min-height:0!important}
+  .fury-tryouts-26 .tn26-hero-visual{min-height:300px!important;border-right:0!important;border-bottom:1px solid #484848!important}
+  .fury-tryouts-26 .tn26-hero-visual img{object-position:center 35%!important}
+  .fury-tryouts-26 .tn26-hero-visual::after{
+    background:linear-gradient(0deg,rgba(0,0,0,.64),transparent 65%)!important
+  }
+  .fury-tryouts-26 .tn26-hero-content{padding:37px 24px 50px!important}
+  .fury-tryouts-26 #tn26-title{font-size:clamp(42px,8.8vw,68px)!important}
+  .fury-tryouts-26 .tn26-facts{grid-template-columns:1fr!important}
+  .fury-tryouts-26 .tn26-fact{padding:17px 0!important;border-right:0!important;border-bottom:1px solid rgba(0,0,0,.26)!important}
+  .fury-tryouts-26 .tn26-fact:last-child{border-bottom:0!important}
+  .fury-tryouts-26 .tn26-section{padding:62px 0!important}
+  .fury-tryouts-26 .tn26-intro-grid{grid-template-columns:1fr!important;gap:28px!important}
+  .fury-tryouts-26 .tn26-intro-photo{min-height:315px!important}
+  .fury-tryouts-26 .tn26-pillars{grid-template-columns:1fr!important;gap:12px!important}
+  .fury-tryouts-26 .tn26-pillar{min-height:0!important}
+  .fury-tryouts-26 .tn26-season-art{grid-template-columns:minmax(0,1fr) 130px!important}
+  .fury-tryouts-26 .tn26-pitch{width:130px!important;height:105px!important}
+  .fury-tryouts-26 .tn26-route{grid-template-columns:1fr!important;border-top:0!important;border-left:3px solid var(--tn26-orange)!important}
+  .fury-tryouts-26 .tn26-route li{padding:12px 14px 19px 25px!important;border-left:0!important;border-bottom:1px solid #333!important}
+  .fury-tryouts-26 .tn26-route li:last-child{border-right:0!important}
+  .fury-tryouts-26 .tn26-route li::before{top:23px!important;left:-10px!important}
+  .fury-tryouts-26 .tn26-route-city{margin-top:5px!important;font-size:23px!important}
+  .fury-tryouts-26 .tn26-cta-grid{grid-template-columns:minmax(0,1fr)!important}
+}
+@media(max-width:440px){
+  .fury-tryouts-26 .tn26-wrap{width:calc(100% - 32px)!important}
+  .fury-tryouts-26 .tn26-hero-content{padding:32px 18px 42px!important}
+  .fury-tryouts-26 .tn26-hero-visual{min-height:250px!important}
+  .fury-tryouts-26 #tn26-title{font-size:clamp(38px,10vw,50px)!important}
+  .fury-tryouts-26 .tn26-date-flash strong{font-size:56px!important}
+  .fury-tryouts-26 .tn26-actions{display:grid!important;grid-template-columns:1fr!important}
+  .fury-tryouts-26 .tn26-actions .tn26-btn{width:100%!important}
+  .fury-tryouts-26 .tn26-season-art{grid-template-columns:1fr!important}
+  .fury-tryouts-26 .tn26-pitch{display:none!important}
+  .fury-tryouts-26 .tn26-cta .tn26-btn{width:100%!important}
+}
+@media(prefers-reduced-motion:reduce){
+  .fury-tryouts-26 .tn26-btn{transition:none!important}
+  .fury-tryouts-26 .tn26-btn:hover{transform:none!important}
+}
+</style>
+
+<main class="fury-tryouts-26" aria-labelledby="tn26-title">
+  <section class="tn26-hero" aria-labelledby="tn26-title">
+    <div class="tn26-hero-grid">
+      <div class="tn26-hero-visual">
+        <img src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-9d59acd8-30c2-4df4-b013-60b794d91640/1790802955-full.png" alt="Fayetteville Fury player development on the soccer field" loading="eager" fetchpriority="high" decoding="async">
+        <svg class="tn26-hero-graphic" viewBox="0 0 360 310" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+          <g fill="none" stroke="#f15a24" stroke-width="5" opacity=".83">
+            <path d="M62 284L305 42M109 306L350 66M14 263L239 36"/>
+            <circle cx="214" cy="171" r="51" stroke-width="3"/>
+            <path d="M162 171h104M214 120v102" stroke-width="2"/>
+          </g>
+          <path d="M205 305L359 157v149H205" fill="#f15a24" opacity=".25"/>
+        </svg>
+        <span class="tn26-photo-label">Fury NXT · Player development</span>
+      </div>
+      <div class="tn26-hero-content">
+        <div class="tn26-topline"><span>Fayetteville Fury</span><span class="tn26-nxt">NXT</span><span>Supplemental assessments</span></div>
+        <div class="tn26-date-flash" aria-label="November 19, 2026"><strong>19</strong><span>NOV<br>2026</span></div>
+        <h1 id="tn26-title">Your next step <span>starts here.</span></h1>
+        <p class="tn26-hero-desc">Ready for a new challenge? Whether you're returning to Fury NXT or checking us out for the first time, come show us your game and learn what we're building for the season ahead.</p>
+        <div class="tn26-actions">
+          <a class="tn26-btn" href="https://sportsbase.com/playercontact_onboarding/1742225433183x760466384722329600?program=1785759230059x234751970220179460" target="_blank" rel="noopener noreferrer" aria-label="Register for Fury NXT supplemental assessments through SportsBase (opens in a new tab)">Register for assessments <span class="tn26-arrow" aria-hidden="true">→</span></a>
+          <a class="tn26-btn tn26-btn-alt" href="#tn26-season">See the season plan</a>
+        </div>
+        <p class="tn26-hero-small">Register ahead if you can. Walk-ups are welcome on assessment day.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="tn26-event-bar" aria-label="Assessment date, time, and location">
+    <div class="tn26-wrap tn26-facts">
+      <div class="tn26-fact">
+        <span class="tn26-fact-label">Date</span>
+        <span class="tn26-fact-value"><time datetime="2026-11-19">Thursday, Nov. 19, 2026</time></span>
+      </div>
+      <div class="tn26-fact">
+        <span class="tn26-fact-label">Time</span>
+        <span class="tn26-fact-value"><time datetime="2026-11-19T18:30:00-05:00">6:30–7:45 PM</time></span>
+      </div>
+      <div class="tn26-fact">
+        <span class="tn26-fact-label">Where</span>
+        <span class="tn26-fact-value">Jordan Soccer Park · Field #8</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="tn26-section tn26-intro" aria-labelledby="tn26-why-title">
+    <div class="tn26-wrap tn26-intro-grid">
+      <div class="tn26-intro-copy">
+        <span class="tn26-kicker">A place to keep growing</span>
+        <h2 class="tn26-section-heading" id="tn26-why-title">Bring your game. <span>Build what's next.</span></h2>
+        <p>Fury NXT is for players who want purposeful coaching, meaningful competition, and a team environment where improvement matters.</p>
+        <p>We know soccer has to fit alongside school, work, and family commitments. We're working to keep competitive play affordable while giving players the chance to test themselves.</p>
+      </div>
+      <div class="tn26-intro-photo">
+        <img src="https://digitalshift-assets.sfo2.cdn.digitaloceanspaces.com/pw/da60cb0b-d5ec-4354-b3a5-5d50a7664939/p-afd685ad-9671-46b0-8c1a-827832ecf684/1790807705-full.png" alt="Fayetteville Fury players taking part in tournament competition" loading="lazy" decoding="async">
+        <span class="tn26-intro-photo-label">Train · Compete · Grow</span>
+      </div>
+    </div>
+    <div class="tn26-wrap tn26-pillars">
+      <article class="tn26-pillar">
+        <span class="tn26-pillar-count">01 / DEVELOPMENT</span>
+        <h3 style="color:#fff!important;-webkit-text-fill-color:#fff!important;background:none!important">Quality coaching</h3>
+        <p>Keep improving your skills and decisions through focused training.</p>
+      </article>
+      <article class="tn26-pillar">
+        <span class="tn26-pillar-count">02 / COMPETITION</span>
+        <h3 style="color:#fff!important;-webkit-text-fill-color:#fff!important;background:none!important">Five planned tournaments</h3>
+        <p>New opponents, different settings, and chances to grow as a group.</p>
+      </article>
+      <article class="tn26-pillar">
+        <span class="tn26-pillar-count">03 / COMMUNITY</span>
+        <h3 style="color:#fff!important;-webkit-text-fill-color:#fff!important;background:none!important">A team to belong to</h3>
+        <p>Returning and new players are invited to be part of the journey.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="tn26-section tn26-season" id="tn26-season" aria-labelledby="tn26-season-title">
+    <div class="tn26-wrap">
+      <div class="tn26-season-art">
+        <div>
+          <span class="tn26-kicker">The season we're planning</span>
+          <h2 class="tn26-section-heading" id="tn26-season-title">Five tournaments. <span>One Fury NXT.</span></h2>
+          <p class="tn26-section-copy">The proposed schedule gives our players chances to travel, play different opponents, and compete together across North Carolina and Tennessee.</p>
+        </div>
+        <svg class="tn26-pitch" viewBox="0 0 250 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Original orange-line soccer field illustration">
+          <g fill="none" stroke="#f15a24" stroke-width="3" opacity=".86">
+            <rect x="6" y="6" width="238" height="176" rx="2"/>
+            <path d="M125 6v176"/>
+            <circle cx="125" cy="94" r="29"/>
+            <rect x="6" y="49" width="40" height="90"/>
+            <rect x="204" y="49" width="40" height="90"/>
+            <rect x="6" y="73" width="14" height="42"/>
+            <rect x="230" y="73" width="14" height="42"/>
+          </g>
+          <circle cx="125" cy="94" r="4.4" fill="#f15a24"/>
+        </svg>
+      </div>
+      <ol class="tn26-route" aria-label="Planned tournament destinations in proposed order">
+        <li><span class="tn26-route-num">STOP 01</span><strong class="tn26-route-city">Raleigh</strong><span class="tn26-route-state">North Carolina</span></li>
+        <li><span class="tn26-route-num">STOP 02</span><strong class="tn26-route-city">Greensboro</strong><span class="tn26-route-state">North Carolina</span></li>
+        <li><span class="tn26-route-num">STOP 03</span><strong class="tn26-route-city">Gatlinburg</strong><span class="tn26-route-state">Tennessee</span></li>
+        <li><span class="tn26-route-num">STOP 04</span><strong class="tn26-route-city">Hickory</strong><span class="tn26-route-state">North Carolina</span></li>
+        <li><span class="tn26-route-num">STOP 05</span><strong class="tn26-route-city">Raleigh</strong><span class="tn26-route-state">North Carolina</span></li>
+      </ol>
+      <p class="tn26-fine">Tournament destinations and the season schedule are planned and may change. Specific dates, events, travel arrangements, and program costs have not been announced in this invitation.</p>
+    </div>
+  </section>
+
+  <section class="tn26-cta" aria-labelledby="tn26-cta-title">
+    <div class="tn26-wrap tn26-cta-grid">
+      <div>
+        <span class="tn26-cta-kicker">November 19 · Jordan Soccer Park · Field #8</span>
+        <h2 id="tn26-cta-title">Come show us your game.</h2>
+        <p>Join us from 6:30 to 7:45 PM. Register online ahead of time, or walk up on the day.</p>
+      </div>
+      <a class="tn26-btn" href="https://sportsbase.com/playercontact_onboarding/1742225433183x760466384722329600?program=1785759230059x234751970220179460" target="_blank" rel="noopener noreferrer" aria-label="Register online for Fury NXT assessments through SportsBase (opens in a new tab)">Register on SportsBase <span class="tn26-arrow" aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <section class="tn26-section tn26-faq" aria-labelledby="tn26-faq-title">
+    <div class="tn26-wrap">
+      <span class="tn26-kicker">Questions before you come?</span>
+      <h2 class="tn26-section-heading" id="tn26-faq-title">Good to <span>know.</span></h2>
+      <div class="tn26-faq-list">
+        <details>
+          <summary>Do I need to register before attending?</summary>
+          <p>Online registration is encouraged, but walk-up registration is also welcome on assessment day.</p>
+        </details>
+        <details>
+          <summary>Are returning Fury NXT players welcome?</summary>
+          <p>Yes. The invitation is for returning players who want to keep growing and new players interested in joining Fury NXT.</p>
+        </details>
+        <details>
+          <summary>Are all five tournament locations confirmed?</summary>
+          <p>The five stops are part of the proposed season plan. Final tournaments, dates, and travel details will be shared separately.</p>
+        </details>
+        <details>
+          <summary>Who should I contact about eligibility or program fees?</summary>
+          <p>Contact Fayetteville Fury at <a href="mailto:info@fayettevillefury.com?subject=Fury%20NXT%20November%2019%20Assessments">info@fayettevillefury.com</a>. The invitation does not specify age groups or final costs.</p>
+        </details>
+      </div>
+      <p class="tn26-help">Fayetteville Fury NXT · Fayetteville, North Carolina. <a href="https://sportsbase.com/playercontact_onboarding/1742225433183x760466384722329600?program=1785759230059x234751970220179460" target="_blank" rel="noopener noreferrer">Open the assessment registration form</a>.</p>
+    </div>
+  </section>
+</main>
